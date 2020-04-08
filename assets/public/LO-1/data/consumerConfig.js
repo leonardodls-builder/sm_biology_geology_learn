@@ -6,19 +6,19 @@ var consumerConfig = {
     },
     "modules": {
       "flashcard-activity-player": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/flashcard-activity-player",
+        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/flashcard-activity-player/releases/",
         "version": "0.0.1",
-        "js": "libs-flashcard-activity-player",
-        "css": "libs-flashcard-activity-player",
+        "js": "0.0.1/libs-flashcard-activity-player",
+        "css": "0.0.1/libs-flashcard-activity-player",
         "dependencies": [
           "react",
           "react-dom"
         ]
       },
       "presentation-card-item-player": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/presentation-card-item-player/",
+        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/presentation-card-item-player/releases/",
         "version": "0.0.1",
-        "js": "libs-presentation-card-item-player",
+        "js": "0.0.1/libs-presentation-card-item-player",
         "dependencies": [
           "react",
           "react-dom"
