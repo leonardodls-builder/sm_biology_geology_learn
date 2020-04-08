@@ -98,10 +98,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -140,10 +140,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -194,10 +194,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -236,10 +236,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -278,10 +278,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -320,10 +320,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -362,10 +362,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -410,10 +410,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -458,10 +458,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -506,10 +506,10 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "flashcardItem",
-        "model": "presentation-card",
-        "editor": "presentation-card-item-editor",
-        "renderer": "presentation-card-item-player",
+        "subType": "presentation-card",
+
+
+
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
