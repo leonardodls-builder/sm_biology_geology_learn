@@ -78,7 +78,7 @@
 			if (params.type === 'checkAnswers') {
 				activity.checkAnswer(checkAnswerCallback.bind(this));
 			} else if (params.type === 'sendScores') {
-				activity.submit(submitCallback.bind(this));
+				activity.submit();
 			} else if (params.type === 'reviewAnswers') {
 				if(activityState && activityState.status == "Completed") {
 					goIntoReviewMode();
@@ -336,6 +336,9 @@
 						delete dims.width;
 						newDimensions(dims);
 					}
+				},
+				submit: function(eventArgs){
+					submitCallback(eventArgs);
 				}
 			},
 			uiStyles: {

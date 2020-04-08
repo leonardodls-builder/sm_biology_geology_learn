@@ -1,35 +1,27 @@
 var consumerConfig = {
   "players": {
     "playerMap": {
-      "collection": "multi-item-activity-player",
-      "imagelabel-dnd": "image-label-dnd-player",
-      "mcsr-radio": "mcq-radio-player"
+      "flashcard": "flashcard-activity-player",
+      "presentation-card": "presentation-card-item-player"
     },
     "modules": {
-      "multi-item-activity-player": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/multi-item-activity-player/releases/",
-        "version": "0.0.19",
-        "js": "0.0.19/multiItemActivityPlayer",
-        "css": "0.0.19/multiItemActivityPlayer"
-      },
-      "image-label-dnd-player": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/image-label-dnd-player/releases/",
-        "version": "0.0.18",
-        "js": "0.0.18/libs-imagelabel-dnd-item-player",
+      "flashcard-activity-player": {
+        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/flashcard-activity-player",
+        "version": "0.0.1",
+        "js": "libs-flashcard-activity-player",
+        "css": "libs-flashcard-activity-player",
         "dependencies": [
           "react",
-          "react-dom",
-          "libs-player-ui-components"
+          "react-dom"
         ]
       },
-      "mcq-radio-player": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/mcq-radio-player/releases/",
-        "version": "0.0.18",
-        "js": "0.0.18/libs-mcsr-radio-item-player",
+      "presentation-card-item-player": {
+        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/presentation-card-item-player/",
+        "version": "0.0.1",
+        "js": "libs-presentation-card-item-player",
         "dependencies": [
           "react",
-          "react-dom",
-          "libs-player-ui-components"
+          "react-dom"
         ]
       },
       "react": {
@@ -41,11 +33,6 @@ var consumerConfig = {
         "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/react-dom/releases/",
         "version": "16.12.0",
         "js": "16.12.0/react-dom.development"
-      },
-      "libs-player-ui-components": {
-        "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/libs-player-ui-components/releases/",
-        "version": "0.0.13",
-        "js": "0.0.13/libs-player-ui-components"
       }
     }
   }

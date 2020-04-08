@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LearningObjectInfo>
 	<PROVIDERID>CMP_ASSESSMENT</PROVIDERID>
-	<UID>leonardo-dev-5</UID>
-	<name>Hello World Learning Activity 101</name>
-	<timestamp>2019-01-31T09:54Z</timestamp>
-	<questionCount>3</questionCount>
+	<UID>leonardo-dev-4</UID>
+	<name>Flash Card Study Activity</name>
+	<timestamp>2020-04-08T11:54Z</timestamp>
 </LearningObjectInfo>
