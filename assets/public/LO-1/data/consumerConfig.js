@@ -7,9 +7,9 @@ var consumerConfig = {
     "modules": {
       "flashcard-activity-player": {
         "baseURL": "https://d3f2ws3vg5f2o9.cloudfront.net/modules/flashcard-activity-player/releases/",
-        "version": "0.0.5",
-        "js": "0.0.5/libs-flashcard-activity-player",
-        "css": "0.0.5/libs-flashcard-activity-player",
+        "version": "0.0.6",
+        "js": "0.0.6/libs-flashcard-activity-player",
+        "css": "0.0.6/libs-flashcard-activity-player",
         "dependencies": [
           "react",
           "react-dom"
