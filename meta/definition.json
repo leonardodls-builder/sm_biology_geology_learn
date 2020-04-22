@@ -191,7 +191,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. ¿Qué necesita nuestro organismo para funcionar?",
@@ -319,7 +319,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. La dieta",
@@ -429,7 +429,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. ¿Qué desechos produce el organismo?",
@@ -575,7 +575,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. Relación y coordinación",
@@ -712,7 +712,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. Estímulos, receptores y sentidos",
@@ -849,7 +849,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. La reproducción en los seres humanos",
@@ -986,7 +986,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. La salud",
@@ -1132,7 +1132,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0001",
+                "resource": "RE_0002",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "1. El escenario de la vida",
