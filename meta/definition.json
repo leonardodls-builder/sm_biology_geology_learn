@@ -315,7 +315,7 @@
                 "contributes-to-completion": true,
                 "name": "Entrada",
                 "tracking": true,
-                "item-code": "\n  1234567891001/1234567892003/1234567893001"
+                "item-code": "1234567891001/1234567892003/1234567893001"
               },
               {
                 "item-type": "resource",
