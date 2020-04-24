@@ -182,7 +182,7 @@ var activityJson = {
             "text": {
               "content": {
                 "type": "plain-text",
-                "data": "No te preocupes si en la imagen superior solo ves un punto, es lo normal porque el poder de resolución del ojo humano está por encima de los 0,2 mm"
+                "data": "No te preocupes si en la imagen superior solo ves un punto, es lo normal porque el poder de resolución del ojo humano está por encima de los 0,2 mm."
               }
             }
           }
@@ -224,7 +224,7 @@ var activityJson = {
             "text": {
               "content": {
                 "type": "plain-text",
-                "data": "Sin embargo, si miras a través de una simple lupa o de un microscopio óptico como los que usas en el laboratorio, los percibirás como dos puntos separados. No es magia, es porque el poder de resolución de un microscopio óptico es de 0,2 µm(*)."
+                "data": "Sin embargo, si miras a través de una simple lupa o de un microscopio óptico como los que usas en el laboratorio, los percibirás como dos puntos separados. No es magia, es porque el poder de resolución de un microscopio óptico es de 0,2 µm."
               }
             }
           }
