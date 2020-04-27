@@ -1,7 +1,9 @@
 var activityJson = {
   "itemId": "leonardo-dev-5",
   "type": "activity",
-  "subType": "flashcard",
+  "model": "flashcard",
+  "player": "flashcard-activity-player",
+  "editor": "flashcard-editor",
   "status": "in-process",
   "displayType": "master",
   "toolName": "paint",
@@ -98,10 +100,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -140,10 +141,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -194,10 +194,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -236,10 +235,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -278,10 +276,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -320,10 +317,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -362,10 +358,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -410,10 +405,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -458,10 +452,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
@@ -506,10 +499,9 @@ var activityJson = {
       "itemId": {
         "itemId": "leonardo-dev-1553",
         "type": "item",
-        "subType": "presentation-card",
-
-
-
+        "model": "presentation-card",
+        "player": "presentation-card-item-player",
+        "editor": "presentation-card-editor",
         "status": "in-process",
         "displayType": "embedded",
         "itemMeta": {
