@@ -1310,7 +1310,9 @@
       "course": "3.º",
       "level": "ESO",
       "isbn": "978-84-675-7600-9",
-      "series": "BREZO (SAVIA)"
+      "series": "BREZO (SAVIA)",
+      "booktitle":"Biología y Geología",
+      "booksubtitle":"3.º ESO BREZO (SAVIA)"
     }
   }
 }
