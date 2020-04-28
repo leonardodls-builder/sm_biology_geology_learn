@@ -13,9 +13,9 @@ var consumerConfig = {
       },
       "presentation-card-item-player": {
         "baseURL": "https://sdk-qa.leonardodls.com/modules/presentation-card-item-player/releases/",
-        "version": "0.0.6",
-        "js": "0.0.6/libs-presentation-card-item-player",
-        "css": "0.0.6/libs-presentation-card-item-player",
+        "version": "0.0.7",
+        "js": "0.0.7/libs-presentation-card-item-player",
+        "css": "0.0.7/libs-presentation-card-item-player",
         "dependencies": [
           "react",
           "react-dom",
