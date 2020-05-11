@@ -3,9 +3,9 @@ var consumerConfig = {
     "modules": {
       "flashcard-activity-player": {
         "baseURL": "https://sdk-qa.leonardodls.com/modules/flashcard-activity-player/releases/",
-        "version": "0.0.9",
-        "js": "0.0.9/libs-flashcard-activity-player",
-        "css": "0.0.9/libs-flashcard-activity-player",
+        "version": "0.0.10",
+        "js": "0.0.10/libs-flashcard-activity-player",
+        "css": "0.0.10/libs-flashcard-activity-player",
         "dependencies": [
           "react",
           "react-dom"
