@@ -64,16 +64,18 @@
 	var activityLaunchId;
 
 	/* Function to create/initialize jsChannel */
-	var initChannel = function (callback) {
-		channel = Channel.build({
-			window: window.parent,
-			origin: '*',
-			scope: 'cup-generic-default',
-			onReady: function () {
-				callback(channel);
-			}
+	function initChannel() {
+		return new Promise((resolve, reject) => {
+			channel = Channel.build({
+				window: window.parent,
+				origin: '*',
+				scope: 'cup-generic-default',
+				onReady: function () {
+					resolve(channel);
+				}
+			});
 		});
-	};
+	}
 
 	/* Function to bind methods with the created jschannel instance.  */
 	var bindChannel = function (channel) {
@@ -208,17 +210,19 @@
 	};
 
 	/* Function to get initialization paramters from the container */
-	var getInitParameters = function (callback) {
-		channel.call({
-			method: 'sendMessageToContainer',
-			params: {
-				type: 'init'
-			},
-			success: function (params) {
-				callback(params);
-			}
-		});
-	};
+	function getInitParameters() {
+		return new Promise((resolve, reject) => {
+			channel.call({
+				method: 'sendMessageToContainer',
+				params: {
+					type: 'init'
+				},
+				success: function (params) {
+					resolve(params);
+				}
+			});
+		})
+	}
 
 	/* Function called on launch of Activity, to notify container with the ready event when the LO is loaded and ready for interaction */
 	var DOMReady = function () {
@@ -375,8 +379,11 @@
 				size: function (eventArgs) {
 					dims = eventArgs.size;
 					if (dims) {
-						container.style.height = dims.height + "px";
-						delete dims.width;
+						if (dims.containerFit) {
+							container.style.height = '100%';
+						} else {
+							container.style.height = dims.height + 'px';
+						}
 						newDimensions(dims);
 					}
 				},
@@ -406,9 +413,9 @@
 		}); */
 		LeonardoApp.Activity.init(activityLaunchId, activityJson, container, options).then((player) => {
 			activity = player;
+			activity.render(activityLaunchId);
 		});
 
-		LeonardoApp.Activity.render(activityLaunchId);
 
 		/*fetch(jsonPath)
 			.then(res => res.json())
@@ -620,38 +627,34 @@
 
 	/* DOM Ready event */
 	document.addEventListener('DOMContentLoaded', function () {
-		initChannel(
-			function (channel) {
+
+		initChannel()
+			.then((channel) => {
 				bindChannel(channel);
-
-
-				/* Get initiliazation paramters - contentPath and state, if any. */
-				getInitParameters(function (initParams) {
-
-					activityLaunchId = initParams.id || "launchId1";
-
-					loWithoutControls = initParams.hasOwnProperty('loWithoutControls') ? initParams.loWithoutControls : true;
-					if (initParams.hasOwnProperty('state') && initParams.state) {
-						activityState = initParams.state;
-						if (initParams.status == "completed") {
-							isReviewMode = true;
-						}
+	/* Get initiliazation paramters - contentPath and state, if any. */
+				return getInitParameters();
+			})
+			.then((initParams) => {
+				activityLaunchId = initParams.id || "launchId1";
+				loWithoutControls = initParams.hasOwnProperty('loWithoutControls') ? initParams.loWithoutControls : true;
+				if (initParams.hasOwnProperty('state') && initParams.state) {
+					activityState = initParams.state;
+					if (initParams.status == "completed") {
+						isReviewMode = true;
 					}
+				}
 
-					// setting conumer config based on init params and default consumer key present in the index.html of this LO
-					if (initParams && initParams.consumerConfig) {
-						consumerConfig = initParams.consumerConfig;
-					}
+				// setting conumer config based on init params and default consumer key present in the index.html of this LO
+				if (initParams && initParams.consumerConfig) {
+					consumerConfig = initParams.consumerConfig;
+				}
 
-					if (consumerConfig) {
-						LeonardoApp.setConfig(consumerConfig);
-					}
+				if (consumerConfig) {
+					LeonardoApp.setConfig(consumerConfig);
+				}
 
-					generateStatement('started');
-
-					launchActivity();
-
-				});
+				generateStatement('started');
+				launchActivity();
 			});
 	});
 
