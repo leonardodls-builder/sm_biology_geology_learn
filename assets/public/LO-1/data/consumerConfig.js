@@ -34,7 +34,7 @@ var consumerConfig = {
       },
       "libs-player-ui-components": {
         "baseURL": "https://sdk-qa.leonardodls.com/modules/libs-player-ui-components/releases/",
-        "version": "0.3.1"
+        "version": "0.3.1",
         "js": "0.3.1/libs-player-ui-components"
       }
     }
