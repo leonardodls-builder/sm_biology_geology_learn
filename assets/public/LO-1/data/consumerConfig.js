@@ -3,19 +3,20 @@ var consumerConfig = {
     "modules": {
       "flashcard-activity-player": {
         "baseURL": "https://sdk-qa.leonardodls.com/modules/flashcard-activity-player/releases/",
-        "version": "0.0.12",
-        "js": "0.0.12/libs-flashcard-activity-player",
-        "css": "0.0.12/libs-flashcard-activity-player",
+        "version": "0.0.13",
+        "js": "0.0.13/libs-flashcard-activity-player",
+        "css": "0.0.13/libs-flashcard-activity-player",
         "dependencies": [
           "react",
-          "react-dom"
+          "react-dom",
+          "libs-player-ui-components"
         ]
       },
       "presentation-card-item-player": {
         "baseURL": "https://sdk-qa.leonardodls.com/modules/presentation-card-item-player/releases/",
-        "version": "0.0.9",
-        "js": "0.0.9/libs-presentation-card-item-player",
-        "css": "0.0.9/libs-presentation-card-item-player",
+        "version": "0.0.10",
+        "js": "0.0.10/libs-presentation-card-item-player",
+        "css": "0.010/libs-presentation-card-item-player",
         "dependencies": [
           "react",
           "react-dom",
