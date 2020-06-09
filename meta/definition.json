@@ -54,7 +54,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0002",
+                "resource": "RE_0003",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "2. ¿Qué contiene el citoplasma?",
@@ -63,7 +63,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0002",
+                "resource": "RE_0004",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "3. El núcleo de la célula",
@@ -72,7 +72,7 @@
               },
               {
                 "item-type": "resource",
-                "resource": "RE_0002",
+                "resource": "RE_0005",
                 "pass-score": 0.7,
                 "contributes-to-completion": true,
                 "name": "4. La membrana y los intercambios con el medio",
@@ -1265,7 +1265,7 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-cup-xapiscoreable",
+        "sub-type": "ext-cup-xapi",
         "interaction-type": "practice",
         "ext-cup-xapiscoreable": {
           "url": "LO-1"
@@ -1284,9 +1284,42 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
+        "sub-type": "default",
         "html": {
           "url": ""
+        },
+        "tags": []
+      },
+      "RE_0003": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "html",
+        "html": {
+          "url": "etext/LO-3"
+        },
+        "tags": []
+      },
+      "RE_0004": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "html",
+        "html": {
+          "url": "etext/LO-4"
+        },
+        "tags": []
+      },
+      "RE_0005": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "html",
+        "html": {
+          "url": "etext/LO-5"
         },
         "tags": []
       }
