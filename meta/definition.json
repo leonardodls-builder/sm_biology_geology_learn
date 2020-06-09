@@ -1285,7 +1285,7 @@
         ],
         "description": "",
         "sub-type": "default",
-        "html": {
+        "default": {
           "url": ""
         },
         "tags": []
