@@ -1267,7 +1267,7 @@
         "description": "",
         "sub-type": "ext-cup-xapi",
         "interaction-type": "practice",
-        "ext-cup-xapiscoreable": {
+        "ext-cup-xapi": {
           "url": "LO-1"
         },
         "attribs": {
