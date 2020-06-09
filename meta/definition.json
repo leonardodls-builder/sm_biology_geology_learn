@@ -1297,7 +1297,7 @@
         "description": "",
         "sub-type": "html",
         "html": {
-          "url": "etext/LO-3"
+          "url": "etext/LO-3/index.html"
         },
         "tags": []
       },
@@ -1308,7 +1308,7 @@
         "description": "",
         "sub-type": "html",
         "html": {
-          "url": "etext/LO-4"
+          "url": "etext/LO-4/index.html"
         },
         "tags": []
       },
@@ -1319,7 +1319,7 @@
         "description": "",
         "sub-type": "html",
         "html": {
-          "url": "etext/LO-5"
+          "url": "etext/LO-5/index.html"
         },
         "tags": []
       }
