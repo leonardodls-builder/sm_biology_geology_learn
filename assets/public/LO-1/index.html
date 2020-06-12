@@ -112,7 +112,7 @@
 			} else if (params.type === 'currentScreen') {
 				return activity.getCurrentItemIndex() + 1;
 			} else if (params.type === 'totalScreens') {
-				return activity.getItems().length;
+				return activity.getItemCount();
 			} else if (params.type === 'tryAgain') {
 				activity.retry(retryCallback.bind(this));
 			} else if (params.type === 'reset') {
@@ -631,7 +631,7 @@
 		initChannel()
 			.then((channel) => {
 				bindChannel(channel);
-	/* Get initiliazation paramters - contentPath and state, if any. */
+				/* Get initiliazation paramters - contentPath and state, if any. */
 				return getInitParameters();
 			})
 			.then((initParams) => {
