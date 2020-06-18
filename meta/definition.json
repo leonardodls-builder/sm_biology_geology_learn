@@ -24,1237 +24,1229 @@
     "default": [
       {
         "item-type": "folder",
-        "name": "learn",
+        "name": "La organización del cuerpo humano",
         "sub-type": "default",
         "item-code": "1234567891001",
         "items": [
           {
-            "item-type": "folder",
-            "name": "La organización del cuerpo humano",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892001",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0001",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. Nuestro organismo está formado por células",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0003",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. ¿Qué contiene el citoplasma?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0004",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. El núcleo de la célula",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0005",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. La membrana y los intercambios con el medio",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. ¿Cómo funcionan las células?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Células especializadas",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. Los tejidos I",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. Los tejidos II",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Órganos y sistemas de órganos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "10. Niveles de organización de la materia viva",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893014"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892001/1234567893015"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter1.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892001"
           },
           {
-            "item-type": "folder",
-            "name": "De los alimentos a los nutrientes",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892002",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. ¿Qué necesita nuestro organismo para funcionar?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. El sistema respiratorio",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. El intercambio de gases",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. El sistema respiratorio y la salud",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. Los alimentos y sus componentes",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. El sistema digestivo",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. La digestión de los alimentos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. El sistema digestivo y la salud",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892002/1234567893013"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter2.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. Nuestro organismo está formado por células",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892002"
           },
           {
-            "item-type": "folder",
-            "name": "Los alimentos y la dieta",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892003",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. La dieta",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. La dieta nos proporciona energía",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. ¿Todos necesitamos la misma dieta?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. ¿Y si la dieta no es equilibrada?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. El etiquetado: una información que debemos leer",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Métodos de conservación de los alimentos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892003/1234567893011"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter3.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0003",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. ¿Qué contiene el citoplasma?",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892003"
           },
           {
-            "item-type": "folder",
-            "name": "La eliminación de desechos y el transporte",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892004",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. ¿Qué desechos produce el organismo?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. El sistema urinario",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. ¿Cómo funcionan los riñones?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. El sistema urinario y la salud",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. El sistema circulatorio: la sangre",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Los vasos sanguíneos y el corazón: el sistema cardiovascular",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. ¿Cómo circula la sangre?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. El sistema circulatorio y la salud",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Cuatro sistemas para una función: la nutrición",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893014"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Proyecto de investigación",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892004/1234567893015"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter4.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0004",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. El núcleo de la célula",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892004"
           },
           {
-            "item-type": "folder",
-            "name": "La coordinación de nuestro organismo",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892005",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. Relación y coordinación",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. El sistema endocrino u hormonal",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. El sistema nervioso: componentes",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. ¿Cómo está organizado el sistema nervioso?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. El sistema nervioso central",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. El encéfalo",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. La médula espinal",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. El sistema nervioso periférico",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Sistemas nerviosos somático y autónomo",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892005/1234567893014"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter5.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0005",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. La membrana y los intercambios con el medio",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892005"
           },
           {
-            "item-type": "folder",
-            "name": "Receptores y efectores. Estímulos y respuestas",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892006",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. Estímulos, receptores y sentidos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. La piel y el tacto",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. Los ojos y la vista",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. Los oídos, la audición y el equilibrio",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. Los sentidos del olfato y el gusto",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Sensación, percepción, emoción y sentimiento",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. Efectores: la respuesta muscular",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. El sistema esquelético: huesos y articulaciones",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Lesiones o trastornos del sistema locomotor",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892006/1234567893014"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter6.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. ¿Cómo funcionan las células?",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892006"
           },
           {
-            "item-type": "folder",
-            "name": "La reproducción",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892007",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. La reproducción en los seres humanos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. De la infancia a la edad adulta",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. El sistema reproductor femenino",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. El sistema reproductor masculino",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. La fecundación y la gestación",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. El nacimiento",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. La reproducción asistida",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. Los métodos anticonceptivos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Sexo y sexualidad. Higiene y salud sexual",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892007/1234567893014"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter7.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Células especializadas",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892007"
           },
           {
-            "item-type": "folder",
-            "name": "La salud y la enfermedad",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892008",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. La salud",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. Los agentes infecciosos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. ¿Podemos evitar la contaminación?",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. La transmisión de las enfermedades infecciosas",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. El organismo se defiende",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Una reacción más lenta y específica",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. La medicina nos ayuda",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "8. Trasplantes",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "9. Una vida saludable",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893012"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893013"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893014"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Proyecto de investigación",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892008/1234567893015"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter8.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. Los tejidos I",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892008"
           },
           {
-            "item-type": "folder",
-            "name": "Los ecosistemas",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892009",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893001"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "1. El escenario de la vida",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893002"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "2. Los seres vivos en el medio",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893003"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "3. Relaciones entre los seres vivos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893004"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "4. El suelo como ecosistema",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893005"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "5. Los grandes biomas terrestres",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893006"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "6. Ecosistemas acuáticos",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893007"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "7. Ecosistemas humanizados",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893008"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ciencia en acción",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893009"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Lo esencial",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893010"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Actividades",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893011"
-              },
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Ponte a prueba",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892009/1234567893012"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter9.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. Los tejidos II",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892009"
           },
           {
-            "item-type": "folder",
-            "name": "Desequilibrios en los ecosistemas",
-            "sub-type": "default",
-            "item-code": "1234567891001/1234567892010",
-            "items": [
-              {
-                "item-type": "resource",
-                "resource": "RE_0002",
-                "pass-score": 0.7,
-                "contributes-to-completion": true,
-                "name": "Entrada",
-                "tracking": true,
-                "item-code": "1234567891001/1234567892010/1234567893001"
-              }
-            ],
-            "attribs": {
-              "thubsnail": "images/toc-thumbs/chapter10.png"
-            }
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Órganos y sistemas de órganos",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "10. Niveles de organización de la materia viva",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892014"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891001/1234567892015"
           }
-        ]
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter1.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "De los alimentos a los nutrientes",
+        "sub-type": "default",
+        "item-code": "1234567891002",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. ¿Qué necesita nuestro organismo para funcionar?",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. El sistema respiratorio",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. El intercambio de gases",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. El sistema respiratorio y la salud",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. Los alimentos y sus componentes",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. El sistema digestivo",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. La digestión de los alimentos",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. El sistema digestivo y la salud",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891002/1234567892013"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter2.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "Los alimentos y la dieta",
+        "sub-type": "default",
+        "item-code": "1234567891003",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. La dieta",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. La dieta nos proporciona energía",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. ¿Todos necesitamos la misma dieta?",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. ¿Y si la dieta no es equilibrada?",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. El etiquetado: una información que debemos leer",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Métodos de conservación de los alimentos",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891003/1234567892011"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter3.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "La eliminación de desechos y el transporte",
+        "sub-type": "default",
+        "item-code": "1234567891004",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. ¿Qué desechos produce el organismo?",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. El sistema urinario",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. ¿Cómo funcionan los riñones?",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. El sistema urinario y la salud",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. El sistema circulatorio: la sangre",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Los vasos sanguíneos y el corazón: el sistema cardiovascular",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. ¿Cómo circula la sangre?",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. El sistema circulatorio y la salud",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Cuatro sistemas para una función: la nutrición",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892014"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Proyecto de investigación",
+            "tracking": true,
+            "item-code": "1234567891004/1234567892015"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter4.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "La coordinación de nuestro organismo",
+        "sub-type": "default",
+        "item-code": "1234567891005",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. Relación y coordinación",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. El sistema endocrino u hormonal",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. El sistema nervioso: componentes",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. ¿Cómo está organizado el sistema nervioso?",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. El sistema nervioso central",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. El encéfalo",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. La médula espinal",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. El sistema nervioso periférico",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Sistemas nerviosos somático y autónomo",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891005/1234567892014"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter5.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "Receptores y efectores. Estímulos y respuestas",
+        "sub-type": "default",
+        "item-code": "1234567891006",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. Estímulos, receptores y sentidos",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. La piel y el tacto",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. Los ojos y la vista",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. Los oídos, la audición y el equilibrio",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. Los sentidos del olfato y el gusto",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Sensación, percepción, emoción y sentimiento",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. Efectores: la respuesta muscular",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. El sistema esquelético: huesos y articulaciones",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Lesiones o trastornos del sistema locomotor",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891006/1234567892014"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter6.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "La reproducción",
+        "sub-type": "default",
+        "item-code": "1234567891007",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. La reproducción en los seres humanos",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. De la infancia a la edad adulta",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. El sistema reproductor femenino",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. El sistema reproductor masculino",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. La fecundación y la gestación",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. El nacimiento",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. La reproducción asistida",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. Los métodos anticonceptivos",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Sexo y sexualidad. Higiene y salud sexual",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891007/1234567892014"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter7.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "La salud y la enfermedad",
+        "sub-type": "default",
+        "item-code": "1234567891008",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. La salud",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. Los agentes infecciosos",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. ¿Podemos evitar la contaminación?",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. La transmisión de las enfermedades infecciosas",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. El organismo se defiende",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Una reacción más lenta y específica",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. La medicina nos ayuda",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "8. Trasplantes",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "9. Una vida saludable",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892012"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892013"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892014"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Proyecto de investigación",
+            "tracking": true,
+            "item-code": "1234567891008/1234567892015"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter8.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "Los ecosistemas",
+        "sub-type": "default",
+        "item-code": "1234567891009",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "1. El escenario de la vida",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "2. Los seres vivos en el medio",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "3. Relaciones entre los seres vivos",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "4. El suelo como ecosistema",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "5. Los grandes biomas terrestres",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "6. Ecosistemas acuáticos",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "7. Ecosistemas humanizados",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ciencia en acción",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892009"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Lo esencial",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892010"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Actividades",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892011"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Ponte a prueba",
+            "tracking": true,
+            "item-code": "1234567891009/1234567892012"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter9.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "Desequilibrios en los ecosistemas",
+        "sub-type": "default",
+        "item-code": "1234567891010",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "Entrada",
+            "tracking": true,
+            "item-code": "1234567891010/1234567892001"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter10.png"
+        }
       }
     ]
   },
@@ -1344,8 +1336,8 @@
       "level": "ESO",
       "isbn": "978-84-675-7600-9",
       "series": "BREZO (SAVIA)",
-      "booktitle":"BIOLOGÍA Y GEOLOGÍA",
-      "booksubtitle":"3.º ESO BREZO (SAVIA)"
+      "booktitle": "BIOLOGÍA Y GEOLOGÍA",
+      "booksubtitle": "3.º ESO BREZO (SAVIA)"
     }
   }
 }
