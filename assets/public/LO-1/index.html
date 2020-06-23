@@ -168,7 +168,7 @@
 			scaled: eventArgs.response.score.scaled
 		}
 		updateState();
-		generateStatement('scored', payload);
+		generateStatement('scored', JSON.parse(JSON.stringify(payload)));
 		isReviewMode = true;
 		updateCheckAnswerBtnStatus(true, false);
 		updateTryAgainBtnStatus(true, false);
@@ -444,12 +444,7 @@
 		}
 		else if (verb === 'scored') {
 			statement.result = {
-				score: {
-					max: payload.max,
-					min: payload.min,
-					raw: payload.raw,
-					scaled: payload.raw / payload.max
-				}
+				score: payload
 			}
 		}
 		var statementsArray = [];
