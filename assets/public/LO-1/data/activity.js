@@ -92,7 +92,13 @@ var activityJson = {
           }
         ]
       }
-    ]
+    ],
+    'summaryCard': {
+      "title": 'Has llegado al final de la lección.',
+      "content": '¿Desea resumir o marcar la lección como completa?',
+      "linkText": 'Resumen de la lección',
+      "buttonText": 'Marcar como completo'
+    }
   },
   "itemResources": null,
   "itemFragments": {
