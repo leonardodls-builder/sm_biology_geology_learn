@@ -75,7 +75,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. ¿Cómo funcionan las células?",
@@ -84,7 +84,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Células especializadas",
@@ -93,7 +93,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. Los tejidos I",
@@ -102,7 +102,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. Los tejidos II",
@@ -111,7 +111,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Órganos y sistemas de órganos",
@@ -120,7 +120,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "10. Niveles de organización de la materia viva",
@@ -129,7 +129,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -138,7 +138,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -147,7 +147,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -156,7 +156,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -176,7 +176,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -185,7 +185,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. ¿Qué necesita nuestro organismo para funcionar?",
@@ -194,7 +194,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. El sistema respiratorio",
@@ -203,7 +203,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. El intercambio de gases",
@@ -212,7 +212,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. El sistema respiratorio y la salud",
@@ -221,7 +221,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. Los alimentos y sus componentes",
@@ -230,7 +230,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. El sistema digestivo",
@@ -239,7 +239,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. La digestión de los alimentos",
@@ -248,7 +248,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. El sistema digestivo y la salud",
@@ -257,7 +257,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -266,7 +266,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -275,7 +275,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -284,7 +284,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -304,7 +304,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -313,7 +313,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. La dieta",
@@ -322,7 +322,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. La dieta nos proporciona energía",
@@ -331,7 +331,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. ¿Todos necesitamos la misma dieta?",
@@ -340,7 +340,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. ¿Y si la dieta no es equilibrada?",
@@ -349,7 +349,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. El etiquetado: una información que debemos leer",
@@ -358,7 +358,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Métodos de conservación de los alimentos",
@@ -367,7 +367,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -376,7 +376,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -385,7 +385,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -394,7 +394,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -414,7 +414,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -423,7 +423,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. ¿Qué desechos produce el organismo?",
@@ -432,7 +432,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. El sistema urinario",
@@ -441,7 +441,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. ¿Cómo funcionan los riñones?",
@@ -450,7 +450,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. El sistema urinario y la salud",
@@ -459,7 +459,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. El sistema circulatorio: la sangre",
@@ -468,7 +468,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Los vasos sanguíneos y el corazón: el sistema cardiovascular",
@@ -477,7 +477,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. ¿Cómo circula la sangre?",
@@ -486,7 +486,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. El sistema circulatorio y la salud",
@@ -495,7 +495,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Cuatro sistemas para una función: la nutrición",
@@ -504,7 +504,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -513,7 +513,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -522,7 +522,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -531,7 +531,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -540,7 +540,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Proyecto de investigación",
@@ -560,7 +560,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -569,7 +569,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. Relación y coordinación",
@@ -578,7 +578,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. El sistema endocrino u hormonal",
@@ -587,7 +587,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. El sistema nervioso: componentes",
@@ -596,7 +596,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. ¿Cómo está organizado el sistema nervioso?",
@@ -605,7 +605,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. El sistema nervioso central",
@@ -614,7 +614,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. El encéfalo",
@@ -623,7 +623,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. La médula espinal",
@@ -632,7 +632,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. El sistema nervioso periférico",
@@ -641,7 +641,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Sistemas nerviosos somático y autónomo",
@@ -650,7 +650,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -659,7 +659,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -668,7 +668,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -677,7 +677,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -697,7 +697,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -706,7 +706,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. Estímulos, receptores y sentidos",
@@ -715,7 +715,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. La piel y el tacto",
@@ -724,7 +724,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. Los ojos y la vista",
@@ -733,7 +733,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. Los oídos, la audición y el equilibrio",
@@ -742,7 +742,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. Los sentidos del olfato y el gusto",
@@ -751,7 +751,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Sensación, percepción, emoción y sentimiento",
@@ -760,7 +760,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. Efectores: la respuesta muscular",
@@ -769,7 +769,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. El sistema esquelético: huesos y articulaciones",
@@ -778,7 +778,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Lesiones o trastornos del sistema locomotor",
@@ -787,7 +787,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -796,7 +796,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -805,7 +805,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -814,7 +814,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -834,7 +834,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -843,7 +843,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. La reproducción en los seres humanos",
@@ -852,7 +852,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. De la infancia a la edad adulta",
@@ -861,7 +861,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. El sistema reproductor femenino",
@@ -870,7 +870,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. El sistema reproductor masculino",
@@ -879,7 +879,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. La fecundación y la gestación",
@@ -888,7 +888,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. El nacimiento",
@@ -897,7 +897,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. La reproducción asistida",
@@ -906,7 +906,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. Los métodos anticonceptivos",
@@ -915,7 +915,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Sexo y sexualidad. Higiene y salud sexual",
@@ -924,7 +924,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -933,7 +933,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -942,7 +942,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -951,7 +951,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -971,7 +971,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -980,7 +980,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. La salud",
@@ -989,7 +989,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. Los agentes infecciosos",
@@ -998,7 +998,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. ¿Podemos evitar la contaminación?",
@@ -1007,7 +1007,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. La transmisión de las enfermedades infecciosas",
@@ -1016,7 +1016,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. El organismo se defiende",
@@ -1025,7 +1025,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Una reacción más lenta y específica",
@@ -1034,7 +1034,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. La medicina nos ayuda",
@@ -1043,7 +1043,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. Trasplantes",
@@ -1052,7 +1052,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Una vida saludable",
@@ -1061,7 +1061,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -1070,7 +1070,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -1079,7 +1079,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -1088,7 +1088,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -1097,7 +1097,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Proyecto de investigación",
@@ -1117,7 +1117,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -1126,7 +1126,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. El escenario de la vida",
@@ -1135,7 +1135,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "2. Los seres vivos en el medio",
@@ -1144,7 +1144,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "3. Relaciones entre los seres vivos",
@@ -1153,7 +1153,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "4. El suelo como ecosistema",
@@ -1162,7 +1162,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. Los grandes biomas terrestres",
@@ -1171,7 +1171,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Ecosistemas acuáticos",
@@ -1180,7 +1180,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. Ecosistemas humanizados",
@@ -1189,7 +1189,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ciencia en acción",
@@ -1198,7 +1198,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Lo esencial",
@@ -1207,7 +1207,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Actividades",
@@ -1216,7 +1216,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Ponte a prueba",
@@ -1236,7 +1236,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_000",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -1304,6 +1304,17 @@
         "sub-type": "html",
         "html": {
           "url": "etext/LO-5/index.html"
+        },
+        "tags": []
+      },
+      "RE_000": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "default",
+        "default": {
+          "url": ""
         },
         "tags": []
       }
