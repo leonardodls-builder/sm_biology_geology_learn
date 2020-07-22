@@ -30,7 +30,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_0002",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -39,7 +39,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0001",
+            "resource": "RE_0002",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "1. Nuestro organismo está formado por células",
@@ -1257,17 +1257,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-cup-xapi",
-        "interaction-type": "practice",
-        "ext-cup-xapi": {
-          "url": "LO-1"
-        },
-        "attribs": {
-          "model": {
-            "total-score": "11",
-            "question-count": "3",
-            "instruction-text": "some text here"
-          }
+        "sub-type": "html",
+        "html": {
+          "url": "etext/LO-1/index.html"
         },
         "tags": []
       },
@@ -1276,9 +1268,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "default",
-        "default": {
-          "url": ""
+        "sub-type": "html",
+        "html": {
+          "url": "etext/LO-2/index.html"
         },
         "tags": []
       },
