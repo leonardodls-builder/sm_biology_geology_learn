@@ -1332,7 +1332,7 @@
     "description": "",
     "producttype": "courseware",
     "model": {
-      "type": "engage-courseware",
+      "type": "engage-type-A",
       "style": "secondary-type-1",
       "subject": "BIOLOGÍA Y GEOLOGÍA",
       "course": "3.º",
