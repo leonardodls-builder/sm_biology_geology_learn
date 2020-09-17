@@ -1333,7 +1333,7 @@
     "producttype": "courseware",
     "model": {
       "type": "engage-type-A",
-      "style": "secondary-type-1",
+      "style": "theme1",
       "subject": "BIOLOGÍA Y GEOLOGÍA",
       "course": "3.º",
       "level": "ESO",
