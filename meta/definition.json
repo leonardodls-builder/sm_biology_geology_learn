@@ -1257,8 +1257,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "etext",
+        "etext": {
           "url": "etext/LO-1/index.html"
         },
         "tags": []
@@ -1268,8 +1268,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "etext",
+        "etext": {
           "url": "etext/LO-2/index.html"
         },
         "tags": []
@@ -1279,8 +1279,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "etext",
+        "etext": {
           "url": "etext/LO-3/index.html"
         },
         "tags": []
@@ -1290,8 +1290,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "etext",
+        "etext": {
           "url": "etext/LO-4/index.html"
         },
         "tags": []
@@ -1301,8 +1301,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "etext",
+        "etext": {
           "url": "etext/LO-5/index.html"
         },
         "tags": []
@@ -1312,8 +1312,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "default",
-        "default": {
+        "sub-type": "html",
+        "html": {
           "url": ""
         },
         "tags": []
@@ -1332,8 +1332,8 @@
     "description": "",
     "producttype": "courseware",
     "model": {
-      "type": "engage-courseware",
-      "style": "secondary-type-1",
+      "type": "engage-type-A",
+      "style": "theme1",
       "subject": "BIOLOGÍA Y GEOLOGÍA",
       "course": "3.º",
       "level": "ESO",
