@@ -75,7 +75,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0006",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "5. ¿Cómo funcionan las células?",
@@ -84,7 +84,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0007",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "6. Células especializadas",
@@ -1304,6 +1304,28 @@
         "sub-type": "etext",
         "etext": {
           "url": "etext/LO-5/index.html"
+        },
+        "tags": []
+      },
+      "RE_0006": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "downloadable",
+        "downloadable": {
+          "url": "etext/LO-6/Gender_Masculine_nouns.pdf"
+        },
+        "tags": []
+      },
+      "RE_0007": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "downloadable",
+        "downloadable": {
+          "url": "etext/LO-7/Gender_Feminine_Nouns.pdf"
         },
         "tags": []
       },
