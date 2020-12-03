@@ -1314,7 +1314,11 @@
         "description": "",
         "sub-type": "downloadable",
         "downloadable": {
-          "url": "etext/LO-6/Gender_Masculine_nouns.pdf"
+          "url": "etext/LO-6/Gender_Masculine_nouns.pdf",
+          "title":"Gender Feminine Nouns",
+          "sub-title":"Grammer Table",
+          "size":"30529",
+          "type":"pdf"
         },
         "tags": []
       },
@@ -1325,7 +1329,11 @@
         "description": "",
         "sub-type": "downloadable",
         "downloadable": {
-          "url": "etext/LO-7/Gender_Feminine_Nouns.pdf"
+          "url": "etext/LO-7/Gender_Feminine_Nouns.pdf",
+          "title":"Gender Feminine Nouns",
+          "sub-title":"Grammer Table",
+          "size":"40826",
+          "type":"pdf"
         },
         "tags": []
       },
