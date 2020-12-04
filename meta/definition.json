@@ -93,7 +93,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0008",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "7. Los tejidos I",
@@ -102,7 +102,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0009",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "8. Los tejidos II",
@@ -111,7 +111,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0010",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "9. Órganos y sistemas de órganos",
@@ -1329,11 +1329,56 @@
         "description": "",
         "sub-type": "downloadable",
         "downloadable": {
-          "url": "etext/LO-7/Gender_Feminine_Nouns.pdf",
-          "title":"Gender Feminine Nouns",
-          "sub-title":"Grammer Table",
-          "size":"40826",
-          "type":"pdf"
+          "url": "etext/LO-7/multiple_choice_u1_ev.doc",
+          "title":"Multiple choice 50 questions",
+          "sub-title":"Instructor Resources",
+          "size":"529099",
+          "type":"doc"
+        },
+        "tags": []
+      },
+	  "RE_0008": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "downloadable",
+        "downloadable": {
+          "url": "etext/LO-8/Track 01.mp3",
+          "title":"Test 1/Prueba 1",
+          "sub-title":"Instructor Resources",
+          "size":"1989564",
+          "type":"audio"
+        },
+        "tags": []
+      },
+	  "RE_0009": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "downloadable",
+        "downloadable": {
+          "url": "etext/LO-9/05_Artículos_I_high_quality.mov",
+          "title":"Articles",
+          "sub-title":"Grammar Tutorials",
+          "size":"62997709",
+          "type":"video"
+        },
+        "tags": []
+      },
+	  "RE_0010": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "downloadable",
+        "downloadable": {
+          "url": "etext/LO-10/Group_Project_Rubric.zip",
+          "title":"Rúbricas",
+          "sub-title":"Instructor Resources",
+          "size":"534882",
+          "type":"zip"
         },
         "tags": []
       },
