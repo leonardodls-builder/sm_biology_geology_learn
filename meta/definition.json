@@ -176,7 +176,7 @@
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0011",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "Entrada",
@@ -1315,10 +1315,10 @@
         "sub-type": "downloadable",
         "downloadable": {
           "url": "etext/LO-6/Gender_Masculine_nouns.pdf",
-          "title":"Gender Feminine Nouns",
-          "sub-title":"Grammer Table",
-          "size":"30529",
-          "type":"pdf"
+          "title": "Gender Feminine Nouns",
+          "sub-title": "Grammer Table",
+          "size": "30529",
+          "type": "pdf"
         },
         "tags": []
       },
@@ -1330,14 +1330,14 @@
         "sub-type": "downloadable",
         "downloadable": {
           "url": "etext/LO-7/multiple_choice_u1_ev.doc",
-          "title":"Multiple choice 50 questions",
-          "sub-title":"Instructor Resources",
-          "size":"529099",
-          "type":"doc"
+          "title": "Multiple choice 50 questions",
+          "sub-title": "Instructor Resources",
+          "size": "529099",
+          "type": "doc"
         },
         "tags": []
       },
-	  "RE_0008": {
+      "RE_0008": {
         "learning-objectives": [
           "Learning Objective 1"
         ],
@@ -1345,14 +1345,14 @@
         "sub-type": "downloadable",
         "downloadable": {
           "url": "etext/LO-8/Track 01.mp3",
-          "title":"Test 1/Prueba 1",
-          "sub-title":"Instructor Resources",
-          "size":"1989564",
-          "type":"audio"
+          "title": "Test 1/Prueba 1",
+          "sub-title": "Instructor Resources",
+          "size": "1989564",
+          "type": "audio"
         },
         "tags": []
       },
-	  "RE_0009": {
+      "RE_0009": {
         "learning-objectives": [
           "Learning Objective 1"
         ],
@@ -1360,14 +1360,14 @@
         "sub-type": "downloadable",
         "downloadable": {
           "url": "etext/LO-9/05_Artículos_I_high_quality.mov",
-          "title":"Articles",
-          "sub-title":"Grammar Tutorials",
-          "size":"62997709",
-          "type":"video"
+          "title": "Articles",
+          "sub-title": "Grammar Tutorials",
+          "size": "62997709",
+          "type": "video"
         },
         "tags": []
       },
-	  "RE_0010": {
+      "RE_0010": {
         "learning-objectives": [
           "Learning Objective 1"
         ],
@@ -1375,10 +1375,29 @@
         "sub-type": "downloadable",
         "downloadable": {
           "url": "etext/LO-10/Group_Project_Rubric.zip",
-          "title":"Rúbricas",
-          "sub-title":"Instructor Resources",
-          "size":"534882",
-          "type":"zip"
+          "title": "Rúbricas",
+          "sub-title": "Instructor Resources",
+          "size": "534882",
+          "type": "zip"
+        },
+        "tags": []
+      },
+      "RE_0011": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "ext-cup-xapiscoreable",
+        "interaction-type": "practice",
+        "ext-cup-xapiscoreable": {
+          "url": "LO-1"
+        },
+        "attribs": {
+          "model": {
+            "total-score": "25",
+            "question-count": "5",
+            "instruction-text": "some text here"
+          }
         },
         "tags": []
       },
