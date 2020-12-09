@@ -41,6 +41,9 @@
 	// var to hold uiTheme
 	var uiTheme = null;
 
+	// var to hold itemUIConfig
+	var itemUIConfig = null;
+
 	//var to hold the CheckAnswer button status
 	var checkAnswerBtnVisible = false;
 
@@ -333,11 +336,12 @@
 		var container = document.getElementById('player-container');
 
 		let options = {
-			playerConfig: {
+			playerUIConfig: {
 				buttons: {
 					visible: !loWithoutControls
 				}
 			},
+			itemUIConfig: itemUIConfig,
 			events: {
 				launched: function (eventArgs) {
 					generateStatement("launched");
@@ -644,6 +648,10 @@
 				}
 				if (initParams.hasOwnProperty('uiTheme') && initParams.uiTheme) {
 					uiTheme = initParams.uiTheme;
+				}
+
+				if (initParams.hasOwnProperty('itemUIConfig') && initParams.itemUIConfig) {
+					itemUIConfig = initParams.itemUIConfig;
 				}
 
 				// setting conumer config based on init params and default consumer key present in the index.html of this LO
