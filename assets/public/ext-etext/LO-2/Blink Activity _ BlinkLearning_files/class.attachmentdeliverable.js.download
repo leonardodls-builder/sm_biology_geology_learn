@@ -1,0 +1,97 @@
+function AttachmentDeliverable ($messageElement, $obj, slideDeliverableFile ) {
+	this.$warning = $messageElement.find(".no-files");
+	var attach   = $obj;
+
+	this.onSelectFile = function (path, ruta, receivedResponse, id_swfu) {
+		if (typeof(path) == 'object') { // Viene de una subida.
+			path = finSeleccionarMultimedia(path, ruta, 'attachfile');
+		}
+
+		if (typeof(path) == 'string') {
+			if (isBlinkUrl(path)) {
+				attach.getAttachmentFileData(path);
+			}
+			else {
+				// Si es una url externa, se preprocesa.
+				getAJAX('/LMS/ajax.php?op=files.setcontentbyurl&url=' + encodeURIComponent(path), function (o) {
+					if (o.startsWith('OK')) {
+						var data = JSON.parse(o.substr(2));
+						attach.getAttachmentFileData(data.url);
+					}
+					else {
+						standardAJAX(o);
+					}
+				});
+			}
+		}
+		else {
+			blink.log.warning("error. path no es string");
+		}
+	};
+
+	this.onSelectDeliverableFile = function (data, path) {
+		return attach.onSelectFile('/useruploads/tmp/' + path.substring(2), false, false, false);
+	};
+
+	this.getAttachmentFileData = function (pathfile){
+		var idclase = blink.getReqParam(location.href, 'idclase');
+		getAJAX('/LMS/ajax.php?op=DeliverableFile.getFileData&type=file&path='+encodeURIComponent(pathfile)+'&idclase='+idclase,
+			function(o) {
+				if (o.startsWith('OK')) {
+					var data = JSON.parse(o.substr(2));
+					attach.files.push(data.id);
+					attach.append(data);
+					updateSCORM();
+
+					if( typeof slideDeliverableFile != "undefined" && slideDeliverableFile != false ){
+						slideDeliverableFile.setReviewButtons();
+					}
+
+					closeMsgBox();
+				}
+				else {
+					standardAJAX(o);
+				}
+			}
+		);
+	};
+
+	this.append = function (data) {
+		modo_revision = attach.$container.closest(".modo-revision");
+		var newId = attach.tmpId++,
+			attachWrapper = document.createElement('tr'),
+			$attachWrapper = $(attachWrapper),
+			newrow = document.createElement('td');
+		var functiondownload = "blink.rest.connection(function(connected){ if (connected == 0) { _showAlert(textweb('tablettxt_require_connection'));}else {"+data.downloadurl+"}});";
+
+		var tz = moment.tz.guess(true);
+		var dateCreatedTz = moment.tz(data.datecreated, databaseTz);
+        var dateCreatedTzFormat = dateCreatedTz.tz(tz).format('DD-MM-YYYY HH:mm');
+
+		html = '';
+		html = html + $(newrow).attr('class','name').html(data.logicalname).prop('outerHTML');
+		html = html + $(newrow).attr('class','type').html(data.type).prop('outerHTML');
+		html = html + $(newrow).attr('class','datecreated').html(dateCreatedTzFormat).attr('data-date', data.datecreated).prop('outerHTML');
+		html = html + $(newrow).attr('class','downloaddeliverable').html('<i class="blinkicon-download" onclick="'+functiondownload+'"></i>').attr('data-id', data.id).prop('outerHTML');
+		if (!window.completed && modo_revision.length==0) html = html + $(newrow).attr('class','deletedeliverable js-delete').html('<span class="fa fa-minus-circle fa-2x"></span>').attr('data-id', data.id).prop('outerHTML');
+
+		$attachWrapper
+			.addClass("t"+attach.id+"_tr_deliverablefile")
+			.html(html);
+
+		attach.$warning.hideBlink();
+
+		attach.$container
+			.showBlink()
+			.find('tbody')
+				.append(attachWrapper);
+
+	};
+
+}
+// me creo una clase que extienda a attachment y aprovecho la lógica.
+var AttachmentDeliverableFile = function($messageElement, slide){
+	$attachment = new Attachment(  $messageElement );
+	var settings = $.extend($attachment,new AttachmentDeliverable( $messageElement, $attachment,slide ));
+	return settings;
+}

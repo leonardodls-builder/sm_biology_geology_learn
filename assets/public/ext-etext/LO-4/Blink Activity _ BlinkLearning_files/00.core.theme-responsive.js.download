@@ -1,0 +1,12 @@
+(function (B) {
+	'use strict';
+
+	B.theme = B.theme || {};
+	var theme = B.theme;
+
+	theme.validarProtocoloExterno = function(url){
+		console.log("validarProtocoloExterno");
+		return !!url.match(/^page:\/\/[0-9a-z\.\-_]/);
+	};
+
+}) (blink);

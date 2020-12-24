@@ -1,0 +1,83 @@
+.items.cursos.edit-mode .botonConectorSocial,
+.items.recursos.edit-mode .botonConectorSocial {
+	display: none;
+}
+
+.ventanaConector {
+	text-align: center;
+	display: table;
+	margin: 0 auto -15px;
+}
+
+.ventanaConector div:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.ventanaConector div a:not(:last-child) {
+	margin-right: 30px;
+}
+
+a.botonSocial {
+	height: auto;
+	width: 80px;
+	background-size: cover;
+	float: left;
+	padding-top: 8px;
+    color: #fff;
+    opacity: 1;
+    filter: opacity(100%);
+    margin-bottom: 15px;
+}
+
+a.botonSocial:hover {
+    opacity: 0.8;
+    filter: opacity(80%);
+}
+
+.botonSocial img {
+	width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.botonSocial div {
+	color: black;
+}
+
+.urlCopyField {
+	text-align: center;
+	/*display: none;*/
+	width: 100%;
+	border: none;
+	font-size: 8px;
+}
+
+.urlCopyField::selection {
+  background: transparent;
+}
+
+.ventanaConector .alert { width: 96%; }
+
+
+@media screen and (max-width: 600px) {
+
+	.botonSocial div {
+		height: 40px
+	}
+
+	.ventanaConector div a:last-child {
+		margin-right: 30px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 280px) {
+
+	.ventanaConector div a:last-child, .ventanaConector div a:not(:last-child) {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}

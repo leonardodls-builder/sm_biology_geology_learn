@@ -1,0 +1,3 @@
+grade_numDecimales = 0;
+grade_max = 100;
+grade_aprobado = 75;

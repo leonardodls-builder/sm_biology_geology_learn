@@ -1,0 +1,149 @@
+/* Demo Note:  This demo uses a FileProgress class that handles the UI for displaying the file name and percent complete.
+The FileProgress class is not part of SWFUpload.
+*/
+
+
+/* **********************
+   Event Handlers
+   These are my custom event handlers to make my
+   web application behave the way I went when SWFUpload
+   completes different tasks.  These aren't part of the SWFUpload
+   package.  They are part of my application.  Without these none
+   of the actions SWFUpload makes will show up in my application.
+   ********************** */
+function fileQueued(file) {
+	try {
+		var div = document.getElementById(this.customSettings.progressTarget);
+		div.innerHTML = '<div style="float:left;">' + textweb('upload_9') + ' ' + file.name + '...</div><div style="margin-left:15px;float:left;" id="uploadingpg" ></div>';
+	} catch (ex) {
+		this.debug(ex);
+	}
+
+}
+
+function fileQueueError(file, errorCode, message) {
+	try {
+		if (errorCode === SWFUpload.QUEUE_ERROR.QUEUE_LIMIT_EXCEEDED) {
+			//alert("You have attempted to queue too many files.\n" + (message === 0 ? "You have reached the upload limit." : "You may select " + (message > 1 ? "up to " + message + " files." : "one file.")));
+			alert(textweb('upload_3')+"\n" + (message === 0 ? textweb('upload_4') : textweb('upload_5') + " " + (message > 1 ? textweb('upload_6')+" " + message + " "+textweb('upload_7') : textweb('upload_8'))));
+			return;
+		}
+		
+		var nerr = 0;
+		switch (errorCode) {
+		case SWFUpload.QUEUE_ERROR.FILE_EXCEEDS_SIZE_LIMIT:
+			nerr = 1;
+			this.debug("Error Code: File too big, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		case SWFUpload.QUEUE_ERROR.ZERO_BYTE_FILE:
+			nerr = 2;
+			this.debug("Error Code: Zero byte file, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		case SWFUpload.QUEUE_ERROR.INVALID_FILETYPE:
+			nerr = 3;
+			this.debug("Error Code: Invalid File Type, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		default:
+			nerr = 0;
+			this.debug("Error Code: " + errorCode + ", File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		}
+		txt_error = textweb('upload_err_'+nerr);
+		var div = document.getElementById(this.customSettings.progressTarget);
+		div.innerHTML = '<span style="color:red;">' + textweb('upload_10') + '. ' + txt_error + '</span>';
+	} catch (ex) {
+        this.debug(ex);
+    }
+}
+
+function fileDialogComplete(numFilesSelected, numFilesQueued) {
+	try {
+		/* I want auto start the upload and I can do that here */
+		this.startUpload();
+	} catch (ex)  {
+        this.debug(ex);
+	}
+}
+
+// La unica progressbar de file upload que existirá...
+var filepb = null;
+
+function uploadStart(file) {
+	try {
+		/* I don't want to do any file validation or anything,  I'll just update the UI and
+		return true to indicate that the upload should start.
+		It's important to update the UI here because in Linux no uploadProgress events are called. The best
+		we can do is say we are uploading.
+		 */
+		filepb = new YAHOO.widget.ProgressBar({value:0,minValue:0,maxValue:100,height:10,width:22}).render('uploadingpg');
+	}
+	catch (ex) {}
+	
+	return true;
+}
+
+function uploadProgress(file, bytesLoaded, bytesTotal) {
+	try {
+		var percent = Math.ceil((bytesLoaded / bytesTotal) * 100);
+		filepb.set('value', percent);
+	} catch (ex) {
+		this.debug(ex);
+	}
+}
+
+function uploadSuccess(file, serverData) {
+}
+
+function uploadError(file, errorCode, message) {
+	nerr = 0;
+	try {
+		switch (errorCode) {
+		case SWFUpload.UPLOAD_ERROR.HTTP_ERROR:
+			nerr = 4;
+			this.debug("Error Code: HTTP Error, File name: " + file.name + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.UPLOAD_FAILED:
+			nerr = 5;
+			this.debug("Error Code: Upload Failed, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.IO_ERROR:
+			nerr = 6;
+			this.debug("Error Code: IO Error, File name: " + file.name + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.SECURITY_ERROR:
+			nerr = 7;
+			this.debug("Error Code: Security Error, File name: " + file.name + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.UPLOAD_LIMIT_EXCEEDED:
+			nerr = 1;
+			this.debug("Error Code: Upload Limit Exceeded, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.FILE_VALIDATION_FAILED:
+			nerr = 8;
+			this.debug("Error Code: File Validation Failed, File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		case SWFUpload.UPLOAD_ERROR.FILE_CANCELLED:
+			nerr = 9;
+			// If there aren't any files left (they were all cancelled) disable the cancel button
+			break;
+		case SWFUpload.UPLOAD_ERROR.UPLOAD_STOPPED:
+			nerr = 10;
+			break;
+		default:
+			this.debug("Error Code: " + errorCode + ", File name: " + file.name + ", File size: " + file.size + ", Message: " + message);
+			break;
+		}
+		txt_error = textweb('upload_err_'+nerr);
+		var div = document.getElementById(this.customSettings.progressTarget);
+		div.innerHTML = '<span style="color:red;">' + textweb('upload_10') + '. ' +txt_error + '</span>';
+	} catch (ex) {
+        this.debug(ex);
+    }
+}
+
+function uploadComplete(file) {
+}
+
+// This event comes from the Queue Plugin
+function queueComplete(numFilesUploaded) {
+}

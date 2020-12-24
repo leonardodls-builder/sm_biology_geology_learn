@@ -1,0 +1,90 @@
+var p=0;
+var ias="";
+var masResWiki = false;
+
+function buscarWiki(id){
+	$('.js-alert-modal').addClass("hidden");
+	var texto = trim($("#wiki-buscador-sfilter").val());
+	if (!texto)
+		standardAJAXPopup("ERROR" + textweb('wikiurl.texto_buscar'));
+	else 
+		getAJAX("/LMS/ajax.php?op=wikiurl.buscaWikipedia&t="+texto, function (o){
+			p=0;
+			try {
+				$("#"+id).parent().scrollTop(0);
+				$("#"+id).html("");
+				var json = JSON.parse(o);
+				masResWiki = json["continue"];
+				var resultados = json["resultados"];
+				if (resultados) {
+					resultados.forEach(function(elemento) {
+						pintaElementoWiki(id, elemento);
+					});
+				}
+				else {
+					$("#"+id).html(textweb('wikiurl.sin_resultado'));
+				}
+
+				ias && ias.destroy();
+				if (masResWiki) {
+					$("#wiki_recursos_next").attr("href", "/LMS/ajax.php?op=wikiurl.buscaWikipedia&t="+texto);
+					blink.pages.catalog.setInitParams('/LMS/ajax.php', 0,'op=wikiurl.buscaWikipedia&t='+texto, 0, null);
+
+					cargaIasWiki(id);
+				}
+			} catch (e) {
+				standardAJAXPopup("ERROR" + textweb('wikiurl.error'));
+			}
+
+		});
+}
+
+function pintaElementoWiki(id, elemento){
+	$("#"+id).append("<div class='entrada'><div><a href='"+elemento["url"]+"' target='_blank'><span class='titulo'>"+elemento["titulo"]+"</span></a><a href='javascript:void(0)' onclick='creaEnlace(\"" + elemento["titulo"]+'\", \"'+ elemento["url"] + "\")'><span class='plusBlink'>+</span></a></div><div>"+elemento["texto"]+"</div><div>");
+}
+
+function cargaIasWiki(id){
+	var itemsCargados = "";
+	ias && ias.destroy();
+
+	ias = $('#contListaWikiUrl').ias({
+		container : '.listaWikiUrl',
+		item : '.entrada',
+		pagination: '.wiki_recursos_pagination',
+		next: '#wiki_recursos_next'
+	});
+
+	ias.extension(new IASSpinnerExtension({
+		html: '<div class="ias_loader" style="display: block;"><div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div></div>'
+	}));
+
+	ias.on('load', function(event) {
+		p = p+1;
+		event.url = event.url + "&p="+p;
+	});
+
+	ias.on('loaded', function(data, items) {
+		$('.js-alert-modal').addClass("hidden");
+		try {
+			var json = JSON.parse(data);
+			itemsCargados = json["resultados"];
+			masResWiki = json["continue"];
+		} catch (e) {
+			itemsCargados = false;
+			masResWiki = false;
+			standardAJAXPopup("ERROR" + textweb('wikiurl.error'));
+		}
+	});
+
+	ias.on('render', function(items) {
+		if (itemsCargados)
+			itemsCargados.forEach(function(elemento) {
+				pintaElementoWiki(id, elemento);
+			});
+		if (masResWiki) {
+			cargaIasWiki(id);
+		}
+		return false;
+	});
+
+}

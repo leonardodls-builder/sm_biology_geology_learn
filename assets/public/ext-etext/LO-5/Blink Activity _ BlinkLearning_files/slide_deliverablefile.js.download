@@ -1,0 +1,204 @@
+// *******************************************************
+// Codigo transparencia tipo Grabacion Audio
+// *******************************************************
+
+function Slide_deliverablefile() {
+
+}     
+
+Slide_deliverablefile.prototype = new Slide();
+Slide_deliverablefile.prototype.esEjercicio=true;
+Slide_deliverablefile.prototype.esAutocorregible=false;
+
+Slide_deliverablefile.prototype.setMaxIntentos = function(maxIntentos) {
+	this.numMaxIntentos = 1;	
+}
+
+Slide_deliverablefile.prototype.onShow = function(){
+	Slide.prototype.onShow.call(this);
+}
+
+Slide_deliverablefile.prototype.update = function(manual, corregir){
+
+	if (corregir) this.clasificacion = 0;
+
+	if (this.respuestas != undefined ){ 
+		var _cslide = this;
+		window.attachments[this.prefijo.substring(1)].$container.find("tbody tr").remove();
+		$.each(_cslide.respuestas, function(i, element){		
+			_cslide._updateFile(i, element);
+		});		
+	} 
+	if (mostrarNota) {
+		this.pintaNota(i, this.resultados[i]);
+	}
+
+	if (corregir && this.resultados[i] != null) {
+		this.clasificacion+= this.resultados[i]/2;
+	}
+	
+	if (corregir) {
+		if (this.numElementos > 0) this.clasificacion = this.clasificacion / this.numElementos;
+	}
+
+	Slide.prototype.update.call(this, manual, corregir);
+}
+
+Slide_deliverablefile.prototype.loadSuspendData = function(data){
+	this.evalNumElements();
+	this.numElementosEvaluables = this.numElementos;
+	Slide.prototype.loadSuspendData.call(this, data);
+}
+
+Slide_deliverablefile.prototype.getSuspendData = function(){
+	var _cslide = this;
+	if ($("." + _cslide.prefijo + "_tr_deliverablefile").length > 0 ) this.respuestas = [];	
+	$.each($("." + _cslide.prefijo + "_tr_deliverablefile"), function(i, element){
+		var arr = {};
+		arr["logicalname"] = $(element).find(".name").html();
+		arr["type"] = $(element).find(".type").html();	
+		arr["datecreated"] = $(element).find(".datecreated").data('date');
+		arr["downloadurl"] = $(element).find(".blinkicon-download").attr("onclick");
+		arr["id"] = $(element).find(".downloaddeliverable").data("id");
+
+		_cslide.respuestas[i] = JSON.stringify(arr);
+		
+	});
+		
+	return Slide.prototype.getSuspendData.call(this);
+}
+
+Slide_deliverablefile.prototype.correct = function(manual, corregir){
+
+	Slide.prototype.correct.call(this, manual, corregir);
+	this.onShow();
+}
+
+Slide_deliverablefile.prototype.pintaNota = function(i, nota){
+	var estado = "sin_corregir";
+	if (nota == 0) {
+		estado = "respuesta_ko";
+	} else if (nota == 1) {
+		estado = "respuesta_regular";
+	} else if (nota == 2) {
+		estado = "respuesta_ok";
+	}
+	$("[id='" + this.prefijo + "nota" + i + "']").html("<img src='../images/i/" + estado + ".gif'/>").parent().height($("[id='" + this.prefijo + "v" + i + "']").height());
+}
+
+Slide_deliverablefile.prototype.cambiaNota = function(i){
+	var nota = this.resultados[i];
+	if (nota == 2) {
+		nota = null;
+	} else if (nota == null) {
+		nota = 0;
+	} else {
+		nota++;
+	}
+	this.resultados[i] = nota;
+	this.pintaNota(i, nota);
+	// actualizamos nota profesor
+	this.clasificacionprofesor = 0;
+	for (var j=0; j<this.numElementos; j++) {
+		this._updateFile(j, response);
+		this.pintaNota(i, this.resultados[j]);
+		if (this.resultados[j] != null) {
+			this.clasificacionprofesor+= this.resultados[j]/2;
+		}
+	}
+	if (this.numElementos > 0) this.clasificacionprofesor = this.clasificacionprofesor / this.numElementos;
+
+	$("#nota_revision").val(maxclasificacion*this.clasificacionprofesor);  // theme responsive
+	$("#edicion_nota_transp").val(maxclasificacion*this.clasificacionprofesor);  // theme default
+	var currentSlide = this.prefijo.split('t')[1];
+	updateNota(currentSlide); // notificamos a la actividad el cambio
+}
+
+Slide_deliverablefile.prototype._updateFile = function(i, element) {
+	window.attachments[this.prefijo.substring(1)].append(JSON.parse(element));
+}
+
+Slide_deliverablefile.prototype.showSolution = function() {
+	// not implemented yet - in the future, hints?
+	return;
+
+	Slide.prototype.showSolution.call(this);
+	if (checkMostrarSoluciones()) {
+		$('#'+this.prefijo+'_saq .hint').show();
+	}
+}
+
+Slide_deliverablefile.prototype.hideSolution = function() {
+	// not implemented yet - in the future, hints?
+	return;
+
+	Slide.prototype.hideSolution.call(this);
+	if (checkMostrarSoluciones()) {
+		$('#'+this.prefijo+'_saq .hint').hide();
+	}
+}
+
+Slide_deliverablefile.prototype.onAfterShowSlide = function() {
+
+	scormAPI = getAPI();
+	loadStatusActivity(scormAPI);
+
+	if (!(window.modoClase == 3 || window.modoClase == 4 || offline)) {
+
+		if( !this.isDone() ){
+			$("#"+this.prefijo+"pg").find(".divbuttons").showBlink();
+			$("#"+this.prefijo+"pg").find(".deletedeliverable").showBlink();
+		}else{
+			$("#"+this.prefijo+"pg").find(".divbuttons").hideBlink();
+			$("#"+this.prefijo+"pg").find(".deletedeliverable").hideBlink();
+		}
+
+		if (blink.user.esAlumno()) {
+			$("#"+this.prefijo+"pg").find(".finish-button").showBlink();
+		}
+
+	}
+
+
+}
+
+Slide_deliverablefile.prototype.clearSlide = function () {
+
+	this.clearSlideComunIni();
+
+	var idclase = blink.getReqParam(location.href, 'idclase');
+	var prefijo = this.prefijo;
+	var _this = this;
+
+	var files = $("#"+prefijo+"pg").find("td.deletedeliverable");
+	var idFiles = new Array();
+	if(files.length){
+		$.each(files, function(i, element){
+			idFiles.push($(element).data('id'));
+		});
+	}
+
+	getAJAX('/LMS/ajax.php?op=DeliverableFile.deleteFiles&idFiles='+((!isEmptyJSON(idFiles))?JSON.stringify(idFiles):""),
+        function(o) {
+            if (o.startsWith('OK')) {
+            	_this.respuestas = undefined;
+            	$("." + prefijo + "_tr_deliverablefile").remove();
+               	$(".alert-warning").showBlink();
+               	$("#"+prefijo+"pg").find(".js-attachments").hideBlink();
+               	if(  !_this.isDone() ){
+               		$(".divbuttons").showBlink();
+               	}
+               	_this.setReviewButtons();
+            }
+            else {
+                standardAJAX(o);
+            }
+        }
+    );
+
+	this.clearSlideComunFin();
+}
+
+Slide_deliverablefile.prototype.evalNumElements = function(){
+	this.numElementos = 1;
+}

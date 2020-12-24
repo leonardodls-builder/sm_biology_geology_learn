@@ -1,0 +1,106 @@
+/**
+ * @license Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md or http://ckeditor.com/license
+ */
+CKEDITOR.editorConfig = function( config ) {
+	config.allowedContent = true;
+	config.toolbarCanCollapse = false;
+	config.scayt_autoStartup = false;
+	//config.disableNativeSpellChecker = false; //esto activa el corrector en todo ckeditor
+	config.skin = 'moono';
+
+ 	config.title=false;
+	if(typeof esExamen !== "undefined" && esExamen && blink.user && blink.user.esAlumno()){
+		config.menu_groups = config.menu_groups.replace("clipboard,", "");
+	}
+
+	CKEDITOR.disableAutoInline = true; //Evitar doble barra de herramientas
+
+	config.justifyClasses = ['bck-t-align-left','bck-t-align-center','bck-t-align-right','bck-t-align-justify'];
+	config.image2_alignClasses = [ 'bck-img-align-left','bck-img-align-center','bck-img-align-right' ];
+	config.image2_captionedClass = 'bck-img2-figure';
+
+	config.indentClasses = ['bck-indent-1', 'bck-indent-2', 'bck-indent-3'];
+
+	config.autoParagraph = false;
+
+	config.useComputedState = false;
+
+	config.coreStyles_underline = {
+		element: 'span',
+		attributes: { 'class': 'bck-underline' }
+	};
+
+	config.specialChars = [ '&rarr;','&larr;','&uarr;','&darr;','&crarr;','&harr;','&#8597;',
+		'&rArr;','&lArr;','&uArr;','&dArr;','&hArr;','&laquo;','&raquo;',
+		'&#8598;','&#8599;','&#8601;','&#8600;','&#9735;','&#9736;','&#8881;','&#8880;',
+		'&#10173;','&#10163;','&#10169;','&not;','&Lambda;','&#9754;','&#9755;',
+		'&#9756;','&#9757;','&#9758;','&#9759;','&#9996;','&#9993;','&#9997;','&#9998;','&#9999;','&#10000;','&#10001;',
+		'&lsquo;','&rsquo;','&ldquo;','&rdquo;','&prime;','&Prime;','&quot;','&uml;','&hellip;',
+		'&Xi;','&equiv;','&#9776;','&#9783;','&#12307;','&#10003;','&#9745;','&#9746;','&#10007;',
+		'&oplus;','&otimes;','&#9784;','&#9762;','&#9785;','&#9786;','&#9787;','&#9794;','&#9792;','&#65533;',
+		'&#9812;','&#9813;','&#9814;','&#9815;','&#9816;','&#9817;','&#9818;','&#9819;','&#9820;','&#9821;','&#9822;','&#9823;',
+		'&#1769;','&spades;','&clubs;','&hearts;','&diams;','&bull;','&loz;','&nabla;','&nabla;',
+		'&#9733;','&#9734;','&#10016;','&#9774;','&#9798;','&#10015;','&#9763;','&#9731;','&#9730;','&#9775;','&#9760;','&#9728;',
+		'&#9729;','&#9992;','&#9988;','&#9985;','&#9987;','&#9773;','&#9732;',
+		'&#9833;','&#9834;','&#9835;','&#9836;','&#9837;','&#9838;','&#9839;','&#9770;','&#10017;','&#9788;',
+		'&fnof;','&#9990;','&#9742;','&#9743;','&#9658;','&#9650;','&#9660;','&#9668;','&#9654;','&#9664;','&#9655;','&#9665;','&#9651;','&#9661;',
+		'&#9699;','&#9698;','&#9701;','&#9700;','&#9608;','&#9612;','&#9604;','&#9600;','&#9644;','&#9602;',
+		'&macr;','&#9619;','&#9618;','&#9617;','&#8362;','&#8251;','&#9803;','&#9637;','&#9636;','&#9639;',
+		'&#9640;','&#9638;','&#9641;','&#9632;','&#9633;','&#9642;','&#9643;','&#9688;','&#9635;','&#9689;',
+		'&curren;','&hearts;','&#10084;','&#10085;','&#10083;','&#4326;','&#10086;','&#10087;','&#10169;','&#9825;',
+		'&#9435;','&#9438;','&#9445;','&#9428;','&#12354;','&#65204;','&#3633;','&#2960;','&#65260;','&#12419;',
+		'&#3665;','&#12355;','&#12398;','&#9803;','&epsilon;','&sect;','&#12389;','&#240;',
+		'&#10047;','&#10049;','&#10048;','&#10046;','&#10051;','&#10058;','&#10056;','&#10057;','&#10055;','&#65290;',
+		'&#10033;','&#10034;','&#10050;','&#10042;','&#9733;','&#10025;','&#10032;','&#9734;','&#10027;','&#10028;',
+		'&#10029;','&#10039;','&#10040;','&#10037;','&#10036;','&#10052;','&#10053;','&#10054;',
+		'&#9679;','&#9675;','&#9681;','&#9680;','&#9685;','&#9775;','&#9678;','&#8857;',
+		'&oplus;','&#9737;','&#9435;','&#9991;','&#9438;',
+		'&cent;','&pound;','&euro;','&yen;','&fnof;','&alpha;','&szlig;','&Omega;','&Theta;','&copy;','&reg;','&trade;','&infin;','&#8470;'
+	];
+
+	config.toolbar_BasicBlinkToolbar = [
+		['Bold','Italic','Underline', 'Strike', /*'Styles',*/'TextColor','BGColor'],
+        ['NumberedList','BulletedList','Outdent','Indent',/*'Blockquote'*/],
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Table'],
+		['Undo','Redo']
+    ];
+
+   	config.toolbar_BlinkToolbar = [
+ 		['Bold','Italic','Underline', 'Strike', /*'Styles',*/'TextColor','BGColor'],
+        ['NumberedList','BulletedList','Outdent','Indent',/*'Blockquote'*/],
+ 		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+ 		['Subscript','Superscript'],
+        ['Link','Table','blink_sound','blink_video','blink_image','fmath_formula'],
+ 		['Templates','Copy','Paste','PasteText','Undo','Redo']
+    ];
+
+   	config.toolbar_AdminBlinkToolbar = [
+ 		['Bold','Italic','Underline', 'Strike', 'Styles','TextColor','BGColor'],
+        ['NumberedList','BulletedList','Outdent','Indent',/*'Blockquote'*/],
+ 		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+ 		['Subscript','Superscript'],
+        ['Link','Table','blink_sound','blink_video','blink_image','fmath_formula'],
+ 		['Templates','Copy','Paste','PasteText','Undo','Redo','Source']
+    ];
+
+	config.toolbar_EschoToolbar = [
+		['Bold','Italic','Underline', 'Strike',/*'Styles',*/'TextColor','BGColor', '-', 'RemoveFormat'],
+		['NumberedList','BulletedList','Outdent','Indent','Blockquote', '-'/*, 'Blockquote'*/],
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+		['Subscript','Superscript'],
+		['Link','Table','blink_sound','blink_video','blink_image', 'SpecialChar', 'fmath_formula', 'Iframe'],
+		['Copy','Paste','PasteText','Undo','Redo'],
+		['Font','FontSize']
+	];
+
+	config.toolbar_AdminEschoToolbar = [
+		['Bold','Italic','Underline', 'Strike', 'Styles','TextColor','BGColor', '-', 'RemoveFormat'],
+		['NumberedList','BulletedList','Outdent','Indent','Blockquote', '-'/*, 'Blockquote'*/],
+		['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+		['Subscript','Superscript'],
+		['Link','Table','blink_sound','blink_video','blink_image', 'SpecialChar', 'fmath_formula', 'Iframe'],
+		['Copy','Paste','PasteText','Undo','Redo','Source'],
+		['Font','FontSize']
+	];
+};

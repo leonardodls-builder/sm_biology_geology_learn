@@ -1,0 +1,587 @@
+(function (B) {
+	'use strict';
+
+	var tools = B.tools || {};
+	var parent = tools.tool;
+	var __super__ = parent.prototype;
+
+	var timerUser;
+	var storageTimer;
+
+	// Default properties
+	var Timer = function () {
+		parent.apply(this, arguments);
+		this.enabled = false;
+
+		if (blink.isPhantom && !window.Audio) {
+	        window.Audio = function() {
+	            return {
+	                play: function() {},
+	                pause: function() {}
+	            };
+	        };
+	    }
+
+		Object.defineProperty(this, 'name', {
+			enumerable: true,
+			value: 'Timer'
+		});
+
+		Object.defineProperty(this, 'downTime', {
+			enumerable: true,
+			writable: true,
+			value: 300
+		});
+
+		Object.defineProperty(this, 'containerSelector', {
+			value: 'body'
+		});
+
+		Object.defineProperty(this, 'mode', {
+			enumerable: true,
+			writable: true,
+			value: 'count-down'
+		});
+
+		Object.defineProperty(this, 'leftPosX', {
+			writable: true,
+			value: '40px'
+		});
+
+		Object.defineProperty(this, 'topPosY', {
+			writable: true,
+			value: '85px'
+		});
+
+		Object.defineProperty(this, 'timeCountDown', {
+			enumerable: true,
+			writable: true,
+			value: this.downTime
+		});
+
+		Object.defineProperty(this, 'timeCountUp', {
+			enumerable: true,
+			writable: true,
+			value: null
+		});
+
+		Object.defineProperty(this, 'timeCountDownStartTime', {
+			enumerable: true,
+			writable: true,
+			value: this.downTime
+		});
+
+		Object.defineProperty(this, 'intervalSecond', {
+			writable: true,
+			value: null
+		});
+
+		Object.defineProperty(this, 'finishAudio', {
+			writable: true,
+			value: new Audio()
+		});
+
+		Object.defineProperty(this, 'finishSoundUrl', {
+			enumerable: true,
+			writable: true,
+			value: "../sonidos/efectos/timer_finish_sound.mp3"
+		});
+	};
+
+	Timer.prototype = Object.create(__super__);
+
+	Timer.prototype.init = function () {
+		// Html construction
+		var blinkTimer = '<div id="blink-timer" class="hidden">' +
+				'<div class="timer-bar"><span><i class="fa fa-clock-o"></i> ' + textweb('tool_timer') + '</span><button class="fa fa-times timer-bar__close"></button></div>' +
+				'<div class="timer-container">' +
+					'<div class="timer-count__background"></div>' +
+					'<div class="timer-tabs">' +
+						'<button class="timer-tabs__count-down active">' + textweb('timer_count_down') + '</button>' +
+						'<button class="timer-tabs__count-up">' + textweb('timer_count_up') + '</button>' +
+					'</div>' +
+					'<div class="timer-count-number">' +
+						'<div class="timer-count-number__col-minutes"><button class="plus fa fa-plus"></button><button class="minus fa fa-minus"></button></div>' +
+						'<div class="timer-count-number__col-time"></div>' +
+						'<div class="timer-count-number__col-seconds"><button class="plus fa fa-plus"></button><button class="minus fa fa-minus"></button></div>' +
+					'</div>' +
+				'</div>' +
+				'<div class="timer-buttons">' +
+					'<button class="timer-buttons__start">Start</button>' +
+					'<button class="timer-buttons__reset hidden"><span class="fa fa-undo"></span>Reset</button>' +
+					'<button class="timer-buttons__pause hidden"><span class="fa fa-pause"></span>Pause</button>' +
+					'<button class="timer-buttons__play hidden"><span class="fa fa-play"></span>Continue</a>' +
+				'</div>' +
+			'</div>';
+
+		if (!$('#blink-timer').length) {
+			$(this.containerSelector).append(blinkTimer);
+		}
+
+		timerUser = 'timer' + blink.user.getID();
+
+		if(blink.localStorage.isAvailable()) {
+
+			if (typeof(blink.localStorage.get(timerUser)) !== 'undefined' && blink.localStorage.get(timerUser) !== null) {
+				storageTimer = JSON.parse(blink.localStorage.get(timerUser));
+			} else {
+				storageTimer = {};
+			}
+
+			if(storageTimer.leftPosX) {
+				this.leftPosX = storageTimer.leftPosX;
+			}
+
+			if(storageTimer.topPosY) {
+				this.topPosY = storageTimer.topPosY;
+			}
+
+			if(storageTimer.timeCountDownStartTime) {
+				this.timeCountDownStartTime = Number(storageTimer.timeCountDownStartTime);
+			}
+
+			if(storageTimer.timeCountDown) {
+				this.timeCountDown = Number(storageTimer.timeCountDown);
+			} else if(storageTimer.timeCountDownStartTime) {
+				this.timeCountDown = Number(storageTimer.timeCountDownStartTime);
+			}
+
+			if(storageTimer.mode) {
+				if(storageTimer.mode == 'count-down-play' && storageTimer.timeCountDown) {
+					this.modeChange("count-down-pause");
+					this.timeCountDown = Number(storageTimer.timeCountDown);
+      				$('#blink-timer .timer-count__background').width(100-Math.round(this.timeCountDown*100/this.timeCountDownStartTime)+'%');
+					this.doNext();
+				} else if(storageTimer.mode == 'count-down-pause' && storageTimer.timeCountDown){
+					this.modeChange("count-down-pause");
+					this.timeCountDown = Number(storageTimer.timeCountDown);
+      				$('#blink-timer .timer-count__background').width(100-Math.round(this.timeCountDown*100/this.timeCountDownStartTime)+'%');
+					this.showTime(this.timeCountDown);
+				} else if(storageTimer.mode == 'count-up'){
+					this.modeChange("count-up");
+				} else if(storageTimer.mode == 'count-up-play' && storageTimer.timeCountUp){
+					this.modeChange("count-up-pause");
+					this.timeCountUp = Number(storageTimer.timeCountUp);
+					this.doNext();
+				} else if(storageTimer.mode == 'count-up-pause' && storageTimer.timeCountUp){
+					this.modeChange("count-up-pause");
+					this.timeCountUp = Number(storageTimer.timeCountUp);
+					this.showTime(this.timeCountUp);
+				} else {
+					if (storageTimer.timeCountDown) {
+						this.timeCountDown = Number(storageTimer.timeCountDown);
+					}
+					this.showTime(this.timeCountDown);
+				}
+			} else {
+				if (storageTimer.timeCountDown) {
+					this.timeCountDown = Number(storageTimer.timeCountDown);
+				}
+				this.showTime(this.timeCountDown);
+			}
+		} else {
+			this.showTime(this.timeCountDown);
+		}
+
+		$('#blink-timer')
+			.blinkDraggable()
+			.css({
+				position: 'absolute',
+				left: this.leftPosX,
+				top: this.topPosY
+			});
+
+			this.events();
+	};
+
+	Timer.prototype.minuteUp = function(){
+		this.timeCountDown += 60;
+		if(this.timeCountDown > 100*60-1) {
+			this.timeCountDown = 100*60-1;
+		}
+		this.timeCountDownStartTime = this.timeCountDown;
+		this.setStorage('setDown');
+		this.setStorage('setDownStartTime');
+		this.showTime(this.timeCountDown);
+	};
+
+	Timer.prototype.minuteDown = function(){
+		this.timeCountDown -= 60;
+		if(this.timeCountDown < 0) {
+			this.timeCountDown = 0;
+		}
+		this.timeCountDownStartTime = this.timeCountDown;
+		this.setStorage('setDown');
+		this.setStorage('setDownStartTime');
+		this.showTime(this.timeCountDown);
+	};
+
+	Timer.prototype.secondUp = function(){
+		this.timeCountDown += 1;
+		if(this.timeCountDown > 100*60-1) {
+			this.timeCountDown = 100*60-1;
+		}
+		this.timeCountDownStartTime = this.timeCountDown;
+		this.setStorage('setDown');
+		this.setStorage('setDownStartTime');
+		this.showTime(this.timeCountDown);
+	};
+
+	Timer.prototype.secondDown = function(){
+		this.timeCountDown -= 1;
+		if(this.timeCountDown < 0) {
+			this.timeCountDown = 0;
+		}
+		this.timeCountDownStartTime = this.timeCountDown;
+		this.setStorage('setDown');
+		this.setStorage('setDownStartTime');
+		this.showTime(this.timeCountDown);
+	};
+
+	Timer.prototype.modeChange = function(mode){
+		var that = this;
+		that.mode = mode;
+		$('#blink-timer').removeClass('blink-timer--count-down-active blink-timer--count-down-active-play blink-timer--count-down-active-pause blink-timer--count-down-active-finish blink-timer--count-up-active blink-timer--count-up-active-play blink-timer--count-up-active-pause');
+		$('#blink-timer .timer-count-number__col-time').removeClass('blink');
+		switch (that.mode) {
+			case "count-down":
+				$('#blink-timer').addClass('blink-timer--count-down-active');
+				$('#blink-timer .timer-count__background').width('0%');
+	    		$('#blink-timer .timer-tabs__count-up').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-down').addClass('active');
+	    		$('#blink-timer .timer-buttons button').hideBlink();
+	    		$('#blink-timer .timer-buttons__start, #blink-timer .timer-count-number button').showBlink();
+				clearInterval(that.intervalSecond);
+				that.showTime(that.timeCountDown);
+				that.setStorage('clear');
+				break;
+			case "count-down-play":
+				$('#blink-timer').addClass('blink-timer--count-down-active-play');
+	    		$('#blink-timer .timer-tabs__count-up').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-down').addClass('active');
+	    		$('#blink-timer .timer-buttons button, #blink-timer .timer-count-number button').hideBlink();
+	    		$('#blink-timer .timer-buttons__reset, #blink-timer .timer-buttons__pause').showBlink();
+				that.intervalSecond = setInterval(function(){that.intervalAction('down');}, 1000);
+				break;
+			case "count-down-pause":
+				$('#blink-timer').addClass('blink-timer--count-down-active-pause');
+	    		$('#blink-timer .timer-tabs__count-up').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-down').addClass('active');
+	    		$('#blink-timer .timer-buttons button').hideBlink();
+	    		$('#blink-timer .timer-buttons__reset, #blink-timer .timer-buttons__play, #blink-timer .timer-count-number button').showBlink();
+	    		clearInterval(that.intervalSecond);
+				break;
+			case "count-down-finish":
+				$('#blink-timer').addClass('blink-timer--count-down-active-finish');
+	    		$('#blink-timer .timer-tabs__count-up').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-down').addClass('active');
+				$('#blink-timer .timer-count__background').width('100%');
+				$('#blink-timer .timer-count-number__col-time').addClass('blink');
+	    		$('#blink-timer .timer-buttons button, #blink-timer .timer-count-number button').hideBlink();
+	    		$('#blink-timer .timer-buttons__reset').showBlink();
+	    		that.finishAlert();
+				clearInterval(that.intervalSecond);
+				that.show();
+				that.setStorage('setDownStartTime');
+				break;
+			case "count-up":
+				$('#blink-timer').addClass('blink-timer--count-up-active');
+				$('#blink-timer .timer-count__background').width('0%');
+	    		$('#blink-timer .timer-tabs__count-down').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-up').addClass('active');
+	    		$('#blink-timer .timer-buttons button, #blink-timer .timer-count-number button').hideBlink();
+	    		$('#blink-timer .timer-buttons__start').showBlink();
+				clearInterval(that.intervalSecond);
+				that.timeCountUp = 0;
+				that.showTime(that.timeCountUp);
+				that.setStorage('clear');
+				break;
+			case "count-up-play":
+				$('#blink-timer').addClass('blink-timer--count-up-active-play');
+	    		$('#blink-timer .timer-tabs__count-down').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-up').addClass('active');
+	    		$('#blink-timer .timer-buttons button, #blink-timer .timer-count-number button').hideBlink();
+	    		$('#blink-timer .timer-buttons__reset, #blink-timer .timer-buttons__pause').showBlink();
+				that.intervalSecond = setInterval(function(){that.intervalAction('up');}, 1000);
+				break;
+			case "count-up-pause":
+				$('#blink-timer').addClass('blink-timer--count-up-active-pause');
+	    		$('#blink-timer .timer-tabs__count-down').removeClass('active');
+	    		$('#blink-timer .timer-tabs__count-up').addClass('active');
+	    		$('#blink-timer .timer-buttons button, #blink-timer .timer-count-number button').hideBlink();
+	    		$('#blink-timer .timer-buttons__reset, #blink-timer .timer-buttons__play').showBlink();
+	    		clearInterval(that.intervalSecond);
+				break;
+			default:
+		}
+		that.setStorage('setMode');
+		that.setStorage('setDownStartTime');
+	};
+
+	Timer.prototype.start = function(){
+		if(this.mode == 'count-down') {
+			$('#blink-timer .timer-count__background').width('0%');
+			this.modeChange('count-down-play');
+			this.timeCountDownStartTime = this.timeCountDown;
+			this.setStorage('setDownStartTime');
+		} else if(this.mode == 'count-up') {
+			this.modeChange('count-up-play');
+		}
+	};
+
+	Timer.prototype.pause = function(){
+		if(this.mode == 'count-down-play') {
+			this.modeChange('count-down-pause');
+		} else if(this.mode == 'count-up-play') {
+			this.modeChange('count-up-pause');
+		}
+	};
+
+	Timer.prototype.doNext = function () {
+		if(this.mode == 'count-down-pause') {
+			this.modeChange('count-down-play');
+		} else if(this.mode == 'count-up-pause') {
+			this.modeChange('count-up-play');
+		}
+	};
+
+	Timer.prototype.reset = function () {
+		if(this.mode == 'count-down-play' || this.mode == 'count-down-pause' || this.mode == 'count-down-finish') {
+			this.timeCountDown = this.timeCountDownStartTime;
+			this.modeChange('count-down');
+		} else if(this.mode == 'count-up-play' || this.mode == 'count-up-pause') {
+			this.timeCountUp = 0;
+			this.modeChange('count-up');
+		}
+		this.setStorage('clear');
+	};
+
+	Timer.prototype.intervalAction = function (direction) {
+		if (direction == 'down') {
+			if (this.timeCountDown > 0) {
+				this.timeCountDown--;
+			} else {
+				clearInterval(this.intervalSecond);
+				this.modeChange('count-down-finish');
+			}
+  		$('#blink-timer .timer-count__background').width(100-Math.round(this.timeCountDown*100/this.timeCountDownStartTime)+'%');
+  		this.showTime(this.timeCountDown);
+  		this.setStorage('setDown');
+		} else if (direction == 'up') {
+			if (this.timeCountUp < 100*60-1) {
+				this.timeCountUp++;
+			} else {
+				clearInterval(this.intervalSecond);
+				$('#blink-timer .timer-count-number__col-time').addClass('blink');
+			}
+			this.showTime(this.timeCountUp);
+			this.setStorage('setUp');
+		}
+	};
+
+	Timer.prototype.finishAlert = function () {
+		//Reproduce sonido
+		if(window.HTMLAudioElement){
+			this.finishAudio.currentTime = 0;
+			this.finishAudio.play();
+		}
+	}
+
+	Timer.prototype.show = function(){
+		blink.events.trigger('widget:widgetShows', 'Timer');
+
+		if (this.externalTimer){
+			this.externalTimer.show();
+		} else {
+			$('#blink-timer').showBlink();
+		}
+	};
+
+	Timer.prototype.hide = function (byToggle) {
+		if (this.externalTimer){
+			this.externalTimer.hide();
+		} else {
+			$('#blink-timer').hideBlink();
+		}
+
+		var toggleCaused = byToggle || false;
+		if (!toggleCaused) {
+			blink.events.trigger('widget:widgetHides');
+		}
+	};
+
+	Timer.prototype.toggle = function() {
+		if (!this.isActive()) {
+			blink.events.trigger('widget:widgetShows', 'Timer');
+		}
+
+		if (this.externalTimer){
+			this.externalTimer.toggle();
+		} else {
+			$('#blink-timer').toggleBlink();
+		}
+
+		if (!this.isActive()) {
+			blink.events.trigger('widget:widgetHides', 'Timer');
+		}
+	};
+
+	Timer.prototype.isActive = function(){
+		return this.externalTimer ? this.externalTimer.isActive() : ($('#blink-timer').length > 0 ? !$('#blink-timer').hasClass("hidden") : false);
+	};
+
+	Timer.prototype.secondsToStringTime = function(seconds){
+		var minutesString = Math.floor(seconds/60).toString();
+		while (minutesString.length < 2) {
+			minutesString = '0'+ minutesString;
+		}
+		var secondsString = seconds%60;
+		secondsString = secondsString.toString();
+		while (secondsString.length < 2) {
+			secondsString = '0'+ secondsString;
+		}
+		return minutesString + ' : ' + secondsString;
+	};
+
+	Timer.prototype.showTime = function(seconds){
+		$('#blink-timer .timer-count-number__col-time').text(this.secondsToStringTime(seconds));
+	};
+
+	Timer.prototype.setStorage = function(action){
+		if(blink.localStorage.isAvailable()) {
+			switch (action) {
+				case "onStopDragDraggable":
+					storageTimer.leftPosX = $('#blink-timer').css('left');
+					storageTimer.topPosY = $('#blink-timer').css('top');
+					break;
+				case "clear":
+					if (storageTimer.timerCountDown) {
+						delete storageTimer.timerCountDown;
+					}
+					if (storageTimer.timerCountUp) {
+						delete storageTimer.timerCountUp;
+					}
+					break;
+				case "setDown":
+					if (storageTimer.timerCountUp) {
+						delete storageTimer.timerCountUp;
+					}
+					storageTimer.timeCountDown = this.timeCountDown;
+					break;
+				case "setDownStartTime":
+					storageTimer.timeCountDownStartTime = this.timeCountDownStartTime;
+					break;
+				case "setUp":
+					if (storageTimer.timerCountDown) {
+						delete storageTimer.timerCountDown;
+					}
+					storageTimer.timeCountUp = this.timeCountUp;
+					break;
+				case "setMode":
+					storageTimer.mode = this.mode;
+					break;
+				default:
+			}
+			blink.localStorage.set(timerUser, JSON.stringify(storageTimer));
+		}
+	};
+
+	Timer.prototype.events = function(){
+		var that = this;
+
+		blink.events.on('onStopDragDraggable', function(){
+			that.setStorage('onStopDragDraggable');
+		});
+
+		$('#blink-timer .timer-tabs__count-up').mousedown(function(){
+			that.modeChange('count-up');
+		});
+
+		$('#blink-timer .timer-tabs__count-down').mousedown(function(){
+			that.modeChange('count-down');
+		});
+
+		$('#blink-timer .timer-count-number__col-minutes .plus').mousedown(function(){
+			that.minuteUp();
+			that.plusMinusCounter = 0;
+			that.plusMinusInterval = setInterval(function(){
+				if(that.plusMinusCounter++>3)
+					that.minuteUp();
+			},100);
+		});
+
+		$('#blink-timer .timer-count-number__col-minutes button.minus').mousedown(function(){
+			that.minuteDown();
+			that.plusMinusCounter = 0;
+			that.plusMinusInterval = setInterval(function(){
+				if(that.plusMinusCounter++>3) {
+					that.minuteDown();
+				}
+			},100);
+		});
+
+		$('#blink-timer .timer-count-number__col-seconds button.plus').mousedown(function(){
+			that.secondUp();
+			that.plusMinusCounter = 0;
+			that.plusMinusInterval = setInterval(function(){
+				if(that.plusMinusCounter++>3)
+					that.secondUp();
+			},100);
+		});
+
+		$('#blink-timer .timer-count-number__col-seconds button.minus').mousedown(function(){
+			that.secondDown();
+			that.plusMinusCounter = 0;
+			that.plusMinusInterval = setInterval(function(){
+				if(that.plusMinusCounter++>3)
+					that.secondDown();
+			},100);
+		});
+
+		$('#blink-timer .timer-count-number button')
+			.mouseup(function(){
+				clearInterval(that.plusMinusInterval);
+			})
+			.mouseleave(function(){
+				clearInterval(that.plusMinusInterval);
+			});
+
+		$('#blink-timer .timer-bar__close').mousedown(function(){
+			that.hide();
+		});
+
+		$('#blink-timer .timer-buttons__start').on('tap', function(){
+			that.start();
+			if(window.HTMLAudioElement){
+				that.finishAudio.play();
+				that.finishAudio.pause();
+				that.finishAudio.addEventListener('loadedmetadata', function() {
+					that.finishAudio.currentTime = 0;
+				}, false);
+				that.finishAudio.src = that.finishSoundUrl;
+			}
+		});
+
+		$('#blink-timer .timer-buttons__pause').mousedown(function(){
+			that.pause();
+		});
+
+		$('#blink-timer .timer-buttons__play').mousedown(function(){
+			that.doNext();
+		});
+
+		$('#blink-timer .timer-buttons__reset').mousedown(function(){
+			that.reset();
+		});
+	};
+
+	tools.timer = new Timer();
+})(window.blink);
+
+$(document).ready(function() {
+	$(document).on('documentLoaded', function(){
+	//	if (bpdf.libroJSON.activateTimerTool == 1) {
+			blink.tools.timer.init();
+	//	}
+	});
+});

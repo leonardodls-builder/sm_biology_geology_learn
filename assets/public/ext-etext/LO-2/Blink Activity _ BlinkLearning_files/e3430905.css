@@ -1,0 +1,178 @@
+/*Color fondo enlace*/
+#actividad a {
+background: transparent;
+}
+
+/*Color input*/
+.slide_main .html-book input {
+    background: #fff;
+}
+/**/
+
+/*Logo The Spanish Hub*/
+.libro-left ul li .title:before {
+left: 53%;
+}
+/**/
+
+/*After Caja 1*/
+
+.bck-box.bck-box-1:after {
+display: none;
+}
+/**/
+
+/*Fondo archivo adjunto*/
+#actividad a, body:not(.edit) #actividad a:not(.cke_button):not(.zoom_flag_img){
+background-color: transparent;
+}
+/**/
+
+#actividad .carousel-inner .item-container.aux-bckg .class_slide {
+background-color: transparent;
+}
+
+#actividad .carousel-inner .item-container.aux-bckg.is-top .class_slide {
+    margin-bottom: 5%;
+}
+
+#actividad textarea {
+    font-size: 18px;
+}
+
+/*--------------------------------------------------TICKET MEJORA-------------------------------------------------*/
+
+/*Título Banner - quitar*/
+
+#indice .unit-content .header .title {
+   display: none;
+}
+
+/*-----------------------------------Tag textbook-----------------------------------*/
+
+#list-units .unittag_textbook_proyectos {
+    background: #000 !important;
+}
+
+.units ul#list-units .unittag_textbook_proyectos a .title {
+    color: #ffffff;
+}
+
+#list-units .unittag_textbook_proyectos:hover {
+    background: #3333337d !important;
+}
+
+
+/*--------------------------------Tag activities-------------------------*/
+
+#list-units .unittag_activities_proyectos {
+    background: #fff !important;
+}
+
+.units ul#list-units .unittag_activities_proyectos a .title {
+    color: #000;
+}
+
+#list-units .unittag_activities_proyectos:hover {
+    background: #3333337d !important;
+}
+
+/*----------------------------------------------------LIBRO----------------------------------------------------------*/
+
+/*Pastillas unidades*/
+
+#indice .units ul li.active:not(.disabled), 
+#indice .units ul li:focus:not(.disabled) {
+    background-color: #ae440f !important;
+}
+
+ .btn-primary, 
+ .btn-primary.disabled {
+     background-color: #ae440f;
+}
+
+/*Menú lateral*/
+
+ #book-index #indice .unit-content .content .title-buttons .btn {
+    background: 0;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+}
+
+ #book-index .col-main {
+    background: #fff;
+}
+
+ #book-index #indice .unit-content .content .title-buttons {
+    top: auto;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding: 0 0 12px 0;
+    margin: 0 0 20px 0;
+}
+
+ #book-index #indice .unit-content .actividades .item {
+    background: #b7b7b7;
+}
+
+ #book-index #indice .unit-content .actividades .item:hover,
+ #book-index #indice .unit-content .actividades .item.current,
+ #book-index #indice .unit-content .actividades .item:active {
+	background: #000 !important;
+}
+
+/*Enlaces contenidos*/
+
+#indice .actividades a:hover {
+	color: #ae440f;
+}
+
+/*Prueba descripciones*/
+#indice .unit-content .actividades .item .text {
+    display: block;
+    margin-left: 29px;
+    font-size: 14px;
+    color: gray;
+    max-width: 370px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -moz-transition: height .4s ease;
+    -webkit-transition: height .4s ease;
+    -o-transition: height .4s ease;
+    transition: height .4s ease;
+    max-height: fit-content;
+}
+
+/*-------------------------MATERIAL DE APOYO ICONOS--------------------------------------------*/
+
+/*Archivo*/
+
+#indice .unit-content .material .item .imagen.archivo:after {
+    background-color: rgba(174, 68, 15, 0.7);
+    border-radius: 50%;
+}
+
+#indice .unit-content .material .item .imagen.archivo:before {
+    background-image: none;
+}
+
+/*Actividad*/
+
+#indice .unit-content .material .item .imagen.actividad:after {
+    background-color: rgba(59, 90, 100, 0.8);
+    border-radius: 50%;
+}
+
+#indice .unit-content .material .item .imagen.actividad:before {
+    background-image: none;
+}
+
+a:hover {
+    outline: 0;
+    color: #ae440f;
+    text-decoration: none;
+}

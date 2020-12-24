@@ -1,0 +1,99 @@
+.resetall-deliverable .swfupload {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	cursor: pointer !important;
+}
+.tipo-actividad-14 ~ .slider-control.left,
+.tipo-actividad-14 ~ .slider-control.right,
+.tipo-actividad-14 ~ .navbar-bottom,
+.tipo-actividad-14 #actividad #slider .header{
+	display: none;
+}
+
+.tipo-actividad-14 .layout-panel {
+	width: 100% !important;
+}
+.tipo-actividad-14 #actividad .item-container {
+	background: #fff;
+	padding: 15px 40px;
+}
+
+.deliverablefile .divtitle .title-deliverablefile{
+	font-size: 22px;
+	color: #444;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.deliverablefile .divtitle{
+	border-bottom: 1px solid #c8c8c8;
+	margin-bottom: 15px;
+}
+.deliverablefile .divbuttons .row{
+	border-bottom:1px solid #c8c8c8;
+	padding-bottom: 15px;
+}
+.deliverablefile .divbuttons .btn{
+	padding: 4px 10px;
+	margin-right: 10px;
+}
+.deliverablefile .divtable{
+	margin-top: 40px;
+
+}
+.tableattachments{
+	max-height: 200px;
+	overflow: hidden;
+}
+.tableattachments .mCSB_inside > .mCSB_container {
+	margin-right: 9px;
+}
+.deliverablefile .divtable tbody{
+	border: 2px solid #eee;
+}
+.deliverablefile .divtable tr td {
+	border-bottom: 1px dashed #ddd;
+}
+.deliverablefile .divtable tr th{
+	font-weight: normal;
+	color: #b7b7b7;
+}
+.deliverablefile .divtable td.name{
+	font-weight: bold;
+	color: #6f716e;
+}
+.deliverablefile .divtable .downloaddeliverable,
+.deliverablefile .divtable .deletedeliverable
+{
+	text-align: center;
+	width: 1%;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.deliverablefile .divtable .table{
+	table-layout: auto;
+}
+.downloaddeliverable i{
+	font-size: 25px;
+	color: #3AC62A;
+}
+.deletedeliverable span {
+	color: #fD787E;
+}
+#actividad .description-deliverablefile {
+	float: left;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.no-files {
+	background: none;
+	color: #444;
+	font-size: 1.75em;
+	margin-top: 40px;
+}
+.deliverablefile {
+	margin-top: 20px;
+}

@@ -1,0 +1,76 @@
+
+function dlgCreateReviewActivity(idcurso, a, b, c, d) {
+	showMsgBox('', "/LMS/msgbox.php?op=BlinkCore.newreviewactivity&idcurso=" + idcurso + "&idtema=" + a, 770);
+}
+
+function onGenerateExam(idcurso,idGroup) {
+	showMsgBox('','/LMS/msgbox.php?op=BlinkCore.prepararexamen&idcurso='+idcurso + ( ( typeof idGroup != 'undefined' ) ? '&idgrupo=' + idGroup : "" ) );
+};
+
+function onPickSlide(idcurso, ckEditor, callback) {
+	if (idcurso && ckEditor && callback) {
+		showMsgBox('',
+			'/LMS/msgbox.php?op=BlinkCore.pickSlide' +
+			'&idcurso=' + idcurso +
+			'&ckeditor=' + ckEditor +
+			'&callback=' + callback);
+	}
+};
+
+
+function savePositivosUsuario(idgrupo, idusuario, positivos) {
+
+	getAJAX('/LMS/ajax.php?op=BlinkCore.savepositivos&idgrupo=' + idgrupo + '&idusuario=' + idusuario + '&positivos=' + encodeURIComponent(positivos),
+		function(msg) {
+			if (msg != 'OK') {
+				_showAlert(textweb('js_error_guardar_comentario'));
+				return;
+			} else {
+				path = '#positivos' + idusuario + ' .' + ((positivos == 1) ? 'pos' : 'neg');
+				$(path).html(parseInt($(path).html()) + 1);
+			}
+		}
+	);
+}
+
+function msgboxSmoothCreateWorkingCopy(idcurso) {
+	showMsgBox('', "/LMS/msgbox.php?op=BlinkCore.smoothcreateworkingcopy&idcurso=" + idcurso, '550');
+}
+function executeSmoothCreateWorkingCopy(idcurso) {
+	getAJAX("/LMS/ajax.php?op=BlinkCore.smoothCreateWorkingCopy&idcurso=" + idcurso, standardAJAX);
+}
+
+function msgboxSmoothPublishWorkingCopy(idcurso) {
+	showMsgBox('', "/LMS/msgbox.php?op=BlinkCore.smoothpublishworkingcopy&idcurso=" + idcurso, '550');
+}
+function executeSmoothPublishWorkingCopy(idcurso) {
+	getAJAX("/LMS/ajax.php?op=BlinkCore.smoothPublishWorkingCopy&idcurso=" + idcurso, standardAJAX);
+}
+
+function switchClaseRevisada(idclase, seacepta) {
+	getAJAX('/LMS/ajax.php?op=BlinkCore.switchclaserevisada&idclase=' + idclase + '&seacepta=' + seacepta,
+		function(res) {
+			if (res.startsWith('OK'))
+				$('#actividad' + idclase).hide();
+			else
+				standardAJAX();
+		}, false);
+}
+
+function generarClaseDemo(idcursodemo) {
+	getAJAX('/LMS/ajax.php?op=BlinkCore.generardatosdemo' + ((idcursodemo != null) ? '&idcurso=' + idcursodemo : ''), standardAJAX, false);
+}
+
+function sincronizarAtria() {
+	if (confirm(textweb("sincronizar_atria"))) {
+		getAJAX('/LMS/ajax.php?op=BlinkCore.cargaLicenciasAtria',
+			function(msg) {
+				if (msg.startsWith('OK')) {
+					_showAlert(msg.substring(2));
+					location.reload();
+				} else {
+					_showAlert(textweb('error_general_AJAX'));
+				}
+			});
+	}
+}

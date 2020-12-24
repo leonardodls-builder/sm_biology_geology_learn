@@ -1,0 +1,49 @@
+.tituloWikipedia:before {
+	content: url(../../../images/wikipedia_green_blink.png);
+	vertical-align: middle;
+}
+
+.busca_wiki_url .search {
+	width: 100%;
+}
+.busca_wiki_url .search input{
+    width: 93%;
+}
+
+#contListaWikiUrl {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 0;
+}
+
+#listaWikiUrl > div {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+a.icon-wikipedia-add:before,
+.navbar .recursos .filter a.icon-wiki-add:before {
+	background-image: url(../../../images/wikipedia_green.png);
+}
+
+#listaWikiUrl {
+	padding: 5px 0;
+}
+
+#listaWikiUrl .plusBlink {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 10px;
+    padding: 0px 7px 0px 7px;
+}
+
+.wiki_recursos_pagination {
+	float: right;
+	font-size: 14px;
+	display: none;
+}
+
+#listaWikiUrl .titulo {
+	font-weight: bold;
+}

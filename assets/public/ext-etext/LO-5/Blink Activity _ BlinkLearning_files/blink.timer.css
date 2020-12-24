@@ -1,0 +1,281 @@
+/* COUNTDOWN TOOL */
+ #blink-timer {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	width: 380px;
+	max-width: 100%;
+	height: 300px;
+	overflow: hidden;
+	-webkit-box-shadow: 5px 5px 5px #999;
+	   -moz-box-shadow: 5px 5px 5px #999;
+			box-shadow: 5px 5px 5px #999;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+	background: rgba(69, 69, 69, .8);
+	font-size: 1.6rem;
+}
+
+#blink-timer * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+#blink-timer .fa {
+	font-family: 'FontAwesome';
+}
+
+#blink-timer .timer-bar {
+	width: 100%;
+	height: 40px;
+	background: #e5e5e5;
+	color: #87BE3E;
+	padding: 0 15px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#blink-timer .timer-bar .timer-bar__close {
+	display: inline-block;
+	float: right;
+	color: #999;
+	font-size: 2.1rem;
+	line-height: 40px;
+}
+
+#blink-timer .timer-bar .timer-bar__close:hover {
+	color: #87BE3E;
+}
+
+#blink-timer .timer-container {
+	color: #fff;
+}
+
+#blink-timer button {
+	outline: none;
+	border: 0;
+	background: transparent;
+	padding: 0;
+	-webkit-transition: all ease-in .5s;
+	-o-transition: all ease-in .5s;
+	-moz-transition: all ease-in .5s;
+	transition: all ease-in .5s;
+}
+
+#blink-timer .timer-container .timer-count__background {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	z-index: 0;
+	width: 0;
+	height: 260px;
+	-webkit-border-radius: 0 0 10px 10px;
+	   -moz-border-radius: 0 0 10px 10px;
+			border-radius: 0 0 10px 10px;
+	background-color: rgb(69, 69 ,69);
+}
+
+#blink-timer .timer-container .timer-tabs {
+	position: relative;
+	height: auto;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	zoom: 1;
+	padding: 26px 0 0;
+	text-align: center;
+}
+
+#blink-timer .timer-container .timer-tabs button {
+	display: inline-block;
+	margin: 0 17px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#blink-timer .timer-container .timer-tabs button:hover,
+#blink-timer .timer-container .timer-tabs button.active {
+	color: #87BE3E;
+}
+
+#blink-timer .timer-container .timer-tabs button.active {
+	color: #87BE3E;
+	font-weight: bold;
+}
+
+#blink-timer .timer-container .timer-count-number {
+	position: relative;
+	zoom: 1;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+#blink-timer .timer-container .timer-count-number div {
+	float: left
+}
+
+#blink-timer .timer-container .timer-count-number .timer-count-number__col-minutes,
+#blink-timer .timer-container .timer-count-number .timer-count-number__col-seconds {
+	width: 30px;
+	height: 140px;
+	padding: 30px 0;
+}
+
+#blink-timer .timer-container .timer-count-number button {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+			border-radius: 50%;
+	background: #87BE3E;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
+	line-height: 33px;
+}
+
+#blink-timer .timer-container .timer-count-number button:hover,
+#blink-timer .timer-container .timer-count-number button:active {
+	opacity: .5;
+}
+
+#blink-timer .timer-container .timer-count-number .timer-count-number__col-time {
+	width: 260px;
+	height: 140px;
+	padding: 0 10px;
+	text-align: center;
+	line-height: 14rem;
+	font-size: 84px;
+	font-weight: 600;
+	letter-spacing: -2px;
+}
+
+@-webkit-keyframes blinking {
+	from {
+		opacity: 1;
+		filter: alpha(opacity=1);
+		font-size: 84px;
+	}
+	to {
+			opacity: 0;
+		filter: alpha(opacity=0);
+		font-size: 70px;
+	}
+}
+
+@-moz-keyframes blinking {
+	from {
+		opacity: 1;
+		filter: alpha(opacity=1);
+		font-size: 84px;
+	}
+	to {
+			opacity: 0;
+		filter: alpha(opacity=0);
+		font-size: 70px;
+	}
+}
+
+@-o-keyframes blinking {
+	from {
+		opacity: 1;
+		filter: alpha(opacity=1);
+		font-size: 84px;
+	}
+	to {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		font-size: 70px;
+	}
+}
+
+@keyframes blinking {
+	from {
+		opacity: 1;
+		filter: alpha(opacity=1);
+		font-size: 84px;
+	}
+	to {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		font-size: 70px;
+	}
+}
+
+#blink-timer .timer-container .timer-count-number .timer-count-number__col-time.blink {
+	-webkit-animation-name: blinking;
+	   -moz-animation-name: blinking;
+		 -o-animation-name: blinking;
+			animation-name: blinking;
+	-webkit-animation-duration: .5s;
+	   -moz-animation-duration: .5s;
+		 -o-animation-duration: .5s;
+			animation-duration: .5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+		 -o-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	   -moz-animation-timing-function: ease-in-out;
+		 -o-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
+
+#blink-timer .timer-buttons {
+	position: relative;
+	zoom: 1;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 0 30px;
+	text-align: center;
+}
+
+#blink-timer .timer-buttons button {
+	display: inline-block;
+	margin: 0 10px 10px;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+			border-radius: 15px;
+	background: #87BE3E;
+	padding: 0 20px;
+	color: #fff;
+	line-height: 30px;
+}
+
+#blink-timer .timer-buttons button:hover {
+	opacity: .5;
+}
+
+#blink-timer .timer-buttons span {
+	   margin-right: 5px;
+	font-size: 1.2rem;
+	line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

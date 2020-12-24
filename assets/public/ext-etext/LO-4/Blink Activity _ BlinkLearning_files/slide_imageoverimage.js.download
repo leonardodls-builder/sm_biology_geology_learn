@@ -1,0 +1,697 @@
+// *******************************************************
+// Codigo transparencia tipo imagen sobre imagen
+// @textweb		Revisado 18-10-2018
+// *******************************************************
+
+var imagenesArray = [];
+
+function Slide_imageoverimage() {}
+
+Slide_imageoverimage.prototype = new Slide();
+Slide_imageoverimage.prototype.esEjercicio=true;
+
+/**
+ *  crea las imagenes para arrastra
+ * @param  {string} prefijo  [description]
+ * @param  {boolean} inicializar  [description]
+ */
+function crearImagenesArrastrables(prefijo, inicializar) {
+	$('#' + prefijo + '_base').html('');
+	$('#' + prefijo + '_multimedia').find('.' + prefijo + '_image_dropped').remove();
+
+	var $rows = $('#' + prefijo + 'pg').find('.js-row');
+	var imagesWithCoord = [];
+	var i = 0;
+	for(i; i <= $rows.length; i++) {
+		var imgPath = $rows.find('#' + prefijo + '_img-path_' + i).val();
+		if(imgPath && imgPath !== ''){
+			imagesWithCoord.push({
+				posX: -1,
+				posY: -1,
+				path: imgPath
+			});
+		}
+	}
+
+	imagenesArray[prefijo] = imagesWithCoord;
+	if (imagenesArray[prefijo].length > 0 && inicializar) inicializarImagenes(prefijo);
+}
+
+function inicializarImagenes(prefijo) {
+	if (!imagenesArray[prefijo]) return;
+	$.each(imagenesArray[prefijo], function(i) {
+		addImagenBase(prefijo, this, i);
+	});
+	var $containment = $('#transp' + prefijo.replace(/^t/, ''));
+
+	addDraggableImage($('[id^='+ prefijo + '_thumbImg_]'), $containment, prefijo);
+	if (!editar) {
+		addDroppableImg($('#'+ prefijo + '_multimedia'), $('[id^='+ prefijo + '_thumbImg_]'));
+	}
+
+	$('#' + prefijo + '_imagenesArray').val(json_encode(imagenesArray[prefijo]));
+}
+
+function posicionarImagenes(prefijo) {
+	if(!imagenesArray[prefijo]) return;
+	var $baseImage = $('#' + prefijo + '_img1'),
+		baseImageWidth = $baseImage.width(),
+		baseImageNaturalWidth = $baseImage.prop('naturalWidth');
+
+	window[prefijo + '_imagesRatio'] = baseImageWidth / baseImageNaturalWidth;
+	var $containment = $('#transp' + prefijo.replace(/^t/, ''));
+	$.each(imagenesArray[prefijo], function(i) {
+		if (this.posX == -1 || this.posY == -1) {
+			addImagenBase(prefijo, this, i);
+		} else {
+			addImageDroppableArea(prefijo, this, i, 'editar');
+		}
+		addDraggableImage($('#' + prefijo + '_thumbImg_' + i), $containment, prefijo);
+	});
+}
+
+function addImagenBase(prefijo, imagen, i, aux) {
+	if (!aux) aux ='';
+	$('#' + prefijo + '_base').append(''+
+		'<li id="' + prefijo + '_li' + i + '" class="dnd-base">'+
+			'<img class="' + prefijo + '_thumbImg" id="' + prefijo + '_thumbImg' + aux + '_' + i +
+			'" src="' + imagen.path + '"/>'+
+		'</li>');
+}
+
+function deleteImagenBase(id) {
+	$('#' + id).remove();
+}
+
+function addDraggableImage($id, containment, pref) {
+	var $baseImage = $('#' + pref + '_img1');
+	if(!blink.theme.isAdaptative()) containment = '';
+	$id.draggable({
+		revert: function(status) {
+			return (editar) ? !this.data().dropped : true;
+		},
+		start: function(event, ui) {
+			var $this = $(this),
+				origW = $this.prop('naturalWidth'),
+				origH = $this.prop('naturalHeight');
+
+			var endWidth = calcThumbWidth($baseImage, $this, pref),
+				endHeight = endWidth * origH / origW;
+
+			ui.helper
+				.css({
+					'z-index': 9,
+					'width': endWidth,
+					'height': endHeight
+				})
+				.data('dropped', false);
+		},
+		stop: function(event, ui) {
+			var $this = $(this);
+			if (ui.helper.data('dropped')) {
+				terminaDDimagenes($this.attr('id'));
+			} else {
+				ui.helper.css({
+					'z-index': 3,
+					'width': 'auto',
+					'height': 'auto'
+				})
+			}
+		},
+		containment: containment
+	});
+}
+
+function addDroppableImg($id, $elemsAccept) {
+	$id.droppable({
+		accept: $elemsAccept,
+		tolerance: 'intersect',
+		drop: function(event, ui) {
+			if (ui.draggable.data('dropped')) {
+				return;
+			}
+			var $this = $(this);
+			if ($this.hasClass('drop_ok')) {
+				return;
+			}
+			if ($this.hasClass('answer')) {
+				return;
+			}
+			ui.draggable.data('dropped', true);
+			var solId = $(this).attr('id').split('_'),
+				userId = $(ui.helper).attr('id').split('_'),
+				pref = solId[0],
+				solPos = parseInt(solId[2]),
+				userPos = parseInt(userId[2]);
+			if (solPos == window[pref + '_slide'].exampleIndex) return; // si es la de ejemplo
+			window[pref + '_slide'].Pos[solPos] = userPos;
+			var imgPath = window[pref + '_slide'].imagenesArray[userPos].path;
+			$(this)
+				.attr('data-content-user', imgPath)
+				.addClass('answer')
+				.html('<span id="' + pref + '_thumbImg_' + userPos + '_image_cont"><img id="' +
+					pref + '_thumbImg_' + userPos + '_image" class="' + pref + '_thumbImg_' +
+					userPos + ' image_thumb js_resize_image" src="' + imgPath + '" /></span>');
+			$("#" + pref + "_thumbImg_" + userPos + '_image').css({
+				'width': $("#" + pref + "_thumbImgaux_" + userPos).width()
+			});
+			$('#'+pref+'_thumbImgaux_'+userPos).addClass('dropped').hideBlink();
+			addImgDraggedRevert(pref, $(this),solPos, userPos);
+		}
+	});
+}
+
+function addImgDraggedRevert(pref, $elem, solPos, userPos) {
+	$elem.on('click', function(e) {
+		$(this)
+			.removeAttr('data-content-user')
+			.removeClass('answer')
+			.off('click')
+			.html('');
+
+		$('#' + pref + '_thumbImgaux_' + userPos)
+			.css({'width': 'auto', 'height': 'auto'})
+			.removeClass('dropped').showBlink();
+		window[pref + '_slide'].Pos[solPos] = undefined;
+		window[pref + "_slide"]._refreshStatus();
+		$("[id^='" + pref + "_li']").showBlink();
+		blink.activity.updateCanvasSize && blink.activity.updateCanvasSize();
+		e.stopPropagation();
+	});
+}
+
+//Revisado
+function terminaDDimagenes(id) {
+	// Esta funcion se llama cuando el usuario termina de realizar un drag en modo visualizacion o editando...
+	var arr = id.split('_');
+	var pref = arr[0];
+	
+	if (editar) {
+		var $draggableItem = $('#' + id),
+			$baseImage = $('#' + pref + '_img1');
+		var draggableItemHeight = $draggableItem.height(),
+	 		draggableItemWidth = $draggableItem.width(),
+			baseImageHeight = $baseImage.height(),
+			baseImageWidth = $baseImage.width();
+			
+		var a = arr[2];
+		var xy = $draggableItem.offset(), //posicion elemento dragged
+			xydrop = $('#' + pref + '_img1').offset(), //posicion de zona droppable
+			relx = xy.left - xydrop.left, 
+			rely = xy.top - xydrop.top,
+			oldx = imagenesArray[pref][a].posX, 
+			oldy = imagenesArray[pref][a].posY;
+		
+		imagenesArray[pref][a].posX= Math.round(relx / $('#' + pref + '_img1').width() * 100);
+		imagenesArray[pref][a].posY= Math.round(rely / $('#' + pref + '_img1').height() * 100);
+
+		var newPos = calcXYPosThumbOffset(
+			relx, rely, 
+			imagenesArray[pref][a].posX, imagenesArray[pref][a].posY, 
+			draggableItemHeight, draggableItemWidth, 
+			baseImageHeight, baseImageWidth
+		);
+
+		$draggableItem
+			.attr('style',
+				"cursor:pointer; position:absolute; z-index:3; " +
+				"left:" + newPos[0] + "%;" +
+				'top:' + newPos[1] + '%;'
+			);		
+
+		imagenesArray[pref][a].posX = newPos[0];
+		imagenesArray[pref][a].posY = newPos[1];
+
+		if (oldx == -1 || oldy == -1){
+			deleteImagenBase(id);
+			addImageDroppableArea(pref, imagenesArray[pref][a], a, 'editar');
+			addDraggableImage($('#'+ pref + '_thumbImg_'+ a), $baseImage, pref);
+		}
+
+		$('#' + pref + '_imagenesArray').val(json_encode(imagenesArray[pref]));
+		marcarHaCambiado();
+		var $imagesBase = $('ul#' + pref + '_base li').find('img');
+		if (0 === $imagesBase.length) {
+			$("[id^='" + pref + "_li']").hideBlink();
+		}
+
+		$draggableItem.draggable({containment: $baseImage});
+
+	} else {
+		var dropExample = 0;
+		if (window[pref + '_slide'].useExamples) dropExample = 1;
+		var $imagesBase = $('ul#' + pref + '_base li').find('img');
+		var $droppedImagesBase = $('ul#' + pref + '_base li').find('img.dropped');
+		if ($droppedImagesBase.length === $imagesBase.length - dropExample) {
+			$("[id^='" + pref + "_li']").hideBlink();
+			blink.activity.updateCanvasSize && blink.activity.updateCanvasSize();
+		}
+		window[pref + "_slide"]._refreshStatus();
+	}
+}
+
+function calcXYPosThumbOffset(relx, rely, orix, oriy, draggableItemHeight, draggableItemWidth, baseImageHeight, baseImageWidth) {
+	var newPos = [];	
+
+	// Si la imagen thumb es posicionada a la derecha de la imagen base
+	if (relx + draggableItemWidth > baseImageWidth) newPos.push(((baseImageWidth - draggableItemWidth) / baseImageWidth) * 100);
+	// Si la imagen thumb es posicionada a la izquierda de la imagen base
+	else if (relx <= -1) newPos.push(0);
+	// Se deja posición horizontal original al encontrarse en el interior del eje
+	else newPos.push(orix);
+
+	// Si la imagen thumb es posicionada por debajo de la imagen base
+	if (rely + draggableItemHeight > baseImageHeight) newPos.push(((baseImageHeight - draggableItemHeight) / baseImageHeight) * 100);
+	// Si la imagen thumb es posicionada encima de la imagen base
+	else if (rely <= -1) newPos.push(0);
+	// Se deja posición vertical original al encontrarse en el interior del eje
+	else newPos.push(oriy);
+
+	return newPos;
+}
+
+function getSizeRatio(prefijo, isInit) {
+	var $backgroundImg = $('[id^=' + prefijo + '].image_slide'),	
+		naturalSizeImg = new Image();
+
+	naturalSizeImg.src = $backgroundImg.attr('src');
+	naturalSizeImg.addEventListener('load', function() {		
+		var	$backgroundWidth = $backgroundImg.width(),
+			naturalWidth = this.width;
+		if (!editar) {
+			window[prefijo + '_slide'].imagesRatio = $backgroundWidth / naturalWidth;
+			if (isInit) window[prefijo + '_slide'].posicionarImagenesVer();
+		} else {
+			window[prefijo + '_imagesRatio'] = $backgroundWidth / naturalWidth;
+		}
+	});
+}
+
+function resizeImages(prefijo, updateRatio) {
+	if (updateRatio) { getSizeRatio(prefijo); }
+	var $backgroundCont = $('#' + prefijo + '_multimedia'),
+		$baseImage = $('#' + prefijo + '_img1');
+		$images = $backgroundCont.find('.js_resize_image');
+	$.each($images, function(){
+		var	naturalSizeImg = new Image();
+		naturalSizeImg.src = $(this).attr('src');
+		$(this).width(calcThumbWidth($baseImage, $(this), prefijo));
+	});
+}
+
+function resizeImage(prefijo, $image) {
+	var	naturalSizeImg = new Image(),
+		$baseImage = $('#' + prefijo + '_img1');
+	naturalSizeImg.src = $image.attr('src');
+	naturalSizeImg.addEventListener('load', function() {
+		$image.width(calcThumbWidth($baseImage, $image, prefijo));
+	});
+}
+
+function calcThumbWidth($baseImage, $thumbImage, prefijo) {
+	var baseImageWidth = $baseImage.width(), 
+		baseImageHeight = $baseImage.height(),
+		thumbImageWidth = $thumbImage.prop('naturalWidth'),
+		thumbImageHeight = $thumbImage.prop('naturalHeight');
+	
+	if (!editar) {
+		thumbImageWidth = thumbImageWidth * window[prefijo + '_slide'].imagesRatio;
+		thumbImageHeight = thumbImageHeight * window[prefijo + '_slide'].imagesRatio;
+	} else {
+		thumbImageWidth = thumbImageWidth * window[prefijo + '_imagesRatio'], 
+		thumbImageHeight = thumbImageHeight * window[prefijo + '_imagesRatio'];
+	}
+
+	var newWidth = thumbImageWidth;
+
+	if (baseImageWidth < thumbImageWidth) 
+		newWidth = baseImageWidth;
+	if (baseImageHeight < thumbImageHeight) 
+		newWidth = baseImageHeight * thumbImageWidth / thumbImageHeight;
+
+	window[prefijo + '_newWidth'] = newWidth;
+	return newWidth;
+}
+
+function addImageDroppableArea(prefijo, imagen, i, classTipo) {
+	var	$containerBaseImage = $('#' + prefijo + '_multimedia');
+
+	$containerBaseImage.append(
+		'<div class="' + prefijo + '_image_dropped ' + prefijo + '_thumbImg_' + i + ' ' +
+		prefijo + '_thumbImg ' + classTipo +' droppable_area" id="' + prefijo + '_thumbImg_' + i +
+		'" style="position:absolute; ' +
+		'left:' + imagen.posX + '%; ' +
+		'top:' + imagen.posY + '%;" ' +
+		'data-content="' + imagen.path + '"></div>');
+
+	var $baseImage = $('#' + prefijo + '_img1'),
+		$thumbImage = $("#" + prefijo + "_thumbImg_" + i);			
+
+	if (editar){
+		$thumbImage.html(
+			'<img id="' + prefijo + '_thumbImg_' + i + '_image" ' +
+			'class="' + prefijo + '_thumbImg_' + i + ' image_thumb js_resize_image" ' +
+			'src="' + imagen.path + '" />');
+
+		$("#" + prefijo + "_thumbImg_" + i + "_image").css({
+			'width': window[prefijo + '_newWidth']
+		});
+	} else {
+		$('#' + prefijo + '_thumbImgaux_' + i).load(function(){
+			var origW = $(this).prop('naturalWidth'),
+				origH = $(this).prop('naturalHeight'),
+				endWidth = calcThumbWidth($baseImage, $(this), prefijo),
+				endHeight = endWidth * origH / origW;
+				$thumbImage.css({
+					'width': endWidth + 'px',
+					'height': endHeight + 'px'
+			});
+		});
+	}
+}
+
+Slide_imageoverimage.prototype.posicionarImagenesVer = function() {
+	var prefijo = this.prefijo;
+	var $imgContainer = $('#' + prefijo + '_multimedia'), 
+		$containment = $('#transp' + prefijo.replace(/^t/, '')).parents('.item-container');
+	if(!this.imagenesArray) return;
+	$imgContainer.css('position', 'relative');
+	$.each(this.imagenesArray, function(i){
+		if(this.posX != -1 || this.posY != -1){
+			addImagenBase(prefijo, this, i, 'aux');
+			addImageDroppableArea(prefijo, this, i, '');
+		}
+	});
+
+	var that = this;
+	var $thumbImg = $('img.' + prefijo + '_thumbImg');
+	$thumbImg.one('load', function(i) {
+		var $drags = $containment.find('.' + prefijo + '_image-over-image').find('.' + prefijo + '_thumbImg');
+		var $drops = $imgContainer.find('.' + prefijo + '_image_dropped');
+		addDraggableImage($drags, $containment, prefijo);
+		addDroppableImg($drops, $drags);
+		provideExample(prefijo);
+		if ($thumbImg.length - 1 == i) {
+			if ($.inArray(true, that.resultados) !== -1) {
+				that.update(false, true);
+			}
+		}
+		blink.activity.updateCanvasSize && blink.activity.updateCanvasSize();
+	}).each(function() {
+		if (this.complete) {
+			$(this).load();
+		}
+	});
+
+	if (this.isDone()) {
+		this.update(false, false);
+	}
+}
+
+Slide_imageoverimage.prototype._refreshStatus = function() {
+	this.getSuspendData(); // refresh data
+	this.setReviewButtons();
+}
+
+Slide_imageoverimage.prototype.onShow = function() {
+	Slide.prototype.onShow.call(this);
+}
+
+Slide_imageoverimage.prototype.onAfterShowSlide = function() {
+	Slide.prototype.onAfterShowSlide.call(this);
+}
+
+Slide_imageoverimage.prototype.update = function(manual, corregir) {
+	var correctAnswers = 0;
+	var _prefijo = this.prefijo;
+
+	if (typeof(this.useExamples) != 'undefined') this.firstElementIndex = (this.useExamples) ? 1 : 0;
+	if (corregir) this.clasificacion = 0;
+
+	for(var i = this.firstElementIndex; i < this.numElementos; i++) {
+		if (this.respuestas[i] != null && this.respuestas[i] != undefined && this.respuestas[i] >= 0) { // si hay respuesta
+			// Solo cuentan para la evaluación aquellas que tienen respuestas
+
+			var id = this.prefijo + '_thumbImg_' + i,
+				$option = $('#' + id),
+				$response = $('#' + this.prefijo + '_thumbImgaux_' + this.Pos[i]),
+				movedElementCorrectly = this.elementHasBeenMovedCorrectly(i);
+
+			if (!manual) {
+				// esta cargando desde la base de datos... por lo que tiene que ubicar todo como estaba la última vez que lo utilizó el usuario
+				this.Pos[i] = this.respuestas[i];
+				$option
+					.attr('data-content-user', this.imagenesArray[this.respuestas[i]].path)
+					.addClass('answer');
+				$response.hideBlink();
+
+				if (movedElementCorrectly || this.intentos == this.numMaxIntentos) {
+					//Esta bien, o ya no hay más intentos y el usuario lo llegó a colocar, por lo que tenemos que colocarlo en su sitio
+				}else{
+					addImgDraggedRevert(this.prefijo, $option, i, this.respuestas[i]);
+				}
+			}
+
+			if (corregir) {
+				this.resultados[i] = movedElementCorrectly;
+			}
+
+			if (this.resultados[i]) {
+				if (corregir) correctAnswers++;
+			}
+
+			if (checkMostrarSoluciones()) {
+				if (this.resultados[i] != undefined) {
+					if ((this.intentos == this.numMaxIntentos) || (this.resultados[i])) {
+						// Ya se han agotado los intentos o es correcto - debe marcar como bien y mal...
+						$option
+							.removeClass("drop_ok drop_ko ver")
+							.addClass("drop_" + ((this.resultados[i]) ? 'ok' : 'ko'))
+							.unbind('click');
+						$response.addClass("dropped");
+					} else if(corregir) {
+						// Esta mal - mover a la posicion inicial
+						$option.trigger('click');
+					}
+				}
+			}
+		}
+	}
+
+	if (corregir) {
+		var numt = this.numElementosEvaluables;
+		if (this.useExamples) numt--;
+		if (numt > 0) this.clasificacion = correctAnswers / numt;
+	}
+
+	if (this.isDone()) {
+		var that = this;
+
+		$('.' + _prefijo + '_image_dropped').each(function(i) {
+			var $this = $(this),
+				$usedImage = $this.data('content-user'),
+				imgContainer = $('<span></span>');
+
+			if (that.exampleIndex != i) {
+				$this.find('span').remove();
+				$this
+					.removeClass("drop_" + that.solutionStyleClass)
+					.removeClass("ver");
+				if(typeof $usedImage !== typeof undefined && $usedImage !== false) {
+					$('<img class="js_resize_image" src="' + $usedImage + '" />').one('load', function(i) {
+						$this.html(imgContainer.append(this));
+						 resizeImage(_prefijo, $(this));
+					}).each(function() {
+						if (this.complete) {
+							$(this).load();
+						}
+					});
+				}
+				if (that.resultados[i] != undefined) {
+					$this
+						.addClass("drop_" + ((that.resultados[i]) ? 'ok' : 'ko'))
+						.addClass("answer");
+				}
+			}
+			$("[id^='" + _prefijo + "_li']").hideBlink();
+		});
+		$('[id^='+ that.prefijo + '_thumbImgaux_]:not(".dropped")').each(function(i) {
+			if ($('#'+ that.prefijo + '_thumbImgaux_' + i).hasClass('ui-draggable'))
+				$('#'+ that.prefijo + '_thumbImgaux_' + i).draggable('disable');
+			if (that.exampleIndex != i)
+				$(this).showBlink();
+		});
+	}
+
+	Slide.prototype.update.call(this, manual, corregir);
+}
+
+Slide_imageoverimage.prototype.elementHasBeenMoved = function(index) {
+	var position = this.Pos[index];
+	return  ((position == 0) || (!!position && position != -1));
+}
+
+Slide_imageoverimage.prototype.elementHasBeenMovedCorrectly = function(index) {
+	var position = this.Pos[index];
+	return (this.elementHasBeenMoved(index) && (position == index));
+}
+
+Slide_imageoverimage.prototype.evalNumElements = function(){
+	this.numElementos = this.imagenesArray ? this.imagenesArray.length : 0;
+	this.numElementosEvaluables = this.numElementos;
+	if(typeof this.Pos == 'undefined' || this.Pos.length != this.numElementos){
+		this.Pos = new Array(this.numElementos);
+	}
+}
+Slide_imageoverimage.prototype.loadSuspendData = function(data) {
+	if(data){
+		$.each(data.respuestas, function(i){
+			if(data.respuestas[i] == "-1")
+				data.respuestas[i] = undefined;
+		});
+	}
+
+	this.evalNumElements();
+	Slide.prototype.loadSuspendData.call(this, data);
+}
+Slide_imageoverimage.prototype.getSuspendData = function() {
+	for (var i = 0; i < this.numElementos; i++) {
+		this.respuestas[i] = this.Pos[i];
+	}
+	var data = Slide.prototype.getSuspendData.call(this);
+	return data;
+}
+Slide_imageoverimage.prototype.correct = function(manual, corregir) {
+	for (var i = 0; i < this.numElementos; i++) {
+		this.respuestas[i] = this.Pos[i];
+	}
+	Slide.prototype.correct.call(this, manual, corregir);
+}
+
+Slide_imageoverimage.prototype.showElemSolution = function(i) {
+	var styleClass = (this.useExamples && this.exampleIndex == i) ?
+		this.exampleStyleClass : this.solutionStyleClass,
+		$droppableCont = $('#' + this.prefijo + '_thumbImg_' + i),
+		$correctImage = $droppableCont.data('content');
+	$('#' + this.prefijo + '_thumbImgaux_' + i).hideBlink();
+	$droppableCont.find('span').remove();
+	$droppableCont
+		.html('<span><img class="js_resize_image" src="' + $correctImage + '" /></span>')
+		.removeClass('answer drop_ok drop_ko')
+		.addClass('ver drop_' + styleClass);
+	resizeImage(this.prefijo, $droppableCont.find('img'));
+}
+
+Slide_imageoverimage.prototype.hideSolution = function() {
+	Slide.prototype.hideSolution.call(this);
+	if (checkMostrarSoluciones()) {
+		var that = this;
+		$('.' + this.prefijo + '_image_dropped').each(function(i) {
+			var $this = $(this),
+				$usedImage = $this.data('content-user');
+			if (that.exampleIndex != i) {
+				$this.find('span').remove();
+				$this
+					.removeClass("drop_" + that.solutionStyleClass)
+					.removeClass("ver");
+				if(typeof $usedImage !== typeof undefined && $usedImage !== false) {
+					$this.html('<span><img class="js_resize_image" src="' + $usedImage + '" /></span>');
+				}
+				if (that.resultados[i] != undefined) {
+					$this
+						.addClass("drop_" + ((that.resultados[i]) ? 'ok' : 'ko'))
+						.addClass("answer");
+				}
+			}
+		});
+		resizeImages(this.prefijo);
+		$('[id^=' + that.prefijo + '_thumbImgaux_]:not(".dropped")').each(function(i) {
+			if (that.exampleIndex != i)
+				$(this).showBlink();
+		});
+		this.update(false, false);
+	}
+}
+
+Slide_imageoverimage.prototype.setDisabled = function() {
+	$('.'+ this.prefijo+'_thumbImg').unbind('click');
+}
+
+/**
+ * Callback botón restart si RESTART_ONE_SLIDE
+ */
+Slide_imageoverimage.prototype.clearSlide = function() {
+	this.clearSlideComunIni();
+
+	this.Pos = new Array(this.numElementos);
+
+	$("[id^='" + this.prefijo + "_li']").remove();
+	$("[id^='" + this.prefijo + "_thumbImgaux_']").remove();
+	$("." + this.prefijo + "_thumbImg").remove();
+	$("[id^='" + this.prefijo + "_li']").showBlink();
+
+	this.posicionarImagenesVer();
+	this.clearSlideComunFin();
+}
+
+Slide_imageoverimage.prototype.onChangeWindowSize = function() {
+	this.onAfterShowSlide();
+};
+
+Slide_imageoverimage.prototype.addOption = function(prefijo) {
+	// Añade una nueva fila al slide (modo editar).
+	var $page = $("#" + prefijo + "pg"),
+		numMaxRows = 15,
+		numNextRow = $page.find(".js-row").length,
+		nextRowIndex = numNextRow - 1,
+		$newRow = $page.find(".js-add-new-row").clone(),
+		$imgElemName = $newRow.find('.js-img-slider-name'),
+		$imgElemPath = $newRow.find('.js-img-slider-path'),
+		$imgUploadButton = $newRow.find('.js-img-slider-upload'),
+		$imgElemDelete = $newRow.find('.js-img-slider-delete');
+
+	$newRow
+		.showBlink()
+		.removeClass('js-add-new-row')
+		.attr('name', prefijo + "_row_" + nextRowIndex);
+
+	$imgElemName.attr({
+		id: prefijo + '_img-name_' + nextRowIndex
+	});
+
+	$imgElemPath.attr({
+		name: $imgElemPath.attr('name') + nextRowIndex,
+		id: prefijo + '_img-path_' + nextRowIndex
+	})
+
+	$imgUploadButton.data('slide-index', nextRowIndex);
+
+	$imgElemDelete.data('slide-index', nextRowIndex).attr({
+		id: $imgElemDelete.attr('id') + nextRowIndex,
+	});
+
+	$page.find('.js-form-questions').append($newRow);
+
+	if (numNextRow >= numMaxRows) {
+		$page.find('.js-add-option').addClass('disabled');
+	}
+}
+
+function provideExample(id) {
+	if (typeof window[id + '_slide'] != 'undefined') {
+		if (window[id + "_slide"].useExamples &&
+			34 === window[id + '_slide'].tipo) {
+				window[id + "_slide"].showExample();
+		}
+	}
+}
+
+$(function() {
+	$(document).on('click', '.slide-imageoverimage .js-add-option', function(event) {
+		var $this = $(this),
+			prefijoThis = $this.closest('.slide-imageoverimage').data('prefix'),
+			isDisabled = $this.hasClass('disabled');
+
+		!isDisabled && Slide_imageoverimage.prototype.addOption(prefijoThis);
+	});
+});

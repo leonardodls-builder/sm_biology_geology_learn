@@ -1,0 +1,189 @@
+/**
+ * Existen tres conceptos de nota:
+ * - La que se almacena en la base de datos: en base a 100 "Grade"
+ * - La que se gestiona numéricamente en la vista: en base a grade_max "numGrade": es un número
+ * - La que se muestra: "View" (letra o número con prefijos y sufijos, si los hay): es un string
+ *
+ * Es necesario tener estos tres conceptos porque hay sistemas que muestran letras en lugar de números (ej: Perú),
+ * por lo que necesitamos tener un numGrade, que es el valor numérico correspondiente a la letra mostrada.
+ */
+
+grade_sepDecimal = ',';
+grade_sepMil = '.';
+grade_numDecimales = 1;
+grade_max = 10;
+grade_prefix = '';
+grade_sufix = '';
+grade_aprobado = 50; // base a 100
+grade_edit_as_view = false; // Indica que el profesor introduce las notas tal y como se visualizan (con sufijo, etc) en editar nota slide
+
+var grade_debug = false;
+
+/**
+ * Retorna el texto a mostrar para la nota grade en la vista view
+ * grade está en base a 100
+ * view puede ser 'slide', etc
+ * Es el antiguo prepararNota()
+ * BK-18049 recibimos el alumno para pintarle la P en el segundo nivel
+ */
+function gradeToView(grade, view, pending, alumno) {
+	var statusGrade = checkGradeStatus(grade, pending, view, alumno);
+
+	if (isNaN(statusGrade)) {
+		return statusGrade;
+	}
+
+	nota_aux = obtenerNota(grade);
+	resul = pintaNotaDecimales(nota_aux, view);
+	if (grade_debug) console.log("gradeToView para " + grade + " en vista " + view + ": " + resul);
+	return resul;
+}
+
+//BK-18049 Recibimos el alumno para poder pintar la P en el segundo nivel
+function checkGradeStatus(grade, pending, view, alumno) {
+	alumno = typeof idalumno === 'undefined' ? alumno : idalumno
+	if ((typeof alumno !== "undefined" || !blink.domain.showSlidesGradebook()) && (pending || grade === 'P')) {
+		return returnPending(view);
+	} else if (!isNaN(grade) && grade !== "") {
+		return grade;
+	} else if (grade === undefined || grade === null || grade === '' || isNaN(grade)) {
+		return '-';
+	}
+
+	return false;
+}
+
+
+function returnPending(view) {
+		return "P";
+}
+
+/**
+ * Retorna el numero a mostrar para la nota grade
+ * grade está en base a 100
+ */
+function gradeToNumGrade(grade) {
+	return grade * grade_max / 100;
+}
+
+/**
+ * Retorna el texto a mostrar para la nota grade en la vista view
+ * grade ya está en el formato adecuado para ser mostrado, no hay transformación
+ * view puede ser 'slide', etc
+ * Es el antiguo prepararNota()
+ */
+function numGradeToView(grade, view) {
+	if (grade === '') return '-';
+	if (grade === '-') return '-';
+	if (grade === 'P') return 'P';
+	if (grade === null) return '-';
+
+	resul = pintaNotaDecimales(grade, view);
+	if (grade_debug) console.log("numGradeToView para " + grade + " en vista " + view + ": " + resul);
+	return resul;
+}
+
+/**
+ * Retorna el valor en base a 100 de la nota, que viene en base a grade_max
+ */
+function numGradeToGrade(grade, view) {
+	return (grade / grade_max) * 100;
+}
+
+/**
+ * Retorna el valor numérico en base a 100 para la nota grade, que está ya transformada para visualizar
+ */
+function viewToGrade(grade) {
+	if (gradeaux === '-' || gradeaux === 'P' || gradeaux === '' || gradeaux === null) return '';
+	var gradeaux = viewToNumGrade(grade);
+	return ((gradeaux * 100) / grade_max);
+}
+
+/**
+ * Retorna el valor numérico en base a grade_max para la nota grade, que está ya transformada para visualizar
+ */
+function viewToNumGrade(grade) {
+	var gradeaux = grade;
+
+	if (gradeaux === '-' || gradeaux === 'P' || gradeaux === '' || gradeaux === null) return '';
+
+	// Quitamos prefijos y sufijos, si los hay
+	if (typeof gradeaux == 'string') {
+		if (grade_sepDecimal != '' && grade_sepDecimal != '.') {
+			gradeaux = gradeaux.replace(grade_sepDecimal, '.');
+		}
+		if (gradeaux.indexOf(grade_prefix) == 0) {
+			gradeaux = gradeaux.substr(grade_prefix.length);
+		}
+		if (gradeaux.indexOf(grade_sufix) != -1) {
+			gradeaux = parseFloat(gradeaux);
+		}
+	}
+	return gradeaux;
+}
+
+/**
+ * Retorna la clase css a utilizar para la nota grade en la vista view
+ * grade debe estar en base 100
+ */
+function styleClassForGrade(grade, view) {
+	if (typeof blink.activity.currentStyle.hideGrade !== 'undefined' && blink.activity.currentStyle.hideGrade()) {
+		return 'r_aprobado';
+	}
+	switch (view) {
+		case 'slide':
+			style_class = esAprobado(grade) ? '' : 'r_suspenso';
+			break;
+		case 'slide_act':
+			style_class = esAprobado(grade) ? 'r_aprobado' : 'r_suspenso';
+			break;
+		default:
+			style_class = esAprobado(grade) ? 'ok' : 'ko';
+	}
+	return style_class;
+}
+
+/**
+ * Esta función devuelve la nota en base a 100
+ * BK-10953 No se pasa a base 10 en actividades scorm (esWeb) por coherencia con las notas de actividades blink
+ */
+function obtenerNota(clasificacion) {
+	if (!grade_max || grade_max == '') return '';
+	if (isNaN(clasificacion) || isNaN(grade_max)) return '';
+	// TODO: Realmente puede tener valor ''?
+	// esto da problemas al procesar luego clasificacion de las transparencias, porque les presupone un número.
+	if (!clasificacion && clasificacion !== 0) return '';
+	if (parseInt(clasificacion) < 0) clasificacion = 0;
+	if (typeof grade_numDecimales === 'undefined') grade_numDecimales = 0;
+	return ajustaDecimales(grade_max * clasificacion / 100, grade_numDecimales);
+}
+
+function esAprobado(clasificacion) {
+	if (isNaN(clasificacion)) return true;
+	var aprobado = 50;
+	if (typeof grade_aprobado != 'undefined' && grade_aprobado != '') aprobado = grade_aprobado;
+	return clasificacion >= aprobado;
+}
+
+function pintaNotaDecimales(clasificacion, view) {
+	if (typeof clasificacion === 'undefined' || clasificacion === null || isNaN(clasificacion) || clasificacion === '') return '';
+	if (grade_numDecimales == '') grade_numDecimales = 0;
+	ret = ajustaDecimales(clasificacion, grade_numDecimales);
+	return pintaNotaNumero(ret, view);
+}
+
+function ajustaDecimales(clasificacion, ndecimales) {
+	if (isNaN(clasificacion)) return '';
+	if (clasificacion == grade_max) return grade_max;
+	// Si la nota es coma cero y hay decimales, no los mostramos
+	if (ndecimales && Math.floor(clasificacion) == clasificacion) ndecimales = 0;
+	aux = Math.pow(10, ndecimales);
+	return (Math.round(clasificacion * aux) / aux).toFixed(ndecimales);
+}
+
+function pintaNotaNumero(num, view) {
+	if (view == 'toc') return num;
+	var sep = ','; // separador por defecto
+	if (grade_sepDecimal && grade_sepDecimal != '') sep = grade_sepDecimal;
+	return grade_prefix + ('' + num).replace('.', sep) + grade_sufix;
+}

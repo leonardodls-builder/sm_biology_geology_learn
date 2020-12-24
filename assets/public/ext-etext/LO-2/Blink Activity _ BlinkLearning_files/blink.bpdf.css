@@ -1,0 +1,36 @@
+/* PINE TOOLTIP */
+
+.hotspot.pinetooltip {
+	background-color: #626262;
+}
+
+.hotspot.pinetooltip.tltip-right:after {
+	border-color: transparent #626262 transparent transparent ;
+}
+
+.hotspot.pinetooltip.tltip-left:after {
+	border-color: transparent  transparent transparent #626262;
+}
+
+.hotspot.pinetooltip.tltip-bottom:after {
+	border-color: transparent transparent #626262;
+}
+
+.hotspot.pinetooltip.tltip-top:after {
+	border-color: #626262 transparent transparent;
+}
+
+.pine-bg {
+	position: absolute;
+	z-index: 1;
+	min-width: 0px;
+	cursor: pointer;
+}
+
+.hotspot + .pine-bg {
+	background: rgba(220, 220, 220, 0.5);
+}
+
+.view-mode .navbar .recursos .popover-recursos-wrapper li[data-url^="page://"] {
+	display: none;
+}
