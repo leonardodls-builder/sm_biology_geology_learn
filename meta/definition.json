@@ -1875,7 +1875,7 @@
         "description": "",
         "sub-type": "ext-etext",
         "ext-etext": {
-          "url": "ext-etext/LO2"
+          "url": "ext-etext/LO-2"
         },
         "tags": []
       },
@@ -1886,7 +1886,7 @@
         "description": "",
         "sub-type": "ext-etext",
         "ext-etext": {
-          "url": "ext-etext/LO4"
+          "url": "ext-etext/LO-4"
         },
         "tags": []
       },
@@ -1897,7 +1897,7 @@
         "description": "",
         "sub-type": "ext-etext",
         "ext-etext": {
-          "url": "ext-etext/LO2"
+          "url": "ext-etext/LO-5"
         },
         "tags": []
       },
