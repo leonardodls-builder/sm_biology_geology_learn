@@ -24,144 +24,81 @@
     "default": [
       {
         "item-type": "folder",
-        "name": "La organización del cuerpo humano",
+        "name": "PERSONAS",
         "sub-type": "default",
-        "item-code": "1234567891001",
+        "item-code": "6234567891001",
         "items": [
           {
             "item-type": "resource",
             "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891001/1234567892001"
+            "item-code": "6234567891001/6234567892001"
           },
           {
             "item-type": "resource",
             "resource": "RE_0002",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. Nuestro organismo está formado por células",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891001/1234567892002"
+            "item-code": "6234567891001/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_0003",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. ¿Qué contiene el citoplasma?",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891001/1234567892003"
+            "item-code": "6234567891001/6234567892003"
           },
           {
             "item-type": "resource",
             "resource": "RE_0004",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. El núcleo de la célula",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891001/1234567892004"
+            "item-code": "6234567891001/6234567892004"
           },
           {
             "item-type": "resource",
             "resource": "RE_0005",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. La membrana y los intercambios con el medio",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891001/1234567892005"
+            "item-code": "6234567891001/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. ¿Cómo funcionan las células?",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891001/1234567892006"
+            "item-code": "6234567891001/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Células especializadas",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891001/1234567892007"
+            "item-code": "6234567891001/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. Los tejidos I",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891001/1234567892008"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "8. Los tejidos II",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Órganos y sistemas de órganos",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "10. Niveles de organización de la materia viva",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892014"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891001/1234567892015"
+            "item-code": "6234567891001/6234567892008"
           }
         ],
         "attribs": {
@@ -170,126 +107,90 @@
       },
       {
         "item-type": "folder",
-        "name": "De los alimentos a los nutrientes",
+        "name": "IDENTIDADES",
         "sub-type": "default",
-        "item-code": "1234567891002",
+        "item-code": "6234567891002",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892001"
+            "item-code": "6234567891002/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. ¿Qué necesita nuestro organismo para funcionar?",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891002/1234567892002"
+            "item-code": "6234567891002/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. El sistema respiratorio",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891002/1234567892003"
+            "item-code": "6234567891002/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. El intercambio de gases",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891002/1234567892004"
+            "item-code": "6234567891002/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. El sistema respiratorio y la salud",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892005"
+            "item-code": "6234567891002/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. Los alimentos y sus componentes",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892006"
+            "item-code": "6234567891002/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. El sistema digestivo",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892007"
+            "item-code": "6234567891002/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. La digestión de los alimentos",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892008"
+            "item-code": "6234567891002/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. El sistema digestivo y la salud",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891002/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891002/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891002/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891002/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891002/1234567892013"
+            "item-code": "6234567891002/6234567892009"
           }
         ],
         "attribs": {
@@ -298,108 +199,90 @@
       },
       {
         "item-type": "folder",
-        "name": "Los alimentos y la dieta",
+        "name": "MI ENTORNO",
         "sub-type": "default",
-        "item-code": "1234567891003",
+        "item-code": "6234567891003",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892001"
+            "item-code": "6234567891003/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. La dieta",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891003/1234567892002"
+            "item-code": "6234567891003/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. La dieta nos proporciona energía",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891003/1234567892003"
+            "item-code": "6234567891003/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. ¿Todos necesitamos la misma dieta?",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891003/1234567892004"
+            "item-code": "6234567891003/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. ¿Y si la dieta no es equilibrada?",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892005"
+            "item-code": "6234567891003/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. El etiquetado: una información que debemos leer",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892006"
+            "item-code": "6234567891003/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Métodos de conservación de los alimentos",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892007"
+            "item-code": "6234567891003/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Ciencia en acción",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892008"
+            "item-code": "6234567891003/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Lo esencial",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891003/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891003/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891003/1234567892011"
+            "item-code": "6234567891003/6234567892009"
           }
         ],
         "attribs": {
@@ -408,144 +291,90 @@
       },
       {
         "item-type": "folder",
-        "name": "La eliminación de desechos y el transporte",
+        "name": "LUGARES",
         "sub-type": "default",
-        "item-code": "1234567891004",
+        "item-code": "6234567891004",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892001"
+            "item-code": "6234567891004/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. ¿Qué desechos produce el organismo?",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891004/1234567892002"
+            "item-code": "6234567891004/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. El sistema urinario",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891004/1234567892003"
+            "item-code": "6234567891004/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. ¿Cómo funcionan los riñones?",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891004/1234567892004"
+            "item-code": "6234567891004/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. El sistema urinario y la salud",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892005"
+            "item-code": "6234567891004/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. El sistema circulatorio: la sangre",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892006"
+            "item-code": "6234567891004/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Los vasos sanguíneos y el corazón: el sistema cardiovascular",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892007"
+            "item-code": "6234567891004/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. ¿Cómo circula la sangre?",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892008"
+            "item-code": "6234567891004/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. El sistema circulatorio y la salud",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891004/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Cuatro sistemas para una función: la nutrición",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892014"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Proyecto de investigación",
-            "tracking": true,
-            "item-code": "1234567891004/1234567892015"
+            "item-code": "6234567891004/6234567892009"
           }
         ],
         "attribs": {
@@ -554,135 +383,90 @@
       },
       {
         "item-type": "folder",
-        "name": "La coordinación de nuestro organismo",
+        "name": "IMÁGENES DEL MUNDO HISPANO",
         "sub-type": "default",
-        "item-code": "1234567891005",
+        "item-code": "6234567891005",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892001"
+            "item-code": "6234567891005/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. Relación y coordinación",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891005/1234567892002"
+            "item-code": "6234567891005/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. El sistema endocrino u hormonal",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891005/1234567892003"
+            "item-code": "6234567891005/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. El sistema nervioso: componentes",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891005/1234567892004"
+            "item-code": "6234567891005/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. ¿Cómo está organizado el sistema nervioso?",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892005"
+            "item-code": "6234567891005/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. El sistema nervioso central",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892006"
+            "item-code": "6234567891005/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. El encéfalo",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892007"
+            "item-code": "6234567891005/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. La médula espinal",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892008"
+            "item-code": "6234567891005/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. El sistema nervioso periférico",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891005/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Sistemas nerviosos somático y autónomo",
-            "tracking": true,
-            "item-code": "1234567891005/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891005/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891005/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891005/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891005/1234567892014"
+            "item-code": "6234567891005/6234567892009"
           }
         ],
         "attribs": {
@@ -691,135 +475,90 @@
       },
       {
         "item-type": "folder",
-        "name": "Receptores y efectores. Estímulos y respuestas",
+        "name": "VIAJES",
         "sub-type": "default",
-        "item-code": "1234567891006",
+        "item-code": "6234567891006",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892001"
+            "item-code": "6234567891006/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. Estímulos, receptores y sentidos",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891006/1234567892002"
+            "item-code": "6234567891006/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. La piel y el tacto",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891006/1234567892003"
+            "item-code": "6234567891006/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. Los ojos y la vista",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891006/1234567892004"
+            "item-code": "6234567891006/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. Los oídos, la audición y el equilibrio",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892005"
+            "item-code": "6234567891006/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. Los sentidos del olfato y el gusto",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892006"
+            "item-code": "6234567891006/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Sensación, percepción, emoción y sentimiento",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892007"
+            "item-code": "6234567891006/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. Efectores: la respuesta muscular",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892008"
+            "item-code": "6234567891006/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. El sistema esquelético: huesos y articulaciones",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891006/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Lesiones o trastornos del sistema locomotor",
-            "tracking": true,
-            "item-code": "1234567891006/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891006/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891006/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891006/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891006/1234567892014"
+            "item-code": "6234567891006/6234567892009"
           }
         ],
         "attribs": {
@@ -828,135 +567,90 @@
       },
       {
         "item-type": "folder",
-        "name": "La reproducción",
+        "name": "GENERACIONES",
         "sub-type": "default",
-        "item-code": "1234567891007",
+        "item-code": "6234567891007",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892001"
+            "item-code": "6234567891007/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. La reproducción en los seres humanos",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891007/1234567892002"
+            "item-code": "6234567891007/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. De la infancia a la edad adulta",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891007/1234567892003"
+            "item-code": "6234567891007/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. El sistema reproductor femenino",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891007/1234567892004"
+            "item-code": "6234567891007/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. El sistema reproductor masculino",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892005"
+            "item-code": "6234567891007/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. La fecundación y la gestación",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892006"
+            "item-code": "6234567891007/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. El nacimiento",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892007"
+            "item-code": "6234567891007/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. La reproducción asistida",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892008"
+            "item-code": "6234567891007/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. Los métodos anticonceptivos",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891007/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Sexo y sexualidad. Higiene y salud sexual",
-            "tracking": true,
-            "item-code": "1234567891007/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891007/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891007/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891007/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891007/1234567892014"
+            "item-code": "6234567891007/6234567892009"
           }
         ],
         "attribs": {
@@ -965,144 +659,90 @@
       },
       {
         "item-type": "folder",
-        "name": "La salud y la enfermedad",
+        "name": "RELACIONES",
         "sub-type": "default",
-        "item-code": "1234567891008",
+        "item-code": "6234567891008",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892001"
+            "item-code": "6234567891008/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. La salud",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891008/1234567892002"
+            "item-code": "6234567891008/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. Los agentes infecciosos",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891008/1234567892003"
+            "item-code": "6234567891008/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. ¿Podemos evitar la contaminación?",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891008/1234567892004"
+            "item-code": "6234567891008/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. La transmisión de las enfermedades infecciosas",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892005"
+            "item-code": "6234567891008/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. El organismo se defiende",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892006"
+            "item-code": "6234567891008/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Una reacción más lenta y específica",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892007"
+            "item-code": "6234567891008/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. La medicina nos ayuda",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892008"
+            "item-code": "6234567891008/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "8. Trasplantes",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891008/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "9. Una vida saludable",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ciencia en acción",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892012"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892013"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892014"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Proyecto de investigación",
-            "tracking": true,
-            "item-code": "1234567891008/1234567892015"
+            "item-code": "6234567891008/6234567892009"
           }
         ],
         "attribs": {
@@ -1111,117 +751,90 @@
       },
       {
         "item-type": "folder",
-        "name": "Los ecosistemas",
+        "name": "MODA Y CUERPO",
         "sub-type": "default",
-        "item-code": "1234567891009",
+        "item-code": "6234567891009",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892001"
+            "item-code": "6234567891009/6234567892001"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "1. El escenario de la vida",
+            "name": "PARA EMPEZAR",
             "tracking": true,
-            "item-code": "1234567891009/1234567892002"
+            "item-code": "6234567891009/6234567892002"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "2. Los seres vivos en el medio",
+            "name": "DOCUMENTOS PARA DESCUBRIR",
             "tracking": true,
-            "item-code": "1234567891009/1234567892003"
+            "item-code": "6234567891009/6234567892003"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "3. Relaciones entre los seres vivos",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
-            "item-code": "1234567891009/1234567892004"
+            "item-code": "6234567891009/6234567892004"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "4. El suelo como ecosistema",
+            "name": "SONIDOS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892005"
+            "item-code": "6234567891009/6234567892005"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "5. Los grandes biomas terrestres",
+            "name": "CULTURAS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892006"
+            "item-code": "6234567891009/6234567892006"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "6. Ecosistemas acuáticos",
+            "name": "CONOCER LOS TEXTOS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892007"
+            "item-code": "6234567891009/6234567892007"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "7. Ecosistemas humanizados",
+            "name": "PROYECTOS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892008"
+            "item-code": "6234567891009/6234567892008"
           },
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Ciencia en acción",
+            "name": "RECURSOS LINGÜÍSTICOS",
             "tracking": true,
-            "item-code": "1234567891009/1234567892009"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Lo esencial",
-            "tracking": true,
-            "item-code": "1234567891009/1234567892010"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Actividades",
-            "tracking": true,
-            "item-code": "1234567891009/1234567892011"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_000",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "Ponte a prueba",
-            "tracking": true,
-            "item-code": "1234567891009/1234567892012"
+            "item-code": "6234567891009/6234567892009"
           }
         ],
         "attribs": {
@@ -1230,22 +843,1014 @@
       },
       {
         "item-type": "folder",
-        "name": "Desequilibrios en los ecosistemas",
+        "name": "COMIDA Y SALUD",
         "sub-type": "default",
-        "item-code": "1234567891010",
+        "item-code": "6234567891010",
         "items": [
           {
             "item-type": "resource",
-            "resource": "RE_000",
+            "resource": "RE_0001",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "Entrada",
+            "name": "CONTENIDOS",
             "tracking": true,
-            "item-code": "1234567891010/1234567892001"
+            "item-code": "6234567891010/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891010/6234567892009"
           }
         ],
         "attribs": {
           "thubsnail": "images/toc-thumbs/chapter10.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "EXPERIENCIAS",
+        "sub-type": "default",
+        "item-code": "6234567891011",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891011/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter11.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "EDUCACIÓN Y FUTURO",
+        "sub-type": "default",
+        "item-code": "6234567891012",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891012/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter12.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "ORGANIZACIÓN Y TIEMPO",
+        "sub-type": "default",
+        "item-code": "6234567891013",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891013/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter13.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "CONSUMO Y MEDIOAMBIENTE",
+        "sub-type": "default",
+        "item-code": "6234567891014",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891014/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter14.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "MERCADOTECNIA Y PUBLICIDAD",
+        "sub-type": "default",
+        "item-code": "6234567891015",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891015/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter10.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "HISTORIAS Y DESAFÍOS",
+        "sub-type": "default",
+        "item-code": "6234567891016",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891016/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter16.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "REDES",
+        "sub-type": "default",
+        "item-code": "6234567891017",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891017/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter17.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "TRADICIONES",
+        "sub-type": "default",
+        "item-code": "6234567891018",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891018/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter18.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "EMOCIONES",
+        "sub-type": "default",
+        "item-code": "6234567891019",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891019/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter19.png"
+        }
+      },
+      {
+        "item-type": "folder",
+        "name": "MUJERES Y PODER",
+        "sub-type": "default",
+        "item-code": "6234567891020",
+        "items": [
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONTENIDOS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892001"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "DOCUMENTOS PARA DESCUBRIR",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892003"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "SONIDOS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892006"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CONOCER LOS TEXTOS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892007"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PROYECTOS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892008"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "RECURSOS LINGÜÍSTICOS",
+            "tracking": true,
+            "item-code": "6234567891020/6234567892009"
+          }
+        ],
+        "attribs": {
+          "thubsnail": "images/toc-thumbs/chapter20.png"
         }
       }
     ]
@@ -1259,7 +1864,7 @@
         "description": "",
         "sub-type": "etext",
         "etext": {
-          "url": "etext/LO-1/index.html"
+          "url": "eText/LO1/index.html"
         },
         "tags": []
       },
@@ -1268,20 +1873,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "etext",
+        "sub-type": "ext-eText",
         "etext": {
-          "url": "etext/LO-2/index.html"
-        },
-        "tags": []
-      },
-      "RE_0003": {
-        "learning-objectives": [
-          "Learning Objective 1"
-        ],
-        "description": "",
-        "sub-type": "etext",
-        "etext": {
-          "url": "etext/LO-3/index.html"
+          "url": "ext-eText/LO2"
         },
         "tags": []
       },
@@ -1290,9 +1884,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "etext",
+        "sub-type": "ext-eText",
         "etext": {
-          "url": "etext/LO-4/index.html"
+          "url": "ext-eText/LO4"
         },
         "tags": []
       },
@@ -1301,9 +1895,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "etext",
+        "sub-type": "ext-eText",
         "etext": {
-          "url": "etext/LO-5/index.html"
+          "url": "ext-eText/LO2"
         },
         "tags": []
       },
@@ -1312,8 +1906,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "html",
-        "html": {
+        "sub-type": "default",
+        "default": {
           "url": ""
         },
         "tags": []
@@ -1324,23 +1918,23 @@
   },
   "meta": {
     "schema": 1,
-    "title": "3.º ESO Biología y Geología. Savia. Serie Brezo",
-    "code": "biology_and_geology",
+    "title": "PROYECTOS",
+    "code": "qa_proyectos_learn",
     "author": "Compro",
-    "thumbnailsmall": "BookCover.svg",
-    "thumbnaillarge": "BookCover.svg",
+    "thumbnailsmall": "BookCover.png",
+    "thumbnaillarge": "BookCover.png",
     "description": "",
     "producttype": "courseware",
     "model": {
       "type": "engage-type-A",
-      "style": "theme1",
-      "subject": "BIOLOGÍA Y GEOLOGÍA",
-      "course": "3.º",
-      "level": "ESO",
+      "style": "theme6",
+      "subject": "SPANISH",
+      "course": "º",
+      "level": "",
       "isbn": "978-84-675-7600-9",
-      "series": "BREZO (SAVIA)",
-      "booktitle": "BIOLOGÍA Y GEOLOGÍA",
-      "booksubtitle": "3.º ESO BREZO (SAVIA)"
+      "series": "",
+      "booktitle": "PROYECTOS",
+      "booksubtitle": "An introductory and intermediate Spanish course"
     }
   }
 }
