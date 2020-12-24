@@ -120,7 +120,7 @@ function sendSizeEvent() {
     let container = $.find(containerClass)[0];
     let containerComputedStyles = getComputedStyle(container);
     newDimensions({
-        height: container.clientHeight + parseFloat(containerComputedStyles.marginTop) + parseFloat(containerComputedStyles.marginBottom) + 94,
+        height: container.clientHeight + parseFloat(containerComputedStyles.marginTop) + parseFloat(containerComputedStyles.marginBottom),
         width: container.clientWidth + parseFloat(containerComputedStyles.marginRight) + parseFloat(containerComputedStyles.marginLeft)
     });
 }

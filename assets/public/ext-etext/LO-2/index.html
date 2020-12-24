@@ -415,6 +415,12 @@ div.cke_pagebreak{background:url(https://www.blinklearning.com/libs/CKEditor/cke
     		height: 100%;
     		width: 100%;
 		}
+		.c-removePaddingTop {
+			padding-top: 0px !important;
+		}
+		.c-removePaddingBottom {
+			padding-bottom: 0px !important;
+		}
 	
 </style>
 
@@ -2033,7 +2039,7 @@ myListenerBg.onUpdate = function() {}
 		</div>
 	
 	
-    <div class="content-wrapper actividad tipo-actividad-2" checkfromux="1">
+    <div class="content-wrapper actividad tipo-actividad-2 c-removePaddingTop c-removePaddingBottom" checkfromux="1">
 
     <script type="text/javascript">
 			blink.events.trigger("user:editorEspecial");
@@ -2828,7 +2834,7 @@ Estudia&nbsp; <input type="text" maxlength="50" class="keyboardInput" size="25" 
 
 		
 
-		<span class="copyright">©2020</span><div id="top-navigator"><span class="left slider-navigator"><span class="fa fa-chevron-left"></span></span><span class="slide-counter" data-subunit-index="1" data-subunit-pags="1">2 / 18</span><span class="right slider-navigator"><span class="fa fa-chevron-right"></span></span></div>
+		<span class="copyright">©2020</span><div id="top-navigator" class="c-displayNone"><span class="left slider-navigator"><span class="fa fa-chevron-left"></span></span><span class="slide-counter" data-subunit-index="1" data-subunit-pags="1">2 / 18</span><span class="right slider-navigator"><span class="fa fa-chevron-right"></span></span></div>
 		<ul id="msgAJAXClassNotification"></ul>
 
 	</div></div>
