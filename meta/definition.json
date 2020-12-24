@@ -1874,7 +1874,7 @@
         ],
         "description": "",
         "sub-type": "ext-eText",
-        "etext": {
+        "ext-eText": {
           "url": "ext-eText/LO2"
         },
         "tags": []
@@ -1885,7 +1885,7 @@
         ],
         "description": "",
         "sub-type": "ext-eText",
-        "etext": {
+        "ext-eText": {
           "url": "ext-eText/LO4"
         },
         "tags": []
@@ -1896,7 +1896,7 @@
         ],
         "description": "",
         "sub-type": "ext-eText",
-        "etext": {
+        "ext-eText": {
           "url": "ext-eText/LO2"
         },
         "tags": []
