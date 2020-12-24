@@ -1873,8 +1873,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-eText",
-        "ext-eText": {
+        "sub-type": "ext-etext",
+        "ext-etext": {
           "url": "ext-eText/LO2"
         },
         "tags": []
@@ -1884,8 +1884,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-eText",
-        "ext-eText": {
+        "sub-type": "ext-etext",
+        "ext-etext": {
           "url": "ext-eText/LO4"
         },
         "tags": []
@@ -1895,8 +1895,8 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-eText",
-        "ext-eText": {
+        "sub-type": "ext-etext",
+        "ext-etext": {
           "url": "ext-eText/LO2"
         },
         "tags": []
