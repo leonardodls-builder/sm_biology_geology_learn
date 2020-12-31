@@ -1873,9 +1873,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-etext",
-        "ext-etext": {
-          "url": "ext-etext/LO-2"
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-2"
         },
         "tags": []
       },
@@ -1884,9 +1884,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-etext",
-        "ext-etext": {
-          "url": "ext-etext/LO-4"
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-4"
         },
         "tags": []
       },
@@ -1895,9 +1895,9 @@
           "Learning Objective 1"
         ],
         "description": "",
-        "sub-type": "ext-etext",
-        "ext-etext": {
-          "url": "ext-etext/LO-5"
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-5"
         },
         "tags": []
       },
