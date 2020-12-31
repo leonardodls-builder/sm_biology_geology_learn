@@ -152,6 +152,16 @@ function bindOnBlurEventOnInput() {
     $('input').on('blur', updateCurrentState);
 }
 
+function showModal() {
+    $('.c-icon-file').on('click', showSnackbar);
+    $('.icon-edit').on('click', showSnackbar);
+}
+
+function showSnackbar() {
+    Snackbar.show({text: 'Feature Coming Soon'});
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     initChannel()
         .then(channel => {
@@ -169,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     generateStatement('started');
                     generateStatement('launched');
                     bindOnBlurEventOnInput();
+                    showModal();
                 })
         });
 });
