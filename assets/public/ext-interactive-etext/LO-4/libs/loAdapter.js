@@ -3,7 +3,7 @@ const containerClass = '.item-container';
 let activityState = {};
 
 function updateCss() {
-    let wrapper = $.find('#wrapper')[0];
+    let wrapper = document.getElementById('wrapper');
     wrapper.style.overflow = 'hidden';
 }
 
@@ -117,7 +117,7 @@ function debounce(func, delay){
 }
 
 function sendSizeEvent() {
-    let container = $.find(containerClass)[0];
+    let container = document.querySelector(containerClass);
     let containerComputedStyles = getComputedStyle(container);
     newDimensions({
         height: container.clientHeight + parseFloat(containerComputedStyles.marginTop) + parseFloat(containerComputedStyles.marginBottom) + 1,
@@ -126,7 +126,7 @@ function sendSizeEvent() {
 }
 
 function registerContainerResizeEvent() {
-    let container = $.find(containerClass)[0];
+    let container = document.querySelector(containerClass);
     let debounceEvent = debounce(sendSizeEvent, 50);
     new ResizeObserver(debounceEvent).observe(container);
 }
@@ -144,12 +144,14 @@ function updateCurrentState() {
 function setState() {
     let elements = Array.from(document.getElementsByClassName('keyboardInput'));
     elements.forEach((element) => {
-        $(element).val(activityState[element.id]);
+        element.value = activityState[element.id];
     });
 }
 
 function bindOnBlurEventOnInput() {
-    $('input').on('blur', updateCurrentState);
+    document.querySelectorAll('input').forEach(element => {
+        element.addEventListener('blur', updateCurrentState);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
