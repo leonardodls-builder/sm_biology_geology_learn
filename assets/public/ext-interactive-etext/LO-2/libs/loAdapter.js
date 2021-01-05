@@ -138,6 +138,11 @@ function updateCurrentState() {
                 activityState[element.id] = element.value
             }
     });
+    document.querySelectorAll('textarea').forEach((element) => {
+        if (activityState[element.id] != element.value) {
+            activityState[element.id] = element.value
+        }
+    });
     updateState();
 }
 
@@ -146,10 +151,16 @@ function setState() {
     elements.forEach((element) => {
         element.value = activityState[element.id];
     });
+    document.querySelectorAll('textarea').forEach(element => {
+        element.value = activityState[element.id];
+    });
 }
 
 function bindOnBlurEventOnInput() {
     document.querySelectorAll('input').forEach(element => {
+        element.addEventListener('blur', updateCurrentState);
+    });
+    document.querySelectorAll('textarea').forEach(element => {
         element.addEventListener('blur', updateCurrentState);
     });
 }
