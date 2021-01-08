@@ -42,9 +42,18 @@
             "resource": "RE_0002",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "PARA EMPEZAR",
+            "name": "PARA EMPEZAR (Blink)",
             "tracking": true,
             "item-code": "6234567891001/6234567892002"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0002A",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "PARA EMPEZAR (Compro)",
+            "tracking": true,
+            "item-code": "6234567891001/62345678920022"
           },
           {
             "item-type": "resource",
@@ -60,18 +69,36 @@
             "resource": "RE_0004",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA (Blink)",
             "tracking": true,
             "item-code": "6234567891001/6234567892004"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0004A",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA (Compro)",
+            "tracking": true,
+            "item-code": "6234567891001/62345678920042"
           },
           {
             "item-type": "resource",
             "resource": "RE_0005",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "CULTURAS",
+            "name": "CULTURAS (Blink)",
             "tracking": true,
             "item-code": "6234567891001/6234567892005"
+          },
+          {
+            "item-type": "resource",
+            "resource": "RE_0005A",
+            "pass-score": 0.7,
+            "contributes-to-completion": true,
+            "name": "CULTURAS (Compro)",
+            "tracking": true,
+            "item-code": "6234567891001/62345678920052"
           },
           {
             "item-type": "resource",
@@ -1879,6 +1906,17 @@
         },
         "tags": []
       },
+      "RE_0002A": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-2-Compro"
+        },
+        "tags": []
+      },
       "RE_0004": {
         "learning-objectives": [
           "Learning Objective 1"
@@ -1890,6 +1928,17 @@
         },
         "tags": []
       },
+      "RE_0004A": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-4-Compro"
+        },
+        "tags": []
+      },
       "RE_0005": {
         "learning-objectives": [
           "Learning Objective 1"
@@ -1898,6 +1947,17 @@
         "sub-type": "ext-interactive-etext",
         "ext-interactive-etext": {
           "url": "ext-interactive-etext/LO-5"
+        },
+        "tags": []
+      },
+      "RE_0005A": {
+        "learning-objectives": [
+          "Learning Objective 1"
+        ],
+        "description": "",
+        "sub-type": "ext-interactive-etext",
+        "ext-interactive-etext": {
+          "url": "ext-interactive-etext/LO-5-Compro"
         },
         "tags": []
       },
