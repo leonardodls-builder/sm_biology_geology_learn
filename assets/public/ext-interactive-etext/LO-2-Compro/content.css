@@ -15,6 +15,9 @@
 body {
   margin: 0;
 }
+.root .page-container .pages {
+  padding-bottom: 16px;
+}
 body .pages .section {
   margin-top: 24px;
 }
@@ -564,9 +567,6 @@ body .page-container .page-body .pages .page-number {
   }
 }
 @media screen and (min-width: 575px) {
-  .root .page-container .pages {
-    padding-bottom: 16px;
-  }
   .root .page-container .pages .section .image-container.column-split-4 {
     width: 25%;
   }
