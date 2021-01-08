@@ -42,6 +42,9 @@ body .pages .section .attention-content {
   background-color: #d0d0d0;
   padding: 8px;
 }
+body .pages .section .attention-container{
+  word-break: break-word;
+}
 body .pages .section .attention-content p {
   margin-bottom: 4px;
   margin-top: 8px;
