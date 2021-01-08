@@ -54771,11 +54771,6 @@ const textbox_1 = __importDefault(__webpack_require__(/*! ../textbox */ "./src/c
 const utility_1 = __webpack_require__(/*! ../../utils/utility */ "./src/utils/utility.ts");
 const react_resize_detector_1 = __importDefault(__webpack_require__(/*! react-resize-detector */ "./node_modules/react-resize-detector/lib/esm/index.js"));
 const radio_button_1 = __importDefault(__webpack_require__(/*! ../radio-button */ "./src/components/radio-button/index.tsx"));
-const toolbar_1 = __importDefault(__webpack_require__(/*! ../toolbar */ "./src/components/toolbar/index.tsx"));
-const libs_player_ui_components_1 = __webpack_require__(/*! libs-player-ui-components */ "./node_modules/libs-player-ui-components/dist/libs-player-ui-components.js");
-const StyledToolbar = libs_player_ui_components_1.styled(toolbar_1.default) `
-    height: 48px;
-`;
 class HTMLRendererComponent extends react_1.Component {
     constructor(props) {
         super(props);
@@ -54787,19 +54782,18 @@ class HTMLRendererComponent extends react_1.Component {
     componentDidMount() {
         const containerDOM = this.ref.current;
         this.props.initContext.callbacks.launched(this.props.initContext.uid);
-        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight + 48, width: containerDOM.clientWidth });
+        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
     }
     resizeHandler() {
         const containerDOM = this.ref.current;
         console.log(containerDOM.clientHeight);
-        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight + 48, width: containerDOM.clientWidth });
+        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
     }
     componentWillUnmount() {
         this.props.initContext.callbacks.destroy(this.props.initContext.uid);
     }
     render() {
         return (react_1.default.createElement(utility_1.Context.Provider, { value: this.state },
-            react_1.default.createElement(StyledToolbar, null),
             react_1.default.createElement("div", { ref: this.ref, id: 'renderer' },
                 react_1.default.createElement(react_resize_detector_1.default, { targetRef: this.ref, skipOnMounts: true, handleHeight: true, onResize: this.resizeHandler.bind(this) }),
                 this.htmlConverter.convert(this.props.initContext.inputHTML))));
@@ -55093,62 +55087,6 @@ function TextBox(props) {
     return (react_1.default.createElement(StyledTextBox, { type: "text", ref: inputRef, className: props.className, id: props.id, value: context.state[props.id], onInput: onInputValueChange }));
 }
 exports.default = TextBox;
-
-
-/***/ }),
-
-/***/ "./src/components/toolbar/index.tsx":
-/*!******************************************!*\
-  !*** ./src/components/toolbar/index.tsx ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-const libs_player_ui_components_1 = __webpack_require__(/*! libs-player-ui-components */ "./node_modules/libs-player-ui-components/dist/libs-player-ui-components.js");
-const StyledImg = libs_player_ui_components_1.styled.img `
-object-position: ${props => props.iconPosition};
-object-fit: none;
-width: 50px;
-margin: 0 !important;
-display: inline-block;
-height: 44px;
-position: relative;
-`;
-const StyledToolBarContainer = libs_player_ui_components_1.styled.div `
-background: #4b4b4b;
-display: flex;
-justify-content: flex-end;
-padding-right: 4px;
-`;
-function ToolBar(props) {
-    let toolbarConfig = [
-        {
-            iconType: 'redo',
-            iconPosition: '0 -2708px'
-        },
-        {
-            iconType: 'highlighter',
-            iconPosition: '0 -9px'
-        },
-        {
-            iconType: 'notes',
-            iconPosition: '0 -847px'
-        }
-    ];
-    function onIconClick(type) {
-        alert('Feature Coming Soon');
-    }
-    return (react_1.default.createElement(StyledToolBarContainer, null, toolbarConfig.map(config => react_1.default.createElement("div", { style: { display: 'inline-block' }, onClick: () => { onIconClick(config.iconType); } },
-        react_1.default.createElement(StyledImg, { src: 'https://www.blinklearning.com/themes/responsive/images/shared/tools.png', iconPosition: config.iconPosition })))));
-}
-exports.default = ToolBar;
 
 
 /***/ }),
