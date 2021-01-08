@@ -203,8 +203,8 @@ body .page-container .page-body .pages .page-number {
 }
 .root .page-container .pages .field.container .flexItem.eng-radio-option .radiobtn {
   display: inline-block;
-  height: 8px;
-  width: 8px;
+  min-height: 8px;
+  min-width: 8px;
   border-radius: 100%;
   border: 2px solid;
   margin-right: 8px;
