@@ -1,0 +1,151 @@
+.first-letter > strong {
+  padding-right: 5px;
+  float: left;
+  position: relative;
+  top: -0.23em;
+  margin-bottom: -0.5em;
+  font-size: 72px;
+}
+
+.image-border {
+  border: 5px solid white;
+  box-shadow: 1px 1px 9px darkgrey;
+}
+
+.root .page-container .eng-textbox,
+.root .page-container .eng-textarea {
+  border: 1px solid darkgray;
+  display: inline-block;
+  background: white;
+  width: 100%;
+  min-width: 160px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  min-height: 30px;
+}
+
+.root {
+  background-color: #d5b700;
+  padding: 16px;
+  font: 400 16px "Campton", "Source Sans Pro", sans-serif;
+}
+
+.root .page-container {
+  background-color: #ffffff;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.root .page-container .page-header {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.full-width-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+body .page-container .page-body {
+  padding: 0 16px;
+}
+
+@media only screen and (max-width: 540px) {
+  .root {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .margin-sm-top-8 {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .page-container {
+    padding: 0 0px 48px 0px;
+  }
+}
+
+body .page-container .page-body .pages {
+  padding-bottom: 16px;
+}
+
+body .page-container .page-body .pages .page-number-container {
+  text-align: end;
+  margin: 20px 0 10px 0;
+}
+
+body .page-container .page-body .pages .page-number {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 4px;
+}
+
+.root .page-container .pages .section-header {
+  border-bottom: 4px solid #000000;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+body .pages .section {
+  margin-top: 24px;
+}
+
+.full-width-row {
+  margin: 0;
+}
+
+.full-width-col {
+  padding: 0;
+}
+
+.question-sets {
+  padding: 16px;
+  background-color: white;
+}
+
+.question-set {
+  margin-bottom: 24px;
+}
+
+.gap-4 {
+  padding: 4px;
+}
+
+.bottom-margin-8 {
+  margin-bottom: 16px;
+}
+
+.question-set-heading {
+  font-weight: bold;
+  color: #b28f04;
+  margin-bottom: 8px;
+}
+
+.question {
+  margin-bottom: 16px;
+}
+
+.question-text {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.eng-input-indentation {
+  margin-left: 18px;
+}
+
+.question-number {
+  margin-right: 8px;
+}
