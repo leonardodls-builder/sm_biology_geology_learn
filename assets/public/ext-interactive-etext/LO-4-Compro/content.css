@@ -1,0 +1,253 @@
+:root {
+	--textcolor: #414141;
+	--greenShade1: #556F35;
+	--greenShade2: rgb(198, 200, 179);
+	--yellowShade1: rgb(255, 237, 163);
+	--yellowShade2: rgb(255, 243, 197);
+  --blueShade: #445493;
+  --tableBorder: #ccc;
+  --maxWidth: 1024px;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(assets/sourcesanspro-regular-webfont.woff);
+}
+
+@font-face {
+	font-family: Campton;
+	font-weight: bold;
+	src: url('assets/Campton-Bold.otf');
+}
+
+@font-face {
+	font-family: Campton;
+	font-weight: normal;
+	src: url(assets/Campton-Book.otf);
+}
+
+@font-face {
+	font-family: Marydale;
+	font-weight: normal;
+	src: url(assets/Marydale.ttf);
+}
+
+body {
+	margin: 0;
+}
+
+body .root {
+  padding: 16px;
+  color: var(--textcolor);
+	font: 400 16px 'Campton', 'Source Sans Pro', sans-serif;
+}
+
+.root .page-container {
+	max-width: var(--maxWidth);
+	margin: auto;
+}
+
+.root .page-container .page-header {
+	background-color: var(--greenShade1);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 8px 16px;
+	font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.root .page-container .page-header .title {
+  width: 50%;
+}
+
+.root .page-container .page-header .header-subtitle {
+  text-align: end;
+  width: 50%;
+}
+
+.root .page-container .page-body {
+	padding: 0 8px;
+}
+
+.root .page-container .page-body .pages {
+	padding-bottom: 16px;
+}
+
+.root .page-container .page-body .pages .page-number-container {
+	text-align: end;
+	margin: 20px 0 10px 0px;
+}
+
+.root .page-container .page-body .pages .page-number-container .page-number {
+	background-color: var(--greenShade1);
+	color: #ffffff;
+	padding: 0 4px;
+}
+
+.root .page-container .pages .section-header {
+	color: var(--greenShade1);
+	border-bottom: 4px solid var(--greenShade1);
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 24px;
+	padding-bottom: 8px;
+}
+
+.root .page-container .pages .section {
+	margin-top: 24px;
+}
+
+.root .page-container .pages .section fieldset {
+	border: 2px solid var(--greenShade1);
+}
+
+.root .page-container .pages .section fieldset .legend {
+	color: var(--greenShade1);
+	background-color: #ffffff;
+	margin-left: -26px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.root .page-container .pages .section .legend .image {
+	background-color: var(--greenShade1);
+    width: 24px;
+    height: 20px;
+	float: left;
+	margin-right: 2px;
+}
+
+.root .page-container .pages .section .section-title {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.root .page-container .pages .section .section-title .section-text{
+  padding-left: 8px;
+}
+
+.root .page-container .pages .pl-4 {
+	padding-left: 4px;
+}
+
+.root .page-container .pages .mt-16 {
+  margin-top: 16px;
+}
+
+.root .page-container .pages .text-bold {
+	font-weight: bold;
+}
+
+.root .page-container .pages .section .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -16px;
+	margin-right: -16px
+}
+
+.root .page-container .pages .section .flex-container .sub-section {
+	width: 50%;
+	padding: 8px 16px;
+	box-sizing: border-box;
+}
+
+.root .page-container .pages .section .flex-container .sub-section .image-container {
+	padding-bottom: 8px;
+	position: relative;
+	display: inline-block;
+}
+
+.root .page-container .pages .section .flex-container .sub-section .image-container .image {
+	max-width: 100%;
+}
+
+.root .page-container .pages .section .bg-yellow {
+	background-color: var(--yellowShade1);
+}
+
+.root .page-container .pages .section table.table-body {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid var(--tableBorder);
+	table-layout: fixed;
+}
+
+.root .page-container .pages .section td.table-data.table-heading {
+	background-color: var(--yellowShade1);
+}
+
+.root .page-container .pages .section td.table-data {
+	background-color: var(--yellowShade2);
+	padding: 10px;
+	border-color: var(--tableBorder);
+}
+
+.root .page-container .pages .section .color-blue {
+	font-family: 'Marydale', Sans-Serif;
+	color: var(--blueShade);
+	font-size: 20px;
+    line-height: 20px;
+}
+
+.root .page-container .pages .section .eng-textbox {
+	border: 1px solid darkgray;
+	display: block;
+	background: white;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 7px;
+	min-height: 24px;
+}
+
+.root .page-container .pages .section .attention-container img {
+	width: 20px;
+  margin-right: 4px;
+  max-width: 100%;
+}
+
+.root .page-container .pages .section .attention-title {
+	vertical-align: top;
+	font-weight: 900;
+	color: var(--greenShade1);
+}
+
+.root .page-container .pages .section .attention-content {
+	background-color: var(--greenShade2);
+	padding: 8px;
+}
+
+.root .pages .section .attention-content p {
+	margin-bottom: 4px;
+	margin-top: 8px;
+}
+
+.root .page-container .pages .section .block-content {
+	padding: 8px;
+	margin-top: 24px;
+	background-color: var(--greenShade2);
+}
+
+@media screen and (max-width: 575px) {
+  body .root {
+    padding: 0px;
+  }
+  .root .page-container{
+    padding: 0px;
+  }
+  .root .page-container .pages .section .flex-container .sub-section {
+	width: 100%;
+  } 
+  .root .page-container .page-header .title {
+    width: 100%;
+  }
+  .root .page-container .page-header .header-subtitle {
+    text-align: unset;
+    width: 100%;
+  }
+  .root .page-container .page-body{
+    padding: 0 16px 16px 16px;
+  }
+}
