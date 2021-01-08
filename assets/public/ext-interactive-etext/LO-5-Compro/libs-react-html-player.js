@@ -55154,7 +55154,12 @@ class HtmlPlayer {
         this.htmlRendererRef.current && this.htmlRendererRef.current.setState({ state: state });
     }
     stateChangeHandler(id, state) {
-        this.playerState[id] = state;
+        if (this.playerState[id]) {
+            this.playerState[id] = Object.assign(Object.assign({}, this.playerState[id]), state);
+        }
+        else {
+            this.playerState[id] = state;
+        }
         this.initEvents.change && this.initEvents.change();
     }
     sizeEventHandler(uid, dimensions) {
