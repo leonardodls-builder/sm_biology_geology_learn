@@ -54786,7 +54786,6 @@ class HTMLRendererComponent extends react_1.Component {
     }
     resizeHandler() {
         const containerDOM = this.ref.current;
-        console.log(containerDOM.clientHeight);
         this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
     }
     componentWillUnmount() {
