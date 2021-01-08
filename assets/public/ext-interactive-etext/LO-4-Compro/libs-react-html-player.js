@@ -54968,18 +54968,22 @@ const utility_1 = __webpack_require__(/*! ../../utils/utility */ "./src/utils/ut
 function RadioButton(props) {
     const context = react_1.useContext(utility_1.Context);
     const [isChecked, setIsChecked] = react_1.useState(false);
-    console.log('rendering id', props.id);
+    const radioGroupId = (props['data-name']).split('.');
     react_1.useEffect(() => {
-        if (context.state[props['data-name']] && context.state[props['data-name']].selected == props.id) {
-            console.log("checked", props.id);
+        if (context.state[radioGroupId[0]] && context.state[radioGroupId[0]][radioGroupId[1]] && context.state[radioGroupId[0]][radioGroupId[1]].selected == props.id) {
             setIsChecked(true);
         }
     });
-    function onRadioButtonChange(e) {
-        context.callbacks.onStateChange(props['data-name'], { 'selected': props.id });
+    function onRadioButtonChange() {
+        const radioButtonState = {
+            [radioGroupId[1]]: {
+                selected: props.id
+            }
+        };
+        context.callbacks.onStateChange(radioGroupId[0], radioButtonState);
     }
     return (isChecked ?
-        react_1.default.createElement("input", { type: "radio", className: "radioBtn", id: props.id, name: props['data-name'], onChange: onRadioButtonChange, defaultChecked: true })
+        react_1.default.createElement("input", { type: "radio", className: props.className, id: props.id, name: props['data-name'], onChange: onRadioButtonChange, defaultChecked: true })
         :
             react_1.default.createElement("input", { type: "radio", className: props.className, id: props.id, name: props['data-name'], onChange: onRadioButtonChange }));
 }
@@ -55024,16 +55028,24 @@ const StyledTextArea = libs_player_ui_components_1.styled.textarea `
 font-size: 16px;
 padding: 4px 0 0 8px;
 font-family: Arial;
+resize: vertical;
 `;
 function TextArea(props) {
     const context = react_1.useContext(utility_1.Context);
     const textAreaRef = react_1.useRef();
     const [textAreaState, setTextAreaState] = react_1.useState();
+    const textAreaId = (props.id).split('.');
+    const textAreaValue = context.state[textAreaId[0]] && context.state[textAreaId[0]][textAreaId[1]] && context.state[textAreaId[0]][textAreaId[1]].value;
     function onInputValueChange() {
+        const textAreaState = {
+            [textAreaId[1]]: {
+                value: textAreaRef.current.value
+            }
+        };
         setTextAreaState(textAreaRef.current.value);
-        context.callbacks.onStateChange(props.id, textAreaRef.current.value);
+        context.callbacks.onStateChange(textAreaId[0], textAreaState);
     }
-    return (react_1.default.createElement(StyledTextArea, { ref: textAreaRef, id: props.id, className: props.className, value: context.state[props.id], onInput: onInputValueChange }));
+    return (react_1.default.createElement(StyledTextArea, { ref: textAreaRef, id: props.id, className: props.className, value: textAreaValue, onInput: onInputValueChange }));
 }
 exports.default = TextArea;
 
@@ -55080,11 +55092,18 @@ function TextBox(props) {
     const inputRef = react_1.useRef();
     const [inputState, setInputState] = react_1.useState();
     const context = react_1.useContext(utility_1.Context);
+    const textBoxId = (props.id).split('.');
+    const textBoxValue = context.state[textBoxId[0]] && context.state[textBoxId[0]][textBoxId[1]] && context.state[textBoxId[0]][textBoxId[1]].value;
     function onInputValueChange() {
+        const inputState = {
+            [textBoxId[1]]: {
+                value: inputRef.current.value
+            }
+        };
         setInputState(inputRef.current.value);
-        context.callbacks.onStateChange(props.id, inputRef.current.value);
+        context.callbacks.onStateChange(textBoxId[0], inputState);
     }
-    return (react_1.default.createElement(StyledTextBox, { type: "text", ref: inputRef, className: props.className, id: props.id, value: context.state[props.id], onInput: onInputValueChange }));
+    return (react_1.default.createElement(StyledTextBox, { type: "text", ref: inputRef, className: props.className, id: props.id, value: textBoxValue, onInput: onInputValueChange }));
 }
 exports.default = TextBox;
 
