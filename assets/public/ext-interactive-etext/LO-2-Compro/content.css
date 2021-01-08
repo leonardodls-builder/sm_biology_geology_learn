@@ -135,9 +135,6 @@ body .pages .section .question-container > div {
 body .pages .flex {
   display: flex;
 }
-body .page-container .page-body {
-  padding: 0 8px;
-}
 body .page-container .page-body .pages .page-number-container {
   text-align: end;
   margin: 20px 0 10px 0;
@@ -489,17 +486,11 @@ body .page-container .page-body .pages .page-number {
   width: 100%;
 }
 @media only screen and (max-width: 575px) {
-  .root {
-    padding: 0;
-  }
   body .page-header .title {
     width: 100%;
   }
   body .page-header .header-subtitle {
     width: 100%;
-  }
-  body .page-container .page-body {
-    padding: 0 16px 16px 16px;
   }
   body .pages .section .width-50 {
     width: 100%;
