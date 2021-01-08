@@ -21,10 +21,6 @@ body .pages .section {
   margin-top: 24px;
 }
 
-body .page-container .page-body {
-  padding: 0 16px;
-}
-
 body .page-container .page-body .pages {
   padding-bottom: 16px;
 }
@@ -158,16 +154,8 @@ body .page-container .page-body .pages .page-number {
 }
 
 @media only screen and (max-width: 574.98px) {
-  .root {
-    padding: 0;
-  }
-
   .margin-sm-top-8 {
     margin-top: 16px;
-  }
-
-  .page-container {
-    padding: 0 0px 48px 0px;
   }
 }
 
