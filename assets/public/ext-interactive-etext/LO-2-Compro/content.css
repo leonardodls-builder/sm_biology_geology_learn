@@ -253,6 +253,13 @@ body .page-container .page-body .pages .page-number {
 }
 .root .page-container .pages .section .resources {
   display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.root .page-container .pages .section .resources:hover {
+  text-decoration: underline;
 }
 .root .page-container .pages .section .resources .image {
   width: 24px;
