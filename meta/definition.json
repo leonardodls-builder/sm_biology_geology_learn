@@ -39,19 +39,10 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0002",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "PARA EMPEZAR (Blink)",
-            "tracking": true,
-            "item-code": "6234567891001/6234567892002"
-          },
-          {
-            "item-type": "resource",
             "resource": "RE_0002A",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "PARA EMPEZAR (Compro)",
+            "name": "PARA EMPEZAR",
             "tracking": true,
             "item-code": "6234567891001/62345678920022"
           },
@@ -66,37 +57,19 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0004",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA (Blink)",
-            "tracking": true,
-            "item-code": "6234567891001/6234567892004"
-          },
-          {
-            "item-type": "resource",
             "resource": "RE_0004A",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA (Compro)",
+            "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
             "tracking": true,
             "item-code": "6234567891001/62345678920042"
-          },
-          {
-            "item-type": "resource",
-            "resource": "RE_0005",
-            "pass-score": 0.7,
-            "contributes-to-completion": true,
-            "name": "CULTURAS (Blink)",
-            "tracking": true,
-            "item-code": "6234567891001/6234567892005"
           },
           {
             "item-type": "resource",
             "resource": "RE_0005A",
             "pass-score": 0.7,
             "contributes-to-completion": true,
-            "name": "CULTURAS (Compro)",
+            "name": "CULTURAS",
             "tracking": true,
             "item-code": "6234567891001/62345678920052"
           },
@@ -149,7 +122,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0001",
+            "resource": "RE_0002",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "PARA EMPEZAR",
@@ -167,7 +140,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0001",
+            "resource": "RE_0004",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "ENTENDER CÓMO FUNCIONA LA LENGUA",
@@ -185,7 +158,7 @@
           },
           {
             "item-type": "resource",
-            "resource": "RE_0001",
+            "resource": "RE_0005",
             "pass-score": 0.7,
             "contributes-to-completion": true,
             "name": "CULTURAS",

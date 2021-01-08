@@ -15,6 +15,9 @@
 body {
   margin: 0;
 }
+.root .page-container .pages {
+  padding-bottom: 16px;
+}
 body .pages .section {
   margin-top: 24px;
 }
@@ -38,6 +41,9 @@ body .pages .section .question-title .question-text {
 body .pages .section .attention-content {
   background-color: #d0d0d0;
   padding: 8px;
+}
+body .pages .section .attention-container{
+  word-break: break-word;
 }
 body .pages .section .attention-content p {
   margin-bottom: 4px;
@@ -134,9 +140,6 @@ body .pages .section .question-container > div {
 }
 body .pages .flex {
   display: flex;
-}
-body .page-container .page-body {
-  padding: 0 8px;
 }
 body .page-container .page-body .pages .page-number-container {
   text-align: end;
@@ -286,7 +289,7 @@ body .page-container .page-body .pages .page-number {
   margin-top: -20px;
 }
 .root .page-container .pages .section fieldset .form {
-  padding: 16px;
+  padding: 16px 0;
 }
 .root .page-container .pages .section fieldset .form .container {
   margin-bottom: 16px;
@@ -489,17 +492,11 @@ body .page-container .page-body .pages .page-number {
   width: 100%;
 }
 @media only screen and (max-width: 575px) {
-  .root {
-    padding: 0;
-  }
   body .page-header .title {
     width: 100%;
   }
   body .page-header .header-subtitle {
     width: 100%;
-  }
-  body .page-container .page-body {
-    padding: 0 16px 16px 16px;
   }
   body .pages .section .width-50 {
     width: 100%;
@@ -541,6 +538,9 @@ body .page-container .page-body .pages .page-number {
   body .pages .section .attention-container {
     padding: 16px 0;
   }
+  body .pages .section .attention-container .attention-block {
+    width: 100%;
+  }
   body .pages .section .attention-container .attention-block.column-split-3 {
     width: 100%;
     margin-top: 32px;
@@ -573,9 +573,6 @@ body .page-container .page-body .pages .page-number {
   }
 }
 @media screen and (min-width: 575px) {
-  .root .page-container .pages {
-    padding-bottom: 16px;
-  }
   .root .page-container .pages .section .image-container.column-split-4 {
     width: 25%;
   }
