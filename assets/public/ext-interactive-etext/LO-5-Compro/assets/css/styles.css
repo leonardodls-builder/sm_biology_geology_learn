@@ -132,6 +132,11 @@ body .pages .section {
   margin-right: 8px;
 }
 
+.question .d-flex {
+  display: flex !important;
+  align-items: baseline;
+}
+
 @media only screen and (max-width: 574.98px) {
   .root {
     padding: 0;
