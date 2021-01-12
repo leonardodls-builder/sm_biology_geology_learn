@@ -54781,19 +54781,19 @@ class HTMLRendererComponent extends react_1.Component {
     }
     componentDidMount() {
         const containerDOM = this.ref.current;
-        this.props.initContext.callbacks.launched(this.props.initContext.uid);
-        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
+        this.props.initContext.callbacks.launched();
+        this.props.initContext.callbacks.size({ containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
     }
     resizeHandler() {
         const containerDOM = this.ref.current;
-        this.props.initContext.callbacks.size(this.props.initContext.uid, { containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
+        this.props.initContext.callbacks.size({ containerFit: false, height: containerDOM.clientHeight, width: containerDOM.clientWidth });
     }
     componentWillUnmount() {
-        this.props.initContext.callbacks.destroy(this.props.initContext.uid);
+        this.props.initContext.callbacks.destroy();
     }
     render() {
         return (react_1.default.createElement(utility_1.Context.Provider, { value: this.state },
-            react_1.default.createElement("div", { ref: this.ref, id: 'renderer' },
+            react_1.default.createElement("div", { ref: this.ref },
                 react_1.default.createElement(react_resize_detector_1.default, { targetRef: this.ref, skipOnMounts: true, handleHeight: true, onResize: this.resizeHandler.bind(this) }),
                 this.htmlConverter.convert(this.props.initContext.inputHTML))));
     }
@@ -54967,19 +54967,21 @@ const utility_1 = __webpack_require__(/*! ../../utils/utility */ "./src/utils/ut
 function RadioButton(props) {
     const context = react_1.useContext(utility_1.Context);
     const [isChecked, setIsChecked] = react_1.useState(false);
-    const radioGroupId = (props['data-name']).split('.');
+    const questionRadioGroupId = (props['data-name']).split('.');
+    const questionId = questionRadioGroupId[0];
+    const radioGroupId = questionRadioGroupId[1];
     react_1.useEffect(() => {
-        if (context.state[radioGroupId[0]] && context.state[radioGroupId[0]][radioGroupId[1]] && context.state[radioGroupId[0]][radioGroupId[1]].selected == props.id) {
+        if (context.state[questionId] && context.state[questionId][radioGroupId] && context.state[questionId][radioGroupId].selected == props.id) {
             setIsChecked(true);
         }
     });
     function onRadioButtonChange() {
         const radioButtonState = {
-            [radioGroupId[1]]: {
+            [radioGroupId]: {
                 selected: props.id
             }
         };
-        context.callbacks.onStateChange(radioGroupId[0], radioButtonState);
+        context.callbacks.onStateChange(questionId, radioButtonState);
     }
     return (isChecked ?
         react_1.default.createElement("input", { type: "radio", className: props.className, id: props.id, name: props['data-name'], onChange: onRadioButtonChange, defaultChecked: true })
@@ -55028,7 +55030,9 @@ font-size: 16px;
 padding: 4px 0 0 8px;
 font-family: Arial;
 resize: vertical;
-background-color: white;
+&:focus {
+    outline: none
+}
 `;
 const StyledImageContainer = libs_player_ui_components_1.styled.div `
 display: flex;
@@ -55038,6 +55042,7 @@ padding: 4px 4px 8px 0;
 const StyledContainer = libs_player_ui_components_1.styled.div `
 border: 1px solid darkgray;
 border-radius: 7px;
+background: white;
 `;
 const StyledImageBox = libs_player_ui_components_1.styled.div `
 cursor: pointer;
@@ -55049,22 +55054,30 @@ function TextArea(props) {
     const context = react_1.useContext(utility_1.Context);
     const textAreaRef = react_1.useRef();
     const [textAreaState, setTextAreaState] = react_1.useState();
-    const textAreaId = (props.id).split('.');
-    const textAreaValue = context.state[textAreaId[0]] && context.state[textAreaId[0]][textAreaId[1]] && context.state[textAreaId[0]][textAreaId[1]].value;
+    const questionTextAreaId = (props.id).split('.');
+    const questionId = questionTextAreaId[0];
+    const textAreaId = questionTextAreaId[1];
+    const textAreaValue = context.state[questionId] && context.state[questionId][textAreaId] && context.state[questionId][textAreaId].value;
     function onInputValueChange() {
         const textAreaState = {
-            [textAreaId[1]]: {
+            [textAreaId]: {
                 value: textAreaRef.current.value
             }
         };
         setTextAreaState(textAreaRef.current.value);
-        context.callbacks.onStateChange(textAreaId[0], textAreaState);
+        context.callbacks.onStateChange(questionId, textAreaState);
     }
     function onTextAreaButtonClick() {
         context.callbacks.textAreaButtonClick && context.callbacks.textAreaButtonClick();
     }
+    let textAreaStyle = {
+        background: "#ffffff",
+        border: "1px solid darkgray",
+        borderRadius: "7px 7px 4px 4px",
+        minHeight: "48px"
+    };
     return (react_1.default.createElement(StyledContainer, null,
-        react_1.default.createElement(StyledTextArea, { ref: textAreaRef, id: props.id, className: props.className, value: textAreaValue, onInput: onInputValueChange }),
+        react_1.default.createElement(StyledTextArea, { style: textAreaStyle, ref: textAreaRef, id: props.id, className: props.className, value: textAreaValue, onInput: onInputValueChange }),
         react_1.default.createElement(StyledImageContainer, null,
             react_1.default.createElement(StyledImageBox, { onClick: () => onTextAreaButtonClick() },
                 react_1.default.createElement("img", { src: "data:image/png;base64,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" })),
@@ -55111,23 +55124,34 @@ const libs_player_ui_components_1 = __webpack_require__(/*! libs-player-ui-compo
 const StyledTextBox = libs_player_ui_components_1.styled.input `
     padding-left: 8px;
     font-size: 16px;
+    &:focus {
+        outline: none;
+    }
 `;
 function TextBox(props) {
     const inputRef = react_1.useRef();
     const [inputState, setInputState] = react_1.useState();
     const context = react_1.useContext(utility_1.Context);
-    const textBoxId = (props.id).split('.');
-    const textBoxValue = context.state[textBoxId[0]] && context.state[textBoxId[0]][textBoxId[1]] && context.state[textBoxId[0]][textBoxId[1]].value;
+    const questionTextBoxId = (props.id).split('.');
+    const questionId = questionTextBoxId[0];
+    const textBoxId = questionTextBoxId[1];
+    const textBoxValue = context.state[questionId] && context.state[questionId][textBoxId] && context.state[questionId][textBoxId].value;
     function onInputValueChange() {
         const inputState = {
-            [textBoxId[1]]: {
+            [textBoxId]: {
                 value: inputRef.current.value
             }
         };
         setInputState(inputRef.current.value);
-        context.callbacks.onStateChange(textBoxId[0], inputState);
+        context.callbacks.onStateChange(questionId, inputState);
     }
-    return (react_1.default.createElement(StyledTextBox, { type: "text", ref: inputRef, className: props.className, id: props.id, value: textBoxValue, onInput: onInputValueChange }));
+    let textBoxStyle = {
+        background: "#ffffff",
+        border: "1px solid darkgray",
+        borderRadius: "7px",
+        minHeight: "30px"
+    };
+    return (react_1.default.createElement(StyledTextBox, { type: "text", style: textBoxStyle, ref: inputRef, className: props.className, id: props.id, value: textBoxValue, onInput: onInputValueChange, autoComplete: 'off' }));
 }
 exports.default = TextBox;
 
@@ -55158,6 +55182,7 @@ class HtmlPlayer {
     init(uid, inputHTML, container, initOptions) {
         initOptions.state && (this.playerState = initOptions.state);
         this.initEvents = initOptions.events;
+        this.uid = uid;
         let initContext = {
             uid: uid,
             inputHTML: inputHTML,
@@ -55166,9 +55191,9 @@ class HtmlPlayer {
                 launched: this.launchedEventHandler.bind(this),
                 destroy: this.destroyEventHandler.bind(this),
                 size: this.sizeEventHandler.bind(this),
-                textAreaButtonClick: initOptions.events && initOptions.events.textAreaButtonClick
+                showModal: this.showModalHandler.bind(this)
             },
-            state: initOptions.state || {}
+            state: this.getState()
         };
         react_dom_1.default.render(react_1.default.createElement(html_renderer_1.default, { ref: this.htmlRendererRef, initContext: initContext }), container);
     }
@@ -55185,20 +55210,23 @@ class HtmlPlayer {
         else {
             this.playerState[id] = state;
         }
-        this.initEvents.change && this.initEvents.change();
+        this.initEvents.change && this.initEvents.change({ uid: this.uid, type: 'change' });
     }
-    sizeEventHandler(uid, dimensions) {
+    sizeEventHandler(dimensions) {
         let sizeEventParams = {
-            uid: uid,
+            uid: this.uid,
             size: dimensions
         };
         this.initEvents.size && this.initEvents.size(sizeEventParams);
     }
-    launchedEventHandler(uid) {
-        this.initEvents.launched && this.initEvents.launched({ uid: uid, type: 'launched' });
+    launchedEventHandler() {
+        this.initEvents.launched && this.initEvents.launched({ uid: this.uid, type: 'launched' });
     }
-    destroyEventHandler(uid) {
-        this.initEvents.destroy && this.initEvents.destroy({ uid: uid, type: 'destroy' });
+    destroyEventHandler() {
+        this.initEvents.destroy && this.initEvents.destroy({ uid: this.uid, type: 'destroy' });
+    }
+    showModalHandler() {
+        this.initEvents.showModal && this.initEvents.showModal({ uid: this.uid, type: 'showModal' });
     }
 }
 exports.default = new HtmlPlayer();
