@@ -82,9 +82,10 @@ body .page-container .page-body .pages .page-number {
   padding-right: 5px;
   float: left;
   position: relative;
-  top: -0.23em;
-  margin-bottom: -0.5em;
-  font-size: 72px;
+  top: -0.12em;
+  margin-bottom: -0.3em;
+  font-size: 85px;
+  line-height: 1;
 }
 
 .image-border {
@@ -169,7 +170,7 @@ body .page-container .page-body .pages .page-number {
   .image-2 {
     max-width: 300px !important;
     position: relative;
-    top: 10%;
+    top: 15%;
   }
 
   .image-3 {
@@ -180,7 +181,7 @@ body .page-container .page-body .pages .page-number {
 
   .image-4 {
     position: relative;
-    top: -20%;
+    top: -10%;
     margin-right: 2%;
   }
 
