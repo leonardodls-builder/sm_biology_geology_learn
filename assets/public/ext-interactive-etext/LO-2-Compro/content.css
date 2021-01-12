@@ -153,6 +153,7 @@ body .page-container .page-body .pages .page-number {
 .root {
   padding: 16px;
   font: 400 16px 'Campton', 'Source Sans Pro', sans-serif;
+  line-height: 1.4;
 }
 .root .page-container {
   background-color: #ffffff;
