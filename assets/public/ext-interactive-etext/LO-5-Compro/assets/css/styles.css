@@ -41,6 +41,7 @@ body .page-container .page-body .pages .page-number {
   padding: 16px;
   font-size: 16px;
   font-family: "Campton", "Source Sans Pro", sans-serif;
+  line-height: 1.4;
 }
 
 .root .page-container {
@@ -68,6 +69,10 @@ body .page-container .page-body .pages .page-number {
   box-sizing: border-box;
   border-radius: 7px;
   min-height: 30px;
+}
+
+.root .page-container .eng-textarea {
+  min-height: 48px;
 }
 
 .root .page-container .pages .section-header {
