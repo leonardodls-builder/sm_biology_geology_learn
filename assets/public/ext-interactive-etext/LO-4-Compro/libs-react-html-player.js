@@ -55068,7 +55068,7 @@ function TextArea(props) {
         context.callbacks.onStateChange(questionId, textAreaState);
     }
     function onTextAreaButtonClick() {
-        context.callbacks.textAreaButtonClick && context.callbacks.textAreaButtonClick();
+        context.callbacks.showModal && context.callbacks.showModal();
     }
     let textAreaStyle = {
         background: "#ffffff",
