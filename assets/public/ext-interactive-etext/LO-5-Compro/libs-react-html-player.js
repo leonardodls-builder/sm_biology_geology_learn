@@ -55151,7 +55151,7 @@ function TextBox(props) {
         borderRadius: "7px",
         minHeight: "30px"
     };
-    return (react_1.default.createElement(StyledTextBox, { type: "text", style: textBoxStyle, ref: inputRef, className: props.className, id: props.id, value: textBoxValue, onInput: onInputValueChange, autoComplete: "off-chrome" }));
+    return (react_1.default.createElement(StyledTextBox, { type: "text", style: textBoxStyle, ref: inputRef, className: props.className, id: props.id, value: textBoxValue, onInput: onInputValueChange, autoComplete: "off" }));
 }
 exports.default = TextBox;
 
